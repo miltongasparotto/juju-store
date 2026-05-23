@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <script>
-    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v1.8.3';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
+    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v1.8.4';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
     const mLink=document.createElement('link');mLink.rel='manifest';
     mLink.href=URL.createObjectURL(new Blob([JSON.stringify({name:"Juju Store",short_name:"Juju Store",start_url:"./",display:"standalone",orientation:"portrait",background_color:"#FFF1F5",theme_color:"#DB2777",icons:[{src:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+",sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}]})],{type:'application/manifest+json'}));
     document.head.appendChild(mLink);
@@ -2259,28 +2259,81 @@ const Relatorios = ({vendas,produtos}) => {
 /* ══════════════════════════════════════════════════════════════════════════════
    BACKUP / RESTAURAÇÃO
 ══════════════════════════════════════════════════════════════════════════════ */
+/* ─── BotaoPerigoso — botão com contagem regressiva de 10s ───────────────── */
+const BotaoPerigoso = ({label,onConfirm,segundos=10,cor=C.red}) => {
+  const [contando,setContando] = useState(false);
+  const [restante,setRestante] = useState(segundos);
+  const timerRef = useRef(null);
+
+  const iniciar = () => { setContando(true); setRestante(segundos); };
+  const cancelar = () => { setContando(false); setRestante(segundos); clearInterval(timerRef.current); };
+
+  useEffect(()=>{
+    if(!contando) return;
+    timerRef.current = setInterval(()=>{
+      setRestante(r=>{
+        if(r<=1){ clearInterval(timerRef.current); setContando(false); setRestante(segundos); onConfirm(); return segundos; }
+        return r-1;
+      });
+    },1000);
+    return ()=>clearInterval(timerRef.current);
+  },[contando]);
+
+  if(!contando) return (
+    <button onClick={iniciar} className="tap" style={{width:"100%",padding:"12px",borderRadius:14,background:cor+"18",border:`2px solid ${cor}44`,fontFamily:"inherit",fontWeight:800,fontSize:14,color:cor,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:8}}>
+      <Icon name="trash" size={16} color={cor}/>{label}
+    </button>
+  );
+
+  // Contagem regressiva ativa
+  const pct = ((segundos-restante)/segundos)*100;
+  return (
+    <div style={{borderRadius:14,border:`2px solid ${cor}`,overflow:"hidden",background:cor+"08"}}>
+      {/* Barra de progresso */}
+      <div style={{height:4,background:cor+"22",position:"relative"}}>
+        <div style={{position:"absolute",left:0,top:0,height:"100%",width:`${pct}%`,background:cor,transition:"width 1s linear",borderRadius:99}}/>
+      </div>
+      <div style={{padding:"12px 14px"}}>
+        <div style={{fontSize:13,fontWeight:800,color:cor,marginBottom:10,textAlign:"center"}}>
+          ⏳ Confirmando em <span style={{fontSize:20,fontWeight:900}}>{restante}s</span> — tem certeza?
+        </div>
+        <div style={{display:"flex",gap:8}}>
+          <button onClick={cancelar} className="tap" style={{flex:1,padding:"10px",borderRadius:12,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:13,color:C.pinkD,cursor:"pointer"}}>
+            ✋ Cancelar
+          </button>
+          <button onClick={()=>{clearInterval(timerRef.current);setContando(false);setRestante(segundos);onConfirm();}} className="tap"
+            style={{flex:1,padding:"10px",borderRadius:12,background:cor,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:13,color:C.white,cursor:"pointer"}}>
+            ✅ Confirmar já
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onClose}) => {
-  const [fase,setFase] = useState("menu"); // menu | importando | preview | sucesso
+  // menu | importando | preview | sucesso | apagar
+  const [fase,setFase] = useState("menu");
   const [preview,setPreview] = useState(null);
+  const [tipoSucesso,setTipoSucesso] = useState(""); // exportar | importar | apagar
   const [erro,setErro] = useState("");
   const fileRef = useRef();
 
-  const exportar = () => {
-    const dados = {
-      versao:"1.8.0",
-      exportadoEm: new Date().toISOString(),
-      produtos,
-      clientes,
-      vendas,
-    };
-    const json = JSON.stringify(dados, null, 2);
-    const blob = new Blob([json], {type:"application/json"});
-    const url = URL.createObjectURL(blob);
+  const gerarNomeArquivo = () =>
+    `juju-store-backup-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`;
+
+  const exportarJSON = (dados, nome) => {
+    const blob = new Blob([JSON.stringify(dados,null,2)],{type:"application/json"});
     const a = document.createElement("a");
-    a.href = url;
-    a.download = `juju-store-backup-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`;
+    a.href = URL.createObjectURL(blob);
+    a.download = nome;
     a.click();
-    URL.revokeObjectURL(url);
+    URL.revokeObjectURL(a.href);
+  };
+
+  const exportar = () => {
+    exportarJSON({versao:"1.8.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas}, gerarNomeArquivo());
+    setTipoSucesso("exportar");
     setFase("sucesso");
   };
 
@@ -2290,13 +2343,10 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
     reader.onload = ev => {
       try {
         const dados = JSON.parse(ev.target.result);
-        // Validação básica
         if(!dados.produtos||!dados.clientes||!dados.vendas) throw new Error("Arquivo inválido ou corrompido.");
         if(!Array.isArray(dados.produtos)||!Array.isArray(dados.clientes)||!Array.isArray(dados.vendas))
           throw new Error("Formato de dados incorreto.");
-        setPreview(dados);
-        setFase("preview");
-        setErro("");
+        setPreview(dados); setFase("preview"); setErro("");
       } catch(e) {
         setErro(e.message||"Não foi possível ler o arquivo. Verifique se é um backup válido.");
         setFase("importando");
@@ -2309,7 +2359,23 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
     setProdutos(preview.produtos);
     setClientes(preview.clientes);
     setVendas(preview.vendas);
+    setTipoSucesso("importar");
     setFase("sucesso");
+  };
+
+  // Apagar tudo: gera backup automático antes de limpar
+  const executarApagar = () => {
+    exportarJSON(
+      {versao:"1.8.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas},
+      `juju-store-ANTES-DE-APAGAR-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`
+    );
+    setTimeout(()=>{
+      setProdutos([]);
+      setClientes([]);
+      setVendas([]);
+      setTipoSucesso("apagar");
+      setFase("sucesso");
+    }, 600);
   };
 
   const fmtData = (iso) => {
@@ -2317,8 +2383,12 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
     catch { return iso; }
   };
 
+  const totalDados = produtos.filter(p=>!p.deleted).length + clientes.filter(c=>!c.deleted).length + vendas.length;
+
   return (
     <Modal title="💾 Backup e Restauração" onClose={onClose}>
+
+      {/* ── MENU PRINCIPAL */}
       {fase==="menu"&&(
         <div style={{display:"flex",flexDirection:"column",gap:13}}>
           <InfoBox emoji="🛡️" title="Seus dados são preciosos!" text="Faça backup regularmente. Se trocar de celular ou limpar o navegador, seus dados serão perdidos sem backup!" color={C.pinkD}/>
@@ -2327,7 +2397,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
           <div style={{background:C.pinkL,borderRadius:16,padding:14}}>
             <div style={{fontWeight:800,color:C.pinkD,fontSize:14,marginBottom:4}}>📤 Exportar backup</div>
             <div style={{fontSize:12,color:C.gray,marginBottom:10,lineHeight:1.5}}>
-              Salva um arquivo JSON com todos os seus dados: <b>{produtos.filter(p=>!p.deleted).length}</b> produtos, <b>{clientes.filter(c=>!c.deleted).length}</b> clientes e <b>{vendas.length}</b> vendas.
+              Salva um arquivo com <b>{produtos.filter(p=>!p.deleted).length}</b> produtos, <b>{clientes.filter(c=>!c.deleted).length}</b> clientes e <b>{vendas.length}</b> vendas.
             </div>
             <Btn onClick={exportar} full><Icon name="check" size={15}/>Baixar backup agora</Btn>
           </div>
@@ -2336,7 +2406,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
           <div style={{background:"#F0FDF4",border:"1.5px solid #BBF7D0",borderRadius:16,padding:14}}>
             <div style={{fontWeight:800,color:C.green,fontSize:14,marginBottom:4}}>📥 Restaurar backup</div>
             <div style={{fontSize:12,color:C.gray,marginBottom:10,lineHeight:1.5}}>
-              Selecione um arquivo de backup (.json) para restaurar seus dados. <b style={{color:C.red}}>Atenção:</b> substitui todos os dados atuais!
+              Selecione um arquivo .json para restaurar seus dados. <b style={{color:C.red}}>Substitui tudo!</b>
             </div>
             <Btn onClick={()=>{setFase("importando");fileRef.current?.click();}} v="ghost" full>
               <Icon name="restore" size={15}/>Selecionar arquivo de backup
@@ -2345,10 +2415,26 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
               onChange={e=>{lerArquivo(e.target.files[0]); e.target.value="";}}/>
           </div>
 
-          <InfoBox emoji="💡" title="Dica de ouro" text="Faça um backup toda semana! Salve na nuvem (Google Drive, WhatsApp pessoal) para nunca perder nada." color={C.purple}/>
+          {/* Apagar tudo */}
+          <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:16,padding:14}}>
+            <div style={{fontWeight:800,color:C.red,fontSize:14,marginBottom:4}}>🗑️ Apagar todos os dados</div>
+            <div style={{fontSize:12,color:"#7F1D1D",marginBottom:10,lineHeight:1.5}}>
+              Remove <b>todos</b> os produtos, clientes e vendas. Um backup é gerado automaticamente antes de apagar — não vai perder nada por acidente!
+            </div>
+            {totalDados===0
+              ? <div style={{fontSize:12,color:C.soft,textAlign:"center",padding:"6px 0"}}>Nenhum dado para apagar.</div>
+              : <button onClick={()=>setFase("apagar")} className="tap"
+                  style={{width:"100%",padding:"11px",borderRadius:12,background:"#FEE2E2",border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:C.red,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:8}}>
+                  <Icon name="trash" size={16} color={C.red}/>Apagar tudo…
+                </button>
+            }
+          </div>
+
+          <InfoBox emoji="💡" title="Dica de ouro" text="Faça backup toda semana! Salve no Google Drive ou WhatsApp pessoal para nunca perder nada." color={C.purple}/>
         </div>
       )}
 
+      {/* ── AGUARDANDO ARQUIVO */}
       {fase==="importando"&&(
         <div style={{display:"flex",flexDirection:"column",gap:13}}>
           <InfoBox emoji="📁" title="Aguardando arquivo..." text="Selecione o arquivo .json de backup da sua lojinha." color={C.green}/>
@@ -2365,6 +2451,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
         </div>
       )}
 
+      {/* ── PREVIEW DO BACKUP */}
       {fase==="preview"&&preview&&(
         <div style={{display:"flex",flexDirection:"column",gap:13}}>
           <div style={{background:"#FFFBEB",border:"1.5px solid #FDE68A",borderRadius:14,padding:"12px 14px"}}>
@@ -2383,25 +2470,80 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
           </div>
           <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:12,padding:"10px 13px"}}>
             <div style={{fontSize:12,fontWeight:800,color:C.red,marginBottom:3}}>⚠️ Atenção!</div>
-            <div style={{fontSize:11,color:C.red,lineHeight:1.5}}>Esta ação substitui <b>todos os seus dados atuais</b> pelos dados do backup. Esta operação não pode ser desfeita.</div>
+            <div style={{fontSize:11,color:C.red,lineHeight:1.5}}>Esta ação substitui <b>todos os seus dados atuais</b> pelos dados do backup.</div>
           </div>
-          <Btn onClick={confirmarImport} full style={{background:`linear-gradient(135deg,${C.green},#059669)`}}>
-            <Icon name="check" size={15}/> Restaurar este backup
-          </Btn>
+          {/* Botão com contagem regressiva para restaurar */}
+          <BotaoPerigoso
+            label="Restaurar este backup"
+            cor={C.green}
+            onConfirm={confirmarImport}
+          />
           <Btn onClick={()=>setFase("menu")} v="outline" full>Cancelar</Btn>
         </div>
       )}
 
+      {/* ── CONFIRMAR APAGAR TUDO */}
+      {fase==="apagar"&&(
+        <div style={{display:"flex",flexDirection:"column",gap:13}}>
+          <div style={{textAlign:"center",padding:"8px 0"}}>
+            <div style={{fontSize:52,marginBottom:6}}>🗑️</div>
+            <div style={{fontSize:16,fontWeight:900,color:C.red,marginBottom:4}}>Apagar todos os dados?</div>
+            <div style={{fontSize:13,color:C.gray,lineHeight:1.55}}>Esta ação apaga <b style={{color:C.red}}>tudo</b> permanentemente.</div>
+          </div>
+
+          {/* Resumo do que será apagado */}
+          <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:14,padding:"12px 14px"}}>
+            <div style={{fontWeight:800,color:C.red,fontSize:12,marginBottom:8}}>O que será apagado:</div>
+            {[
+              {e:"📦",l:"Produtos",v:produtos.filter(p=>!p.deleted).length},
+              {e:"👥",l:"Clientes",v:clientes.filter(c=>!c.deleted).length},
+              {e:"🛍️",l:"Vendas",v:vendas.length},
+            ].map(r=>(
+              <div key={r.l} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderBottom:"1px solid #FECACA"}}>
+                <span style={{fontSize:12,color:"#7F1D1D"}}>{r.e} {r.l}</span>
+                <span style={{fontSize:12,fontWeight:800,color:C.red}}>{r.v} registros</span>
+              </div>
+            ))}
+          </div>
+
+          <div style={{background:"#ECFDF5",border:"1.5px solid #BBF7D0",borderRadius:12,padding:"10px 13px",display:"flex",gap:9,alignItems:"center"}}>
+            <span style={{fontSize:20,flexShrink:0}}>✅</span>
+            <div style={{fontSize:12,color:"#065F46",lineHeight:1.5,fontWeight:600}}>
+              Um backup será baixado automaticamente <b>antes</b> de apagar tudo. Você não vai perder nada por acidente!
+            </div>
+          </div>
+
+          {/* Botão perigoso com 10 segundos */}
+          <BotaoPerigoso
+            label="Apagar tudo e baixar backup"
+            cor={C.red}
+            segundos={10}
+            onConfirm={executarApagar}
+          />
+          <Btn onClick={()=>setFase("menu")} v="outline" full>Cancelar — voltar</Btn>
+        </div>
+      )}
+
+      {/* ── SUCESSO */}
       {fase==="sucesso"&&(
         <div style={{textAlign:"center",padding:"20px 0"}}>
-          <div style={{fontSize:60,marginBottom:12,animation:"float 2s ease-in-out infinite"}}>✅</div>
-          <div style={{fontSize:17,fontWeight:900,color:C.green,marginBottom:8}}>Feito com sucesso!</div>
-          <div style={{fontSize:13,color:C.gray,marginBottom:20,lineHeight:1.5}}>
-            {fase==="sucesso"&&preview?"Dados restaurados! Todos os registros foram atualizados.":"Backup exportado! Salve o arquivo em local seguro."}
+          <div style={{fontSize:60,marginBottom:12,animation:"float 2s ease-in-out infinite"}}>
+            {tipoSucesso==="apagar"?"🧹":"✅"}
+          </div>
+          <div style={{fontSize:17,fontWeight:900,color:tipoSucesso==="apagar"?C.green:C.green,marginBottom:8}}>
+            {tipoSucesso==="exportar"&&"Backup exportado!"}
+            {tipoSucesso==="importar"&&"Dados restaurados!"}
+            {tipoSucesso==="apagar"&&"Dados apagados com sucesso!"}
+          </div>
+          <div style={{fontSize:13,color:C.gray,marginBottom:20,lineHeight:1.6}}>
+            {tipoSucesso==="exportar"&&"Salve o arquivo em local seguro — Google Drive, WhatsApp ou e-mail."}
+            {tipoSucesso==="importar"&&"Todos os registros foram atualizados com os dados do backup."}
+            {tipoSucesso==="apagar"&&"O backup foi baixado antes de apagar. Sua lojinha está zerada e pronta para recomeçar!"}
           </div>
           <Btn onClick={onClose} full>Fechar</Btn>
         </div>
       )}
+
     </Modal>
   );
 };
