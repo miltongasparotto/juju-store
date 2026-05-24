@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
   <meta name="apple-mobile-web-app-title" content="Juju Store"/>
   <meta name="mobile-web-app-capable" content="yes"/>
-  <title>Juju Store 🌸 v1.9.0</title>
+  <title>Juju Store 🌸 v2.1.0</title>
   <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <script>
-    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v1.9.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
+    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.1.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
     const mLink=document.createElement('link');mLink.rel='manifest';
     mLink.href=URL.createObjectURL(new Blob([JSON.stringify({name:"Juju Store",short_name:"Juju Store",start_url:"./",display:"standalone",orientation:"portrait",background_color:"#FFF1F5",theme_color:"#DB2777",icons:[{src:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+",sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}]})],{type:'application/manifest+json'}));
     document.head.appendChild(mLink);
@@ -44,11 +44,19 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel" data-presets="react">
 /**
- * Lojinha — v1.9.0
+ * Lojinha — v2.1.0
  * Atualizado: 2026-05-23
  *
  * Changelog:
- * v1.9.0 — Correções e melhorias de UX:
+ * v2.0.0 — Grande atualização:
+ *   - Busca global removida (simplificação da interface)
+ *   - Backup local restaurado: exportar/importar JSON + apagar tudo com segurança
+ *   - Lembrete de fiado via WhatsApp: botão 📲 na dashboard e no perfil do cliente
+ *   - Painel Financeiro aprimorado: Receita, Custo, Lucro Real, Margem s/ receita,
+ *     Ganho s/ custo, Ticket médio, Descontos, barra visual de composição
+ *   - Tutorial Onboarding: 5 passos guiados com produto, cliente, venda e relatórios
+ *   - Botão 🎓 no topo para reabrir o tutorial a qualquer momento
+ *   - Animação de carregamento para sincronização com Drive
  *   - Backup: botões de confirmação disponíveis imediatamente (não apenas após o timer)
  *   - Produtos: foto com opção de câmera (traseira) ou galeria ao adicionar produto
  *   - Câmera do produto: câmera traseira por padrão, botão 🔄 para trocar
@@ -134,6 +142,7 @@ const injectStyles = () => {
     @keyframes heartbeat{0%,100%{transform:scale(1)}14%{transform:scale(1.18)}28%{transform:scale(1)}42%{transform:scale(1.1)}70%{transform:scale(1)}}
     @keyframes tooltipPop{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
     @keyframes confirmPop{0%{transform:scale(.88) translateY(10px);opacity:0}80%{transform:scale(1.02) translateY(-2px);opacity:1}100%{transform:scale(1) translateY(0);opacity:1}}
+    @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
     @supports(padding:env(safe-area-inset-bottom)){.safe-nav{padding-bottom:calc(4px + env(safe-area-inset-bottom))!important;min-height:62px;height:auto!important;}}
     .tap:active{transform:scale(.93);transition:transform .1s;}
     .pulse{animation:heartbeat 2.8s ease infinite;}
@@ -833,77 +842,168 @@ const EstoqueAjuste = ({produto,onSave,onClose}) => {
 
 /* ─── Desconto Modal ──────────────────────────────────────────────────────── */
 const DescontoModal = ({item,onSave,onClose}) => {
-  const [tipo,setTipo] = useState("pct"); // pct | valor_unitario | valor_total
-  const [val,setVal] = useState("");
   const precoOrig = item.precoOriginal||item.precoVenda;
-  const pctN = Number(val||0);
   const qtd = item.qtd||1;
-
-  const novoPrecoUnit = tipo==="pct"
-    ? Math.max(0,precoOrig*(1-pctN/100))
-    : tipo==="valor_unitario"
-      ? Math.max(0,Number(val||precoOrig))
-      : Math.max(0,precoOrig-(Math.min(Number(val||0),totalOrig)/qtd));
-
-  const descontoUnit = precoOrig-novoPrecoUnit;
-  const totalFinal = novoPrecoUnit*qtd;
   const totalOrig = precoOrig*qtd;
+  const multiPeca = qtd > 1;
+
+  // Modos disponíveis variam conforme quantidade
+  // 1 peça:  percentual por peça | valor do desconto por peça
+  // N peças: percentual por peça | valor do desconto por peça | valor do desconto no total
+  const modosDisponiveis = [
+    {
+      id:"pct",
+      ico:"💸",
+      label:"Percentual de desconto (%)",
+      sub:`Informe o % de desconto sobre o preço unitário (${fmt(precoOrig)})`,
+    },
+    {
+      id:"valor_unitario",
+      ico:"🏷️",
+      label:"Valor do desconto por peça (R$)",
+      sub:`Informe o valor do desconto em cada peça (preço atual: ${fmt(precoOrig)})`,
+    },
+    ...(multiPeca ? [{
+      id:"valor_total",
+      ico:"🧮",
+      label:"Valor do desconto no total (R$)",
+      sub:`Informe o valor total do desconto sobre as ${qtd} peças (total: ${fmt(totalOrig)})`,
+    }] : []),
+  ];
+
+  const [tipo,setTipo] = useState("pct");
+  const [val,setVal] = useState("");
+
+  // Garante que o tipo atual é válido para a qtd atual
+  const tipoValido = modosDisponiveis.find(m=>m.id===tipo) ? tipo : "pct";
+
+  const valN = Number(val||0);
+
+  // Calcula desconto unitário com base no modo
+  const descontoUnit =
+    tipoValido==="pct"         ? Math.max(0,Math.min(precoOrig, precoOrig*(valN/100)))
+    : tipoValido==="valor_unitario" ? Math.max(0,Math.min(precoOrig, valN))
+    : /* valor_total */           Math.max(0,Math.min(totalOrig, valN))/qtd;
+
+  const novoPrecoUnit = Math.max(0, precoOrig - descontoUnit);
+  const totalFinal    = novoPrecoUnit * qtd;
+  const pctDesconto   = precoOrig > 0 ? (descontoUnit/precoOrig)*100 : 0;
 
   const aplicar = () => {
-    if(!val) return;
-    onSave({...item,precoVenda:parseFloat(novoPrecoUnit.toFixed(2)),precoOriginal:precoOrig,desconto:parseFloat(descontoUnit.toFixed(2)),pctDesconto:parseFloat(((descontoUnit/precoOrig)*100).toFixed(1))});
+    if(!val||valN<=0) return;
+    onSave({
+      ...item,
+      precoVenda:   parseFloat(novoPrecoUnit.toFixed(2)),
+      precoOriginal: precoOrig,
+      desconto:     parseFloat(descontoUnit.toFixed(2)),
+      pctDesconto:  parseFloat(pctDesconto.toFixed(1)),
+    });
     onClose();
   };
 
-  const modos = [
-    {id:"pct",ico:"💸",label:"% por peça",sub:"Desconto percentual sobre o valor unitário"},
-    {id:"valor_unitario",ico:"🏷️",label:"Novo valor unit.",sub:"Informe o novo preço por unidade"},
-    {id:"valor_total",ico:"🧮",label:"Total do produto",sub:"Informe o valor do desconto a aplicar no total"},
-  ];
+  const labelInput =
+    tipoValido==="pct"          ? "Percentual de desconto (%)"
+    : tipoValido==="valor_unitario" ? "Valor do desconto por peça (R$)"
+    :                              "Valor do desconto no total (R$)";
+
+  const placeholderInput =
+    tipoValido==="pct"          ? `Ex: 10  →  desconto de ${fmt(precoOrig*0.1)} por peça`
+    : tipoValido==="valor_unitario" ? `Ex: ${fmtN(precoOrig*0.1)}  →  desconto de 10% por peça`
+    :                              `Ex: ${fmtN(totalOrig*0.1)}  →  desconto de 10% no total`;
 
   return (
     <div style={{padding:"20px 16px 0"}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:14}}>
-        <h2 style={{margin:0,fontSize:16,fontWeight:800,color:C.pinkD}}>Alterar valor do item</h2>
+        <h2 style={{margin:0,fontSize:16,fontWeight:800,color:C.pinkD}}>Desconto no item</h2>
         <button onClick={onClose} style={{background:C.pinkS,border:"none",borderRadius:50,width:32,height:32,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}><Icon name="x" size={14} color={C.pinkD}/></button>
       </div>
-      <div style={{background:C.pinkL,borderRadius:12,padding:"9px 13px",marginBottom:12,display:"flex",gap:9,alignItems:"center"}}>
-        <div style={{flex:1,minWidth:0}}>
-          <div style={{fontSize:13,fontWeight:700,color:C.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{item.nome}{item.variacao?` · ${item.variacao}`:""}</div>
-          <div style={{fontSize:12,color:C.gray}}>Preço unitário: {fmt(precoOrig)} · Qtd: {qtd} · Total: {fmt(totalOrig)}</div>
+
+      {/* Resumo do item */}
+      <div style={{background:C.pinkL,borderRadius:12,padding:"10px 13px",marginBottom:14}}>
+        <div style={{fontSize:13,fontWeight:700,color:C.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",marginBottom:4}}>
+          {item.nome}{item.variacao?` · ${item.variacao}`:""}
+        </div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6}}>
+          {[
+            {l:"Preço unit.", v:fmt(precoOrig)},
+            {l:"Quantidade", v:`${qtd} un.`},
+            {l:"Total", v:fmt(totalOrig)},
+          ].map(r=>(
+            <div key={r.l} style={{background:C.white,borderRadius:9,padding:"6px 8px",textAlign:"center"}}>
+              <div style={{fontSize:12,fontWeight:800,color:C.pinkD}}>{r.v}</div>
+              <div style={{fontSize:9,color:C.soft,marginTop:1}}>{r.l}</div>
+            </div>
+          ))}
         </div>
       </div>
-      <div style={{display:"flex",flexDirection:"column",gap:7,marginBottom:12}}>
-        {modos.map(m=>(
-          <button key={m.id} onClick={()=>{setTipo(m.id);setVal("");}} className="tap" style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:12,border:`2px solid ${tipo===m.id?C.pink:C.pinkM}`,background:tipo===m.id?C.pinkS:C.white,cursor:"pointer",fontFamily:"inherit",textAlign:"left"}}>
+
+      {/* Seleção do tipo de desconto */}
+      <div style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",marginBottom:7}}>
+        Tipo de desconto
+      </div>
+      <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:14}}>
+        {modosDisponiveis.map(m=>(
+          <button key={m.id} onClick={()=>{setTipo(m.id);setVal("");}} className="tap"
+            style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:12,
+              border:`2px solid ${tipoValido===m.id?C.pink:C.pinkM}`,
+              background:tipoValido===m.id?C.pinkS:C.white,
+              cursor:"pointer",fontFamily:"inherit",textAlign:"left"}}>
             <span style={{fontSize:20,flexShrink:0}}>{m.ico}</span>
-            <div>
-              <div style={{fontSize:13,fontWeight:800,color:tipo===m.id?C.pinkD:C.text}}>{m.label}</div>
-              <div style={{fontSize:11,color:C.soft}}>{m.sub}</div>
+            <div style={{minWidth:0}}>
+              <div style={{fontSize:13,fontWeight:800,color:tipoValido===m.id?C.pinkD:C.text}}>{m.label}</div>
+              <div style={{fontSize:10,color:C.soft,marginTop:1,lineHeight:1.4}}>{m.sub}</div>
             </div>
           </button>
         ))}
       </div>
+
+      {/* Campo de entrada */}
       <FInput
-        label={tipo==="pct"?"Percentual de desconto (%)":tipo==="valor_unitario"?"Novo valor por unidade (R$)":"Valor do desconto no total (R$)"}
-        value={val} onChange={setVal} type="number" min="0"
-        placeholder={tipo==="pct"?"Ex: 10 (para 10%)":tipo==="valor_unitario"?`Ex: ${fmtN(precoOrig*0.9)}`:`Ex: ${fmtN(totalOrig*0.1)} (desconto de 10%)`}
+        label={labelInput}
+        value={val}
+        onChange={setVal}
+        type="number"
+        min="0"
+        placeholder={placeholderInput}
       />
-      {val&&(
-        <div style={{marginTop:10,background:"#ECFDF5",borderRadius:12,padding:"10px 13px"}}>
-          <div style={{display:"flex",justifyContent:"space-between",marginBottom:3}}>
-            <span style={{fontSize:12,color:C.gray}}>Novo preço unitário:</span>
-            <span style={{fontSize:14,fontWeight:800,color:C.green}}>{fmt(novoPrecoUnit)}</span>
+
+      {/* Preview do resultado */}
+      {val&&valN>0&&(
+        <div style={{marginTop:12,background:"#ECFDF5",border:`1.5px solid ${C.green}30`,borderRadius:12,padding:"12px 13px"}}>
+          <div style={{fontSize:11,fontWeight:700,color:C.green,textTransform:"uppercase",letterSpacing:".05em",marginBottom:8}}>
+            Prévia do desconto
           </div>
-          <div style={{display:"flex",justifyContent:"space-between"}}>
-            <span style={{fontSize:12,color:C.gray}}>Total ({qtd} un.):</span>
-            <span style={{fontSize:14,fontWeight:800,color:C.green}}>{fmt(totalFinal)}</span>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
+            <span style={{fontSize:12,color:C.gray}}>Desconto por peça:</span>
+            <span style={{fontSize:13,fontWeight:800,color:C.amber}}>-{fmt(descontoUnit)} ({pctDesconto.toFixed(0)}%)</span>
           </div>
-          {descontoUnit>0&&<div style={{fontSize:11,color:C.gray,marginTop:3}}>Desconto: {fmt(descontoUnit)}/un. · {fmt(descontoUnit*qtd)} no total ({((descontoUnit/precoOrig)*100).toFixed(0)}%)</div>}
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
+            <span style={{fontSize:12,color:C.gray}}>Preço unitário após desconto:</span>
+            <span style={{fontSize:13,fontWeight:800,color:C.green}}>{fmt(novoPrecoUnit)}</span>
+          </div>
+          {multiPeca&&(
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
+              <span style={{fontSize:12,color:C.gray}}>Desconto total ({qtd} peças):</span>
+              <span style={{fontSize:13,fontWeight:800,color:C.amber}}>-{fmt(descontoUnit*qtd)}</span>
+            </div>
+          )}
+          <div style={{height:1,background:C.green+"22",margin:"6px 0"}}/>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total do item com desconto:</span>
+            <span style={{fontSize:16,fontWeight:900,color:C.green}}>{fmt(totalFinal)}</span>
+          </div>
         </div>
       )}
-      <div style={{paddingBottom:80,marginTop:14}}>
-        <Btn onClick={aplicar} disabled={!val} full>Aplicar desconto no item</Btn>
+
+      <div style={{display:"flex",flexDirection:"column",gap:8,paddingBottom:80,marginTop:14}}>
+        <Btn onClick={aplicar} disabled={!val||valN<=0} full>
+          <Icon name="check" size={15}/>Aplicar desconto
+        </Btn>
+        {item.desconto>0&&(
+          <Btn onClick={()=>{onSave({...item,precoVenda:item.precoOriginal||item.precoVenda,desconto:0,pctDesconto:0});onClose();}} v="danger" full>
+            Remover desconto atual
+          </Btn>
+        )}
       </div>
     </div>
   );
@@ -914,17 +1014,18 @@ const DescontoCompraModal = ({subtotal,descAtual,onSave,onClose}) => {
   const [tipo,setTipo] = useState("pct"); // pct | valor
   const [val,setVal] = useState(descAtual>0?String(descAtual):"");
 
-  const pctN = Number(val||0);
+  const valN = Number(val||0);
   const desconto = tipo==="pct"
-    ? Math.max(0,subtotal*(pctN/100))
-    : Math.min(subtotal,Math.max(0,Number(val||0)));
-  const totalFinal = subtotal-desconto;
+    ? Math.max(0, Math.min(subtotal, subtotal*(valN/100)))
+    : Math.max(0, Math.min(subtotal, valN));
+  const totalFinal = subtotal - desconto;
+  const pctResultante = subtotal>0 ? (desconto/subtotal)*100 : 0;
 
   const aplicar = () => {
+    if(!val||valN<=0) return;
     onSave(parseFloat(desconto.toFixed(2)));
     onClose();
   };
-
   const remover = () => { onSave(0); onClose(); };
 
   return (
@@ -933,47 +1034,101 @@ const DescontoCompraModal = ({subtotal,descAtual,onSave,onClose}) => {
         <h2 style={{margin:0,fontSize:16,fontWeight:800,color:C.pinkD}}>Desconto na compra total</h2>
         <button onClick={onClose} style={{background:C.pinkS,border:"none",borderRadius:50,width:32,height:32,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}><Icon name="x" size={14} color={C.pinkD}/></button>
       </div>
-      <div style={{background:C.pinkL,borderRadius:12,padding:"9px 13px",marginBottom:14}}>
-        <div style={{fontSize:12,color:C.gray}}>Subtotal dos itens</div>
-        <div style={{fontSize:18,fontWeight:900,color:C.pinkD}}>{fmt(subtotal)}</div>
+
+      {/* Subtotal */}
+      <div style={{background:C.pinkL,borderRadius:12,padding:"10px 14px",marginBottom:14,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+        <div>
+          <div style={{fontSize:11,color:C.soft,fontWeight:700,textTransform:"uppercase",letterSpacing:".04em"}}>Subtotal dos itens</div>
+          <div style={{fontSize:20,fontWeight:900,color:C.pinkD,marginTop:2}}>{fmt(subtotal)}</div>
+        </div>
+        {descAtual>0&&(
+          <div style={{textAlign:"right"}}>
+            <div style={{fontSize:10,color:C.amber,fontWeight:700}}>Desconto atual</div>
+            <div style={{fontSize:15,fontWeight:800,color:C.amber}}>-{fmt(descAtual)}</div>
+          </div>
+        )}
       </div>
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:12}}>
-        {[["pct","💸","% de desconto"],["valor","💰","Valor em R$"]].map(([t,ico,l])=>(
-          <button key={t} onClick={()=>{setTipo(t);setVal("");}} className="tap" style={{display:"flex",flexDirection:"column",alignItems:"center",gap:4,padding:"10px 8px",borderRadius:12,border:`2px solid ${tipo===t?C.pink:C.pinkM}`,background:tipo===t?C.pinkS:C.white,cursor:"pointer",fontFamily:"inherit"}}>
-            <span style={{fontSize:20}}>{ico}</span>
-            <span style={{fontSize:12,fontWeight:800,color:tipo===t?C.pinkD:C.gray}}>{l}</span>
+
+      {/* Tipo de desconto */}
+      <div style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",marginBottom:7}}>
+        Tipo de desconto
+      </div>
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:14}}>
+        {[
+          {t:"pct", ico:"💸", label:"Percentual de desconto (%)", sub:"Informe o % de desconto sobre o total"},
+          {t:"valor", ico:"💰", label:"Valor do desconto (R$)", sub:"Informe o valor exato do desconto"},
+        ].map(({t,ico,label,sub})=>(
+          <button key={t} onClick={()=>{setTipo(t);setVal("");}} className="tap"
+            style={{display:"flex",flexDirection:"column",alignItems:"center",gap:4,padding:"11px 8px",borderRadius:12,
+              border:`2px solid ${tipo===t?C.pink:C.pinkM}`,
+              background:tipo===t?C.pinkS:C.white,
+              cursor:"pointer",fontFamily:"inherit",textAlign:"center"}}>
+            <span style={{fontSize:22}}>{ico}</span>
+            <span style={{fontSize:12,fontWeight:800,color:tipo===t?C.pinkD:C.gray,lineHeight:1.3}}>{label}</span>
+            <span style={{fontSize:10,color:C.soft,lineHeight:1.3}}>{sub}</span>
           </button>
         ))}
       </div>
+
+      {/* Campo */}
       <FInput
-        label={tipo==="pct"?"Percentual de desconto (%)":"Valor do desconto (R$)"}
-        value={val} onChange={setVal} type="number" min="0"
-        placeholder={tipo==="pct"?"Ex: 5 (para 5%)":fmt(subtotal*0.1).replace("R$ ","")}
+        label={tipo==="pct" ? "Percentual de desconto (%)" : "Valor do desconto (R$)"}
+        value={val}
+        onChange={setVal}
+        type="number"
+        min="0"
+        placeholder={tipo==="pct"
+          ? `Ex: 10  →  desconto de ${fmt(subtotal*0.1)}`
+          : `Ex: ${fmtN(subtotal*0.1)}  →  desconto de 10%`}
       />
-      {val&&(
-        <div style={{marginTop:10,background:"#ECFDF5",borderRadius:12,padding:"10px 13px"}}>
-          <div style={{display:"flex",justifyContent:"space-between",marginBottom:3}}>
-            <span style={{fontSize:12,color:C.gray}}>Desconto:</span>
-            <span style={{fontSize:13,fontWeight:700,color:C.amber}}>-{fmt(desconto)}</span>
+
+      {/* Preview */}
+      {val&&valN>0&&(
+        <div style={{marginTop:12,background:"#ECFDF5",border:`1.5px solid ${C.green}30`,borderRadius:12,padding:"12px 13px"}}>
+          <div style={{fontSize:11,fontWeight:700,color:C.green,textTransform:"uppercase",letterSpacing:".05em",marginBottom:8}}>
+            Prévia do desconto
           </div>
-          <div style={{display:"flex",justifyContent:"space-between"}}>
-            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total final:</span>
-            <span style={{fontSize:16,fontWeight:900,color:C.green}}>{fmt(totalFinal)}</span>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
+            <span style={{fontSize:12,color:C.gray}}>Subtotal:</span>
+            <span style={{fontSize:13,color:C.gray}}>{fmt(subtotal)}</span>
+          </div>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
+            <span style={{fontSize:12,color:C.gray}}>Desconto aplicado ({pctResultante.toFixed(0)}%):</span>
+            <span style={{fontSize:13,fontWeight:800,color:C.amber}}>-{fmt(desconto)}</span>
+          </div>
+          <div style={{height:1,background:C.green+"22",margin:"6px 0"}}/>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total final da compra:</span>
+            <span style={{fontSize:17,fontWeight:900,color:C.green}}>{fmt(totalFinal)}</span>
           </div>
         </div>
       )}
+
       <div style={{display:"flex",flexDirection:"column",gap:8,paddingBottom:80,marginTop:14}}>
-        <Btn onClick={aplicar} disabled={!val||desconto<=0} full>Aplicar desconto na compra</Btn>
+        <Btn onClick={aplicar} disabled={!val||valN<=0||desconto<=0} full>
+          <Icon name="check" size={15}/>Aplicar desconto na compra
+        </Btn>
         {descAtual>0&&<Btn onClick={remover} v="danger" full>Remover desconto atual</Btn>}
       </div>
     </div>
   );
 };
 
+/* ─── Lembrete de cobrança via WhatsApp ──────────────────────────────────── */
+const lembreteWpp = (cliente, totalFiado) => {
+  const nome = cliente.nome?.split(" ")[0] || "cliente";
+  const tel = (cliente.telefone||"").replace(/\D/g,"");
+  const msg = encodeURIComponent(
+    `Olá ${nome}! 🌸\n\nPassando para avisar que você tem um valor de ${fmt(totalFiado)} em aberto aqui na Juju Store.\n\nQualquer dúvida, pode me chamar! 💕`
+  );
+  const url = tel ? `https://wa.me/55${tel}?text=${msg}` : `https://wa.me/?text=${msg}`;
+  window.open(url,"_blank");
+};
+
 /* ══════════════════════════════════════════════════════════════════════════════
    DASHBOARD
 ══════════════════════════════════════════════════════════════════════════════ */
-const Dashboard = ({produtos,vendas,clientes}) => {
+const Dashboard = ({produtos,vendas,clientes,onSetTab}) => {
   const agora = new Date();
   const hoje = agora.toDateString();
   const hora = agora.getHours();
@@ -1100,18 +1255,25 @@ const Dashboard = ({produtos,vendas,clientes}) => {
           {clientesDevendo.map(c=>{
             const totalDev=vendas.filter(v=>v.clienteId===c.id&&v.pagamento==="fiado"&&!v.fiadoPago).reduce((s,v)=>s+v.total,0);
             return (
-              <div key={c.id} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"6px 0",borderTop:`1px solid #FEE2E2`,gap:8}}>
-                <div style={{display:"flex",alignItems:"center",gap:7,minWidth:0}}>
+              <div key={c.id} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"7px 0",borderTop:`1px solid #FEE2E2`,gap:8}}>
+                <div style={{display:"flex",alignItems:"center",gap:7,minWidth:0,flex:1}}>
                   {c.foto
                     ?<img src={c.foto} alt="" style={{width:28,height:28,borderRadius:"50%",objectFit:"cover",flexShrink:0,border:`2px solid ${C.red}44`}}/>
                     :<div style={{width:28,height:28,borderRadius:"50%",background:`linear-gradient(135deg,${C.red},#DC2626)`,display:"flex",alignItems:"center",justifyContent:"center",color:C.white,fontWeight:900,fontSize:11,flexShrink:0}}>{c.nome?.[0]?.toUpperCase()}</div>
                   }
                   <span style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{c.nome}</span>
                 </div>
-                <span style={{fontSize:13,fontWeight:800,color:C.red,flexShrink:0}}>{fmt(totalDev)}</span>
+                <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
+                  <span style={{fontSize:13,fontWeight:800,color:C.red}}>{fmt(totalDev)}</span>
+                  <button onClick={()=>lembreteWpp(c,totalDev)} className="tap" title="Enviar lembrete via WhatsApp"
+                    style={{width:30,height:30,borderRadius:50,background:"#DCF8C6",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",flexShrink:0}}>
+                    <span style={{fontSize:16}}>📲</span>
+                  </button>
+                </div>
               </div>
             );
           })}
+          <div style={{fontSize:10,color:C.soft,marginTop:6}}>📲 = enviar lembrete de cobrança via WhatsApp</div>
         </Card>
       )}
 
@@ -1192,18 +1354,13 @@ const Dashboard = ({produtos,vendas,clientes}) => {
 /* ══════════════════════════════════════════════════════════════════════════════
    PRODUTOS
 ══════════════════════════════════════════════════════════════════════════════ */
-const Produtos = ({produtos,setProdutos,onCelebrate,buscaDestino="",onBuscaDestinoClear}) => {
+const Produtos = ({produtos,setProdutos,onCelebrate}) => {
   const [modal,setModal] = useState(null);
   const [form,setForm] = useState({});
   const [ajusteModal,setAjusteModal] = useState(null);
   const [search,setSearch] = useState("");
   const [showDeleted,setShowDeleted] = useState(false);
   const [confirmDel,setConfirmDel] = useState(null); // {id, nome}
-
-  // Aplica filtro vindo da busca global
-  useEffect(()=>{
-    if(buscaDestino){ setSearch(buscaDestino); onBuscaDestinoClear?.(); }
-  },[buscaDestino]);
 
   const blank = ()=>({foto:"",nome:"",categoria:"",precoCusto:"",precoVenda:"",estoqueTotal:"",variacoes:[],obs:""});
   const openAdd = ()=>{setForm(blank());setModal("add");};
@@ -1383,7 +1540,7 @@ const Produtos = ({produtos,setProdutos,onCelebrate,buscaDestino="",onBuscaDesti
 /* ══════════════════════════════════════════════════════════════════════════════
    CLIENTES
 ══════════════════════════════════════════════════════════════════════════════ */
-const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate,buscaDestino="",onBuscaDestinoClear}) => {
+const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate}) => {
   const [modal,setModal]       = useState(null);
   const [form,setForm]         = useState({});
   const [search,setSearch]     = useState("");
@@ -1393,11 +1550,6 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate,buscaDestin
   const [recModal,setRecModal] = useState(null);
   const [recPagt,setRecPagt]   = useState("dinheiro");
   const [confirmDelCli,setConfirmDelCli] = useState(null); // id
-
-  // Aplica filtro vindo da busca global
-  useEffect(()=>{
-    if(buscaDestino){ setSearch(buscaDestino); onBuscaDestinoClear?.(); }
-  },[buscaDestino]);
 
   const save = ()=>{
     if(!form.nome?.trim()) return;
@@ -1464,7 +1616,15 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate,buscaDestin
             {bdHoje&&<div style={{position:"absolute",bottom:-2,right:-2,fontSize:20}}>🎂</div>}
           </div>
           <div style={{fontSize:18,fontWeight:900,color:C.text}}>{detail.nome}</div>
-          {fiadoPend&&<div style={{background:"#FEE2E2",color:C.red,borderRadius:20,padding:"4px 14px",fontSize:12,fontWeight:700,display:"inline-block",marginTop:5}}>📝 Fiado pendente: {fmt(totalFiadoVal)}</div>}
+          {fiadoPend&&(
+            <div style={{display:"flex",alignItems:"center",gap:8,justifyContent:"center",marginTop:5,flexWrap:"wrap"}}>
+              <div style={{background:"#FEE2E2",color:C.red,borderRadius:20,padding:"4px 14px",fontSize:12,fontWeight:700}}>📝 Fiado pendente: {fmt(totalFiadoVal)}</div>
+              <button onClick={()=>lembreteWpp(detail,totalFiadoVal)} className="tap" title="Enviar lembrete WhatsApp"
+                style={{background:"#DCF8C6",border:"none",borderRadius:20,padding:"5px 13px",fontFamily:"inherit",fontWeight:700,fontSize:12,color:"#1a7a1a",cursor:"pointer",display:"flex",alignItems:"center",gap:5}}>
+                📲 WhatsApp
+              </button>
+            </div>
+          )}
           {bdHoje&&<div style={{background:"#FEF3C7",color:"#92400E",borderRadius:20,padding:"3px 12px",fontSize:12,fontWeight:700,display:"inline-block",marginTop:4}}>🎉 Aniversário hoje!</div>}
           {!bdHoje&&bdMes&&<div style={{background:C.pinkS,color:C.pinkD,borderRadius:20,padding:"3px 12px",fontSize:12,fontWeight:700,display:"inline-block",marginTop:4}}>🎈 Aniversário este mês</div>}
           {detail.nascimento&&<div style={{color:C.soft,fontSize:12,marginTop:6}}>🎂 {fmtNasc(detail.nascimento)}{idade!==null?` · ${idade} anos`:""}</div>}
@@ -1634,15 +1794,15 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate,buscaDestin
                   // Formata automaticamente: DD/MM/AAAA → AAAA-MM-DD para armazenamento
                   let v = e.target.value.replace(/\D/g,"");
                   if(v.length>8) v=v.slice(0,8);
-                  let fmt = v;
-                  if(v.length>=5) fmt=v.slice(0,2)+"/"+v.slice(2,4)+"/"+v.slice(4);
-                  else if(v.length>=3) fmt=v.slice(0,2)+"/"+v.slice(2);
+                  let nascFmt = v;
+                  if(v.length>=5) nascFmt=v.slice(0,2)+"/"+v.slice(2,4)+"/"+v.slice(4);
+                  else if(v.length>=3) nascFmt=v.slice(0,2)+"/"+v.slice(2);
                   // Armazena como AAAA-MM-DD se completo
                   if(v.length===8){
                     const iso=`${v.slice(4)}-${v.slice(2,4)}-${v.slice(0,2)}`;
-                    setForm(f=>({...f,nascimento:iso,_nascDisplay:fmt}));
+                    setForm(f=>({...f,nascimento:iso,_nascDisplay:nascFmt}));
                   } else {
-                    setForm(f=>({...f,nascimento:"",_nascDisplay:fmt}));
+                    setForm(f=>({...f,nascimento:"",_nascDisplay:nascFmt}));
                   }
                 }}
                 placeholder="DD/MM/AAAA"
@@ -1675,97 +1835,210 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate,buscaDestin
    VENDAS
 ══════════════════════════════════════════════════════════════════════════════ */
 const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) => {
-  const [modal,setModal] = useState(false);
-  const [clienteId,setClienteId] = useState("");
-  const [itens,setItens] = useState([]);
-  const [prodSel,setProdSel] = useState("");
-  const [varSel,setVarSel] = useState("");
-  const [qtd,setQtd] = useState("1");
-  const [pagamento,setPagamento] = useState("dinheiro");
-  const [filter,setFilter] = useState("todos");
-  const [descontoModal,setDescontoModal] = useState(null); // item index
+  const [modal,setModal]               = useState(false);   // nova venda
+  const [editModal,setEditModal]       = useState(null);    // venda sendo editada
+  const [confirmModal,setConfirmModal] = useState(false);   // confirmação antes de salvar
+  const [trocoModal,setTrocoModal]     = useState(false);   // calculadora de troco
+  const [reembolsoModal,setReembolsoModal] = useState(null); // venda a reembolsar
+  const [clienteId,setClienteId]       = useState("");
+  const [itens,setItens]               = useState([]);
+  const [prodSel,setProdSel]           = useState("");
+  const [varSel,setVarSel]             = useState("");
+  const [qtd,setQtd]                   = useState("1");
+  const [pagamento,setPagamento]       = useState("dinheiro");
+  const [filter,setFilter]             = useState("todos");
+  const [descontoModal,setDescontoModal]           = useState(null);
   const [descontoCompraModal,setDescontoCompraModal] = useState(false);
-  const [descontoCompra,setDescontoCompra] = useState(0); // valor R$ de desconto na compra total
+  const [descontoCompra,setDescontoCompra]           = useState(0);
+  const [recebido,setRecebido]         = useState(""); // valor recebido na calculadora de troco
 
   const prodSelecionado = produtos.filter(p=>!p.deleted).find(x=>x.id===prodSel);
-  const subtotalItens = itens.reduce((s,i)=>s+i.precoVenda*i.qtd,0);
-  const total = Math.max(0,subtotalItens-descontoCompra);
-  const totalOriginal = itens.reduce((s,i)=>s+(i.precoOriginal||i.precoVenda)*i.qtd,0);
-  const totalDesconto = totalOriginal-subtotalItens+descontoCompra;
-  const custoItens = itens.reduce((s,i)=>s+i.precoCusto*i.qtd,0);
+  const subtotalItens   = itens.reduce((s,i)=>s+i.precoVenda*i.qtd,0);
+  const total           = Math.max(0,subtotalItens-descontoCompra);
+  const totalOriginal   = itens.reduce((s,i)=>s+(i.precoOriginal||i.precoVenda)*i.qtd,0);
+  const totalDesconto   = totalOriginal-subtotalItens+descontoCompra;
+  const custoItens      = itens.reduce((s,i)=>s+i.precoCusto*i.qtd,0);
 
-  // Verifica estoque disponível para um item do carrinho
+  const resetModal = () => {
+    setModal(false); setEditModal(null); setConfirmModal(false); setTrocoModal(false);
+    setItens([]); setClienteId(""); setPagamento("dinheiro");
+    setProdSel(""); setVarSel(""); setQtd("1"); setDescontoCompra(0); setRecebido("");
+  };
+
   const estoqueDisp = (prodId, variacao) => {
     const p = produtos.find(x=>x.id===prodId);
     if(!p) return 0;
-    if(variacao && p.variacoes?.length>0){
-      return Number(p.variacoes.find(v=>v.nome===variacao)?.qtd||0);
-    }
-    return Number(p.estoqueTotal||0);
+    // Na edição, o estoque visível deve incluir o que já estava comprometido
+    // na venda original — pois esse estoque "volta" ao salvar a edição.
+    const qtdOriginal = editModal
+      ? (editModal.itens||[]).filter(i=>i.produtoId===prodId&&(i.variacao||"")===(variacao||"")).reduce((s,i)=>s+i.qtd,0)
+      : 0;
+    if(variacao && p.variacoes?.length>0) return Number(p.variacoes.find(v=>v.nome===variacao)?.qtd||0) + qtdOriginal;
+    return Number(p.estoqueTotal||0) + qtdOriginal;
   };
 
-  const estoqueInsuf = itens.filter(it=>{
-    const disp = estoqueDisp(it.produtoId, it.variacao);
-    return disp < it.qtd;
-  });
+  const estoqueInsuf = itens.filter(it=>estoqueDisp(it.produtoId,it.variacao)<it.qtd);
 
-  const addItem = ()=>{
+  const addItem = () => {
     if(!prodSelecionado) return;
     const novaQtd = Number(qtd)||1;
     const varObj = prodSelecionado.variacoes?.find(v=>v.nome===varSel);
-    // Verifica estoque disponível
-    const dispAtual = varSel
-      ? Number(varObj?.qtd||0)
-      : Number(prodSelecionado.estoqueTotal||0);
-    const jaNoCarrinho = itens.find(x=>x.produtoId===prodSelecionado.id&&x.variacao===(varSel||""))?.qtd||0;
-    if(dispAtual>0 && jaNoCarrinho+novaQtd > dispAtual){
-      // Ainda adiciona, mas vai marcar como insuficiente visualmente
-    }
+    const dispAtual = varSel ? Number(varObj?.qtd||0) : Number(prodSelecionado.estoqueTotal||0);
     setItens(is=>{
       const idx = is.findIndex(x=>x.produtoId===prodSelecionado.id&&x.variacao===(varSel||""));
-      if(idx>=0){
-        return is.map((x,i)=>i===idx?{...x,qtd:x.qtd+novaQtd}:x);
-      }
+      if(idx>=0) return is.map((x,i)=>i===idx?{...x,qtd:x.qtd+novaQtd}:x);
       return [...is,{produtoId:prodSelecionado.id,nome:prodSelecionado.nome,variacao:varSel,varFoto:varObj?.foto||"",foto:prodSelecionado.foto||"",qtd:novaQtd,precoVenda:Number(prodSelecionado.precoVenda),precoCusto:Number(prodSelecionado.precoCusto),precoOriginal:Number(prodSelecionado.precoVenda),desconto:0,pctDesconto:0,estoqueDisp:dispAtual}];
     });
     setProdSel(""); setVarSel(""); setQtd("1");
   };
 
-  const finalizarVenda = ()=>{
-    if(itens.length===0) return;
-    // Bloqueia se houver itens com estoque insuficiente
-    if(estoqueInsuf.length>0) return;
+  // Abre modal de confirmação ou calculadora de troco
+  const solicitarFinalizacao = () => {
+    if(itens.length===0||estoqueInsuf.length>0) return;
+    if(pagamento==="dinheiro") { setRecebido(""); setTrocoModal(true); }
+    else setConfirmModal(true);
+  };
+
+  const confirmarVenda = (vendaEditada=null) => {
+    const isEdit = !!vendaEditada;
     const cl = clientes.find(c=>c.id===clienteId);
-    setVendas(vs=>[...vs,{id:uid(),clienteId,clienteNome:cl?.nome||"",itens,total,custo:custoItens,desconto:totalDesconto,pagamento,data:new Date().toISOString()}]);
+    const novaVenda = {
+      id: isEdit ? vendaEditada.id : uid(),
+      clienteId, clienteNome:cl?.nome||"",
+      itens, total, custo:custoItens, desconto:totalDesconto, pagamento,
+      data: isEdit ? vendaEditada.data : new Date().toISOString(),
+      editadaEm: isEdit ? new Date().toISOString() : undefined,
+    };
+
+    if(isEdit) {
+      // Edição: opera produto a produto em dois passos independentes.
+      // Passo 1 — devolve estoque dos itens da venda ORIGINAL.
+      // Passo 2 — desconta estoque dos itens da venda NOVA.
+      // Os passos são aplicados sequencialmente via reduce para garantir
+      // que o estado intermediário de um passo alimenta o próximo.
+      setProdutos(ps => {
+        // Cria uma cópia mutável do array de produtos para operar
+        let estado = ps.map(p => ({
+          ...p,
+          estoqueTotal: Number(p.estoqueTotal||0),
+          variacoes: p.variacoes ? p.variacoes.map(v=>({...v, qtd:Number(v.qtd||0)})) : [],
+        }));
+
+        // PASSO 1 — devolver estoque da venda original
+        vendaEditada.itens.forEach(item => {
+          estado = estado.map(p => {
+            if(p.id !== item.produtoId) return p;
+            if(item.variacao) {
+              // Produto com variação: devolve na variação específica e recalcula total
+              const novasVars = p.variacoes.map(v =>
+                v.nome === item.variacao ? {...v, qtd: v.qtd + item.qtd} : v
+              );
+              return {...p, variacoes: novasVars, estoqueTotal: novasVars.reduce((s,v)=>s+v.qtd,0)};
+            } else {
+              // Produto sem variação: soma diretamente no total
+              return {...p, estoqueTotal: p.estoqueTotal + item.qtd};
+            }
+          });
+        });
+
+        // PASSO 2 — descontar estoque da venda nova
+        itens.forEach(item => {
+          estado = estado.map(p => {
+            if(p.id !== item.produtoId) return p;
+            if(item.variacao) {
+              const novasVars = p.variacoes.map(v =>
+                v.nome === item.variacao ? {...v, qtd: Math.max(0, v.qtd - item.qtd)} : v
+              );
+              return {...p, variacoes: novasVars, estoqueTotal: novasVars.reduce((s,v)=>s+v.qtd,0)};
+            } else {
+              return {...p, estoqueTotal: Math.max(0, p.estoqueTotal - item.qtd)};
+            }
+          });
+        });
+
+        return estado;
+      });
+      setVendas(vs=>vs.map(v=>v.id===novaVenda.id?novaVenda:v));
+    } else {
+      // Nova venda — apenas desconta estoque
+      setProdutos(ps=>ps.map(p=>{
+        const vendidos=itens.filter(i=>i.produtoId===p.id);
+        if(!vendidos.length) return p;
+        if(p.variacoes?.length>0) {
+          // Com variação: opera variação por variação e recalcula total
+          let novasVars = p.variacoes.map(v=>({...v,qtd:Number(v.qtd||0)}));
+          vendidos.forEach(item=>{
+            if(item.variacao) novasVars=novasVars.map(v=>v.nome===item.variacao?{...v,qtd:Math.max(0,v.qtd-item.qtd)}:v);
+          });
+          const semVar = vendidos.filter(i=>!i.variacao).reduce((s,i)=>s+i.qtd,0);
+          const novoTotal = novasVars.reduce((s,v)=>s+v.qtd,0) - semVar;
+          return {...p, estoqueTotal:Math.max(0,novoTotal), variacoes:novasVars};
+        } else {
+          // Sem variação: desconta direto no total
+          const tv=vendidos.reduce((s,i)=>s+i.qtd,0);
+          return {...p, estoqueTotal:Math.max(0,Number(p.estoqueTotal||0)-tv)};
+        }
+      }));
+      setVendas(vs=>[...vs,novaVenda]);
+      const msgs=[
+        {emoji:"🎉",title:"Venda realizada!",message:`${fmt(total)} no caixa! Parabéns!`,tip:"Continue registrando suas vendas para acompanhar o crescimento do negócio!"},
+        {emoji:"💸",title:"Ka-ching!",message:`Você faturou ${fmt(total)}! Incrível!`,tip:"Cada venda registrada é um dado valioso para o seu negócio!"},
+        {emoji:"🚀",title:"Mais uma venda!",message:`${fmt(total)} faturados — você está arrasando!`,tip:"Guarde parte do lucro para reinvestir no estoque!"},
+      ];
+      onCelebrate(msgs[Math.floor(Math.random()*msgs.length)]);
+    }
+    resetModal();
+  };
+
+  // Abre modal de edição preenchendo o estado com os dados da venda
+  const abrirEdicao = (venda) => {
+    if(venda.reembolsada) return;
+    setEditModal(venda);
+    setItens(venda.itens.map(it=>({...it})));
+    setClienteId(venda.clienteId||"");
+    setPagamento(venda.pagamento||"dinheiro");
+    setDescontoCompra(venda.desconto&&venda.desconto>0?venda.desconto:0); // simplificação: desconto da compra
+    setModal(true);
+  };
+
+  // Reembolso: devolve estoque e marca venda como reembolsada
+  const confirmarReembolso = () => {
+    const v = reembolsoModal;
     setProdutos(ps=>ps.map(p=>{
-      const vendidos=itens.filter(i=>i.produtoId===p.id);
-      if(!vendidos.length) return p;
-      const tv=vendidos.reduce((s,i)=>s+i.qtd,0);
-      const novoTotal=Math.max(0,Number(p.estoqueTotal||0)-tv);
-      let novasVars=p.variacoes?[...p.variacoes]:[];
-      vendidos.forEach(item=>{if(item.variacao)novasVars=novasVars.map(v=>v.nome===item.variacao?{...v,qtd:Math.max(0,Number(v.qtd)-item.qtd)}:v);});
-      return {...p,estoqueTotal:novoTotal,variacoes:novasVars};
+      const devolvidos=v.itens.filter(i=>i.produtoId===p.id);
+      if(!devolvidos.length) return p;
+      if(p.variacoes?.length>0) {
+        // Com variação: devolve por variação e recalcula total pelo somatório
+        let novasVars = p.variacoes.map(vr=>({...vr,qtd:Number(vr.qtd||0)}));
+        devolvidos.forEach(item=>{
+          if(item.variacao) novasVars=novasVars.map(vr=>vr.nome===item.variacao?{...vr,qtd:vr.qtd+item.qtd}:vr);
+        });
+        return {...p, variacoes:novasVars, estoqueTotal:novasVars.reduce((s,vr)=>s+vr.qtd,0)};
+      } else {
+        // Sem variação: soma direto
+        const tv=devolvidos.reduce((s,i)=>s+i.qtd,0);
+        return {...p, estoqueTotal:Number(p.estoqueTotal||0)+tv};
+      }
     }));
-    const msgs=[
-      {emoji:"🎉",title:"Venda realizada!",message:`${fmt(total)} no caixa! Parabéns!`,tip:"Continue registrando suas vendas para acompanhar o crescimento do negócio!"},
-      {emoji:"💸",title:"Ka-ching!",message:`Você faturou ${fmt(total)}! Incrível!`,tip:"Cada venda registrada é um dado valioso para o seu negócio!"},
-      {emoji:"🚀",title:"Mais uma venda!",message:`${fmt(total)} faturados — você está arrasando!`,tip:"Guarde parte do lucro para reinvestir no estoque!"},
-    ];
-    onCelebrate(msgs[Math.floor(Math.random()*msgs.length)]);
-    setItens([]); setClienteId(""); setPagamento("dinheiro"); setModal(false); setProdSel(""); setQtd("1"); setDescontoCompra(0);
+    setVendas(vs=>vs.map(venda=>venda.id===v.id?{...venda,reembolsada:true,reembolsadaEm:new Date().toISOString()}:venda));
+    setReembolsoModal(null);
   };
 
   const hoje = new Date().toDateString();
   const agora = Date.now();
   const filtradas = filter==="hoje"
     ? vendas.filter(v=>new Date(v.data).toDateString()===hoje)
-    : filter==="7d"
-      ? vendas.filter(v=>agora-new Date(v.data).getTime()<=7*24*60*60*1000)
-      : filter==="30d"
-        ? vendas.filter(v=>agora-new Date(v.data).getTime()<=30*24*60*60*1000)
-        : vendas;
-  const pagtIcons = {dinheiro:"💵",pix:"📱",fiado:"📝"};
+    : filter==="7d"  ? vendas.filter(v=>agora-new Date(v.data).getTime()<=7*864e5)
+    : filter==="30d" ? vendas.filter(v=>agora-new Date(v.data).getTime()<=30*864e5)
+    : vendas;
+  const pagtIcons  = {dinheiro:"💵",pix:"📱",fiado:"📝"};
   const produtosAtivos = produtos.filter(p=>!p.deleted);
+  const isEdicao = !!editModal;
+
+  // Calculadora de troco
+  const recebidoN = Number(recebido||0);
+  const troco = Math.max(0, recebidoN - total);
+  const trocoInsuf = recebidoN > 0 && recebidoN < total;
 
   return (
     <div style={{padding:"14px 14px"}}>
@@ -1790,10 +2063,14 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
           <p style={{fontSize:12,margin:0}}>Registre sua primeira venda!</p>
         </div>
       ):[...filtradas].reverse().map((v,i)=>(
-        <Card key={v.id} style={{marginBottom:9,padding:12,animation:`fadeUp .28s ease ${i*.03}s both`}}>
+        <Card key={v.id} style={{marginBottom:9,padding:12,animation:`fadeUp .28s ease ${i*.03}s both`,opacity:v.reembolsada?.7:1,border:v.reembolsada?`1.5px solid ${C.amber}44`:v.editadaEm?`1.5px solid ${C.purple}22`:"none",background:v.reembolsada?"#FFFBEB":C.white}}>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:8}}>
             <div style={{flex:1,minWidth:0}}>
-              <div style={{fontWeight:800,fontSize:13,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.clienteNome||"Cliente avulso"}</div>
+              <div style={{display:"flex",alignItems:"center",gap:5,flexWrap:"wrap"}}>
+                <span style={{fontWeight:800,fontSize:13,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.clienteNome||"Cliente avulso"}</span>
+                {v.reembolsada&&<span style={{fontSize:10,background:"#FEF3C7",color:"#92400E",borderRadius:8,padding:"1px 7px",fontWeight:700,flexShrink:0}}>↩ Reembolsada</span>}
+                {v.editadaEm&&!v.reembolsada&&<span style={{fontSize:10,background:"#EEF2FF",color:C.purple,borderRadius:8,padding:"1px 7px",fontWeight:700,flexShrink:0}}>✏️ Editada</span>}
+              </div>
               <div style={{fontSize:11,color:C.soft,marginTop:1}}>{new Date(v.data).toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})} · {pagtIcons[v.pagamento]||"💰"} {v.pagamento}</div>
               <div style={{marginTop:5,display:"flex",flexWrap:"wrap",gap:3}}>
                 {v.itens?.map((it,j)=>(
@@ -1802,18 +2079,38 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
                   </span>
                 ))}
               </div>
-              {v.desconto>0&&<div style={{fontSize:10,color:C.amber,marginTop:3,fontWeight:700}}>Desconto aplicado: {fmt(v.desconto)}</div>}
+              {v.desconto>0&&<div style={{fontSize:10,color:C.amber,marginTop:3,fontWeight:700}}>Desconto: {fmt(v.desconto)}</div>}
             </div>
-            <div style={{textAlign:"right",flexShrink:0}}>
-              <Badge>{fmt(v.total)}</Badge>
+            <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:5,flexShrink:0}}>
+              <Badge color={v.reembolsada?C.amber:C.pink}>{fmt(v.total)}</Badge>
+              {!v.reembolsada&&(
+                <div style={{display:"flex",gap:5}}>
+                  <button onClick={()=>abrirEdicao(v)} title="Editar venda" className="tap"
+                    style={{background:"#EEF2FF",border:"none",borderRadius:8,padding:"5px 8px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
+                    <Icon name="edit" size={12} color={C.purple}/>
+                    <span style={{fontSize:10,fontWeight:700,color:C.purple}}>Editar</span>
+                  </button>
+                  <button onClick={()=>setReembolsoModal(v)} title="Reembolsar" className="tap"
+                    style={{background:"#FEF3C7",border:"none",borderRadius:8,padding:"5px 8px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
+                    <span style={{fontSize:12}}>↩</span>
+                    <span style={{fontSize:10,fontWeight:700,color:"#92400E"}}>Reembolso</span>
+                  </button>
+                </div>
+              )}
+              {v.reembolsada&&<span style={{fontSize:10,color:C.soft}}>{new Date(v.reembolsadaEm).toLocaleDateString("pt-BR")}</span>}
             </div>
           </div>
         </Card>
       ))}
 
+      {/* ── MODAL NOVA VENDA / EDIÇÃO */}
       {modal&&(
-        <Modal title="🛍️ Nova Venda" onClose={()=>{setModal(false);setItens([]);setClienteId("");setPagamento("dinheiro");setProdSel("");setQtd("1");setDescontoCompra(0);}}>
+        <Modal title={isEdicao?"✏️ Editar Venda":"🛍️ Nova Venda"} onClose={resetModal}>
           <div style={{display:"flex",flexDirection:"column",gap:13}}>
+
+            {isEdicao&&(
+              <InfoBox emoji="✏️" title="Modo edição" text="Corrija os itens, quantidades, preços ou forma de pagamento. O estoque será reajustado automaticamente." color={C.purple}/>
+            )}
 
             {/* Cliente */}
             <div>
@@ -1829,7 +2126,7 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
               <SL right={<Tip title="Qual usar?" text="Dinheiro e Pix entram na hora. Fiado tem risco de não receber — exige cliente cadastrado. Prefira dinheiro ou Pix!" color={C.amber}>Qual usar?</Tip>}>Forma de Pagamento</SL>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:7}}>
                 {[["dinheiro","💵","Dinheiro"],["pix","📱","Pix"],["fiado","📝","Fiado"]].map(([id,ico,l])=>{
-                  const bloqueado = id==="fiado"&&!clienteId;
+                  const bloqueado=id==="fiado"&&!clienteId;
                   return (
                     <button key={id} onClick={()=>!bloqueado&&setPagamento(id)} className="tap"
                       style={{display:"flex",flexDirection:"column",alignItems:"center",gap:3,padding:"8px 2px",borderRadius:11,
@@ -1855,14 +2152,7 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
               </select>
               {prodSelecionado&&(
                 <div style={{display:"flex",gap:9,alignItems:"center",marginBottom:8,background:C.white,borderRadius:10,padding:"7px 10px"}}>
-                  {/* Mostra foto da variação selecionada, ou foto geral, ou ícone */}
-                  {(()=>{
-                    const varObj = prodSelecionado.variacoes?.find(v=>v.nome===varSel);
-                    const fotoExibida = varObj?.foto || prodSelecionado.foto;
-                    return fotoExibida
-                      ? <img src={fotoExibida} alt="" style={{width:40,height:40,borderRadius:8,objectFit:"cover",flexShrink:0,border:`2px solid ${varObj?.foto?C.pink:C.pinkM}`,transition:"all .2s"}}/>
-                      : <div style={{width:40,height:40,borderRadius:8,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><Icon name="tag" size={14} color={C.pink}/></div>;
-                  })()}
+                  {(()=>{const varObj=prodSelecionado.variacoes?.find(v=>v.nome===varSel);const fotoExibida=varObj?.foto||prodSelecionado.foto;return fotoExibida?<img src={fotoExibida} alt="" style={{width:40,height:40,borderRadius:8,objectFit:"cover",flexShrink:0,border:`2px solid ${varObj?.foto?C.pink:C.pinkM}`}}/>:<div style={{width:40,height:40,borderRadius:8,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><Icon name="tag" size={14} color={C.pink}/></div>;})()}
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{fontSize:12,fontWeight:800,color:C.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{prodSelecionado.nome}</div>
                     <div style={{fontSize:11,color:C.gray}}>{fmt(prodSelecionado.precoVenda)} · {prodSelecionado.estoqueTotal??0} un. em estoque</div>
@@ -1873,17 +2163,13 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
                 <div style={{display:"grid",gridTemplateColumns:prodSelecionado.variacoes?.length?"1fr 70px":"1fr 70px",gap:7,marginBottom:8}}>
                   {prodSelecionado.variacoes?.length>0&&(
                     <div style={{display:"flex",flexDirection:"column",gap:5}}>
-                      {/* Se tiver fotos nas variações, exibe como grade visual */}
                       {prodSelecionado.variacoes.some(v=>v.foto)?(
                         <>
                           <div style={{display:"flex",gap:5,flexWrap:"wrap"}}>
                             {prodSelecionado.variacoes.map(v=>(
                               <button key={v.id} onClick={()=>setVarSel(v.nome)} className="tap"
                                 style={{display:"flex",flexDirection:"column",alignItems:"center",gap:3,padding:3,borderRadius:10,border:`2px solid ${varSel===v.nome?C.pink:C.pinkM}`,background:varSel===v.nome?C.pinkS:C.white,cursor:"pointer",transition:"all .18s"}}>
-                                {v.foto
-                                  ? <img src={v.foto} alt={v.nome} style={{width:42,height:42,borderRadius:7,objectFit:"cover",display:"block"}}/>
-                                  : <div style={{width:42,height:42,borderRadius:7,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center"}}><Icon name="tag" size={13} color={C.pink}/></div>
-                                }
+                                {v.foto?<img src={v.foto} alt={v.nome} style={{width:42,height:42,borderRadius:7,objectFit:"cover",display:"block"}}/>:<div style={{width:42,height:42,borderRadius:7,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center"}}><Icon name="tag" size={13} color={C.pink}/></div>}
                                 <span style={{fontSize:9,fontWeight:700,color:varSel===v.nome?C.pinkD:C.gray,maxWidth:48,textAlign:"center",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",fontFamily:"inherit"}}>{v.nome}</span>
                                 <span style={{fontSize:8,color:C.soft,fontFamily:"inherit"}}>{v.qtd} un.</span>
                               </button>
@@ -1893,8 +2179,7 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
                         </>
                       ):(
                         <>
-                          <select value={varSel} onChange={e=>setVarSel(e.target.value)}
-                            style={{border:`1.5px solid ${!varSel?C.red:C.pinkM}`,borderRadius:10,padding:"8px 10px",fontFamily:"inherit",fontSize:13,background:!varSel?"#FFF5F5":C.white,color:!varSel?C.red:C.text}}>
+                          <select value={varSel} onChange={e=>setVarSel(e.target.value)} style={{border:`1.5px solid ${!varSel?C.red:C.pinkM}`,borderRadius:10,padding:"8px 10px",fontFamily:"inherit",fontSize:13,background:!varSel?"#FFF5F5":C.white,color:!varSel?C.red:C.text}}>
                             <option value="">⚠️ Escolha a variação…</option>
                             {prodSelecionado.variacoes.map(v=><option key={v.id} value={v.nome}>{v.nome} — {v.qtd} un.</option>)}
                           </select>
@@ -1909,33 +2194,26 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
               <Btn onClick={addItem} v="ghost" small disabled={!prodSel||(prodSelecionado?.variacoes?.length>0&&!varSel)}><Icon name="plus" size={14}/>Adicionar item</Btn>
             </div>
 
-            {/* Itens da venda — sem mostrar lucro (visível ao cliente) */}
+            {/* Itens da venda */}
             {itens.length>0&&(
               <div style={{border:`1.5px solid ${C.pinkM}`,borderRadius:13,padding:12}}>
                 <SL>Itens da Venda</SL>
                 {itens.map((it,i)=>(
                   <div key={i} style={{padding:"8px 0",borderBottom:`1px solid ${C.pinkS}`}}>
                     <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:6}}>
-                      {/* Foto da variação ou produto */}
-                      {(it.varFoto||it.foto)&&(
-                        <img src={it.varFoto||it.foto} alt="" style={{width:34,height:34,borderRadius:7,objectFit:"cover",flexShrink:0,border:`1.5px solid ${it.varFoto?C.pink:C.pinkM}`}}/>
-                      )}
+                      {(it.varFoto||it.foto)&&<img src={it.varFoto||it.foto} alt="" style={{width:34,height:34,borderRadius:7,objectFit:"cover",flexShrink:0,border:`1.5px solid ${it.varFoto?C.pink:C.pinkM}`}}/>}
                       <div style={{flex:1,minWidth:0}}>
                         <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{it.nome}{it.variacao?` · ${it.variacao}`:""}</div>
-                        <div style={{fontSize:12,color:C.gray,marginTop:1}}>
-                          {fmt(it.precoVenda)} × {it.qtd} = <b style={{color:C.pinkD}}>{fmt(it.precoVenda*it.qtd)}</b>
-                        </div>
+                        <div style={{fontSize:12,color:C.gray,marginTop:1}}>{fmt(it.precoVenda)} × {it.qtd} = <b style={{color:C.pinkD}}>{fmt(it.precoVenda*it.qtd)}</b></div>
                         {it.desconto>0&&<div style={{fontSize:11,color:C.amber,marginTop:1}}>Desconto: -{fmt(it.desconto*it.qtd)}</div>}
                       </div>
                       <div style={{display:"flex",gap:4,alignItems:"center",flexShrink:0}}>
-                        {/* Controles de quantidade */}
                         <div style={{display:"flex",alignItems:"center",gap:1,background:C.pinkL,borderRadius:9,padding:"2px"}}>
                           <button onClick={()=>setItens(is=>is.map((x,j)=>j===i?{...x,qtd:Math.max(1,x.qtd-1)}:x))} className="tap" style={{background:C.white,border:"none",borderRadius:7,width:26,height:26,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",fontWeight:900,color:C.pinkD,fontSize:16,lineHeight:1}}>−</button>
                           <span style={{fontSize:13,fontWeight:800,color:C.pinkD,minWidth:22,textAlign:"center"}}>{it.qtd}</span>
                           <button onClick={()=>setItens(is=>is.map((x,j)=>j===i?{...x,qtd:x.qtd+1}:x))} className="tap" style={{background:C.white,border:"none",borderRadius:7,width:26,height:26,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",fontWeight:900,color:C.pinkD,fontSize:16,lineHeight:1}}>+</button>
                         </div>
-                        {/* Botão de desconto */}
-                        <button onClick={()=>setDescontoModal(i)} className="tap" title="Alterar valor" style={{background:"#FEF3C7",border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
+                        <button onClick={()=>setDescontoModal(i)} className="tap" title="Desconto" style={{background:"#FEF3C7",border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
                           <Icon name="percent" size={12} color="#92400E"/>
                         </button>
                         <button onClick={()=>setItens(is=>is.filter((_,j)=>j!==i))} style={{background:"none",border:"none",cursor:"pointer",color:C.red,fontSize:18,lineHeight:1,padding:"2px 4px"}}>✕</button>
@@ -1968,31 +2246,164 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
                 <div style={{fontSize:11,color:"#7F1D1D",marginTop:2}}>Ajuste as quantidades para continuar.</div>
               </div>
             )}
-            <Btn onClick={finalizarVenda} disabled={itens.length===0||estoqueInsuf.length>0} full>
-              <Icon name="check" size={15}/> Finalizar Venda 🎉
+
+            <Btn onClick={solicitarFinalizacao} disabled={itens.length===0||estoqueInsuf.length>0} full>
+              <Icon name="check" size={15}/>{isEdicao?"Salvar alterações":"Finalizar Venda"} {!isEdicao&&"🎉"}
             </Btn>
           </div>
         </Modal>
       )}
 
-      {descontoModal!==null&&(
-        <Modal title="" onClose={()=>setDescontoModal(null)} noPad>
-          <DescontoModal
-            item={itens[descontoModal]}
-            onSave={updated=>setItens(is=>is.map((x,i)=>i===descontoModal?updated:x))}
-            onClose={()=>setDescontoModal(null)}
-          />
-        </Modal>
+      {/* ── CALCULADORA DE TROCO (dinheiro) */}
+      {trocoModal&&(
+        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.52)",zIndex:9200,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
+          <div style={{background:C.white,borderRadius:22,padding:"24px 20px",width:"100%",maxWidth:340,animation:"confirmPop .28s cubic-bezier(.34,1.56,.64,1) forwards",boxShadow:"0 16px 48px rgba(0,0,0,.22)"}}>
+            <div style={{textAlign:"center",marginBottom:16}}>
+              <div style={{fontSize:42,marginBottom:6}}>💵</div>
+              <div style={{fontSize:17,fontWeight:900,color:C.pinkD}}>Calculadora de Troco</div>
+              <div style={{fontSize:13,color:C.gray,marginTop:4}}>Total da compra: <b style={{color:C.pinkD}}>{fmt(total)}</b></div>
+            </div>
+            <div style={{marginBottom:14}}>
+              <label style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",display:"block",marginBottom:5}}>Valor recebido (R$)</label>
+              <input
+                autoFocus
+                type="number" min="0" step="0.01"
+                value={recebido}
+                onChange={e=>setRecebido(e.target.value)}
+                placeholder={fmtN(total)}
+                style={{width:"100%",border:`2px solid ${C.pink}`,borderRadius:12,padding:"12px 14px",fontFamily:"inherit",fontSize:20,fontWeight:900,textAlign:"center",color:C.pinkD,outline:"none",background:C.pinkL}}
+              />
+            </div>
+            {/* Atalhos de valores */}
+            <div style={{display:"flex",gap:6,marginBottom:14,flexWrap:"wrap"}}>
+              {[Math.ceil(total/10)*10, Math.ceil(total/50)*50, Math.ceil(total/100)*100].filter((v,i,a)=>a.indexOf(v)===i&&v>=total).slice(0,4).map(v=>(
+                <button key={v} onClick={()=>setRecebido(String(v))} className="tap"
+                  style={{flex:1,padding:"7px 4px",borderRadius:10,border:`1.5px solid ${C.pinkM}`,background:Number(recebido)===v?C.pinkS:C.white,fontFamily:"inherit",fontWeight:700,fontSize:13,color:C.pinkD,cursor:"pointer",minWidth:60}}>
+                  {fmt(v)}
+                </button>
+              ))}
+            </div>
+            {/* Troco */}
+            <div style={{background:trocoInsuf?"#FEF2F2":troco>0?"#ECFDF5":C.pinkL,borderRadius:14,padding:"12px 16px",marginBottom:16,textAlign:"center"}}>
+              {trocoInsuf?(
+                <>
+                  <div style={{fontSize:12,color:C.red,fontWeight:700}}>⚠️ Valor insuficiente</div>
+                  <div style={{fontSize:13,color:C.red,marginTop:2}}>Faltam <b>{fmt(total-recebidoN)}</b></div>
+                </>
+              ):troco>0?(
+                <>
+                  <div style={{fontSize:12,color:C.green,fontWeight:700}}>Troco a devolver</div>
+                  <div style={{fontSize:28,fontWeight:900,color:C.green,marginTop:2}}>{fmt(troco)}</div>
+                </>
+              ):(
+                <div style={{fontSize:13,color:C.gray,fontWeight:600}}>Informe o valor recebido</div>
+              )}
+            </div>
+            <div style={{display:"flex",gap:8}}>
+              <button onClick={()=>setTrocoModal(false)} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>Voltar</button>
+              <button onClick={()=>{setTrocoModal(false);setConfirmModal(true);}} disabled={trocoInsuf} className="tap"
+                style={{flex:2,padding:"11px",borderRadius:14,background:trocoInsuf?"#F3F4F6":`linear-gradient(135deg,${C.pink},${C.pinkD})`,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:trocoInsuf?C.soft:C.white,cursor:trocoInsuf?"not-allowed":"pointer"}}>
+                Confirmar →
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
+      {/* ── MODAL CONFIRMAÇÃO FINAL */}
+      {confirmModal&&(
+        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.52)",zIndex:9200,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
+          <div style={{background:C.white,borderRadius:22,padding:"24px 20px",width:"100%",maxWidth:340,animation:"confirmPop .28s cubic-bezier(.34,1.56,.64,1) forwards",boxShadow:"0 16px 48px rgba(0,0,0,.22)"}}>
+            <div style={{textAlign:"center",marginBottom:18}}>
+              <div style={{fontSize:48,marginBottom:8}}>🛍️</div>
+              <div style={{fontSize:17,fontWeight:900,color:C.pinkD,marginBottom:4}}>{isEdicao?"Salvar alterações?":"Confirmar venda?"}</div>
+              <div style={{fontSize:13,color:C.gray,lineHeight:1.6}}>
+                {isEdicao?"As alterações serão salvas e o estoque reajustado.":"Confira os detalhes antes de confirmar."}
+              </div>
+            </div>
+            {/* Resumo */}
+            <div style={{background:C.pinkL,borderRadius:14,padding:"12px 14px",marginBottom:16}}>
+              <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
+                <span style={{fontSize:12,color:C.gray}}>Itens</span>
+                <span style={{fontSize:12,fontWeight:700}}>{itens.reduce((s,i)=>s+i.qtd,0)} peças</span>
+              </div>
+              <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
+                <span style={{fontSize:12,color:C.gray}}>Pagamento</span>
+                <span style={{fontSize:12,fontWeight:700}}>{pagtIcons[pagamento]} {pagamento}</span>
+              </div>
+              {pagamento==="dinheiro"&&recebido&&(
+                <>
+                  <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
+                    <span style={{fontSize:12,color:C.gray}}>Recebido</span>
+                    <span style={{fontSize:12,fontWeight:700,color:C.green}}>{fmt(Number(recebido))}</span>
+                  </div>
+                  {troco>0&&<div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
+                    <span style={{fontSize:12,color:C.gray}}>Troco</span>
+                    <span style={{fontSize:12,fontWeight:700,color:C.amber}}>{fmt(troco)}</span>
+                  </div>}
+                </>
+              )}
+              <div style={{height:1,background:C.pinkM,margin:"8px 0"}}/>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                <span style={{fontSize:14,fontWeight:800,color:C.pinkD}}>Total</span>
+                <span style={{fontSize:20,fontWeight:900,color:C.pinkD}}>{fmt(total)}</span>
+              </div>
+            </div>
+            <div style={{display:"flex",gap:10}}>
+              <button onClick={()=>{setConfirmModal(false);if(pagamento==="dinheiro")setTrocoModal(true);}} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>Voltar</button>
+              <button onClick={()=>confirmarVenda(isEdicao?editModal:null)} className="tap"
+                style={{flex:2,padding:"11px",borderRadius:14,background:`linear-gradient(135deg,${C.green},#059669)`,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:C.white,cursor:"pointer"}}>
+                ✅ {isEdicao?"Salvar":"Confirmar"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── MODAL REEMBOLSO */}
+      {reembolsoModal&&(
+        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.52)",zIndex:9200,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
+          <div style={{background:C.white,borderRadius:22,padding:"24px 20px",width:"100%",maxWidth:340,animation:"confirmPop .28s cubic-bezier(.34,1.56,.64,1) forwards",boxShadow:"0 16px 48px rgba(0,0,0,.22)"}}>
+            <div style={{textAlign:"center",marginBottom:16}}>
+              <div style={{fontSize:42,marginBottom:6}}>↩️</div>
+              <div style={{fontSize:17,fontWeight:900,color:"#92400E",marginBottom:4}}>Confirmar Reembolso?</div>
+              <div style={{fontSize:13,color:C.gray,lineHeight:1.6}}>O estoque voltará e a venda ficará marcada como reembolsada no histórico.</div>
+            </div>
+            <div style={{background:"#FFFBEB",border:`1.5px solid ${C.amber}44`,borderRadius:14,padding:"12px 14px",marginBottom:6}}>
+              <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:6}}>{reembolsoModal.clienteNome||"Cliente avulso"}</div>
+              {reembolsoModal.itens?.map((it,i)=>(
+                <div key={i} style={{fontSize:12,color:C.gray,padding:"3px 0",borderBottom:`1px solid ${C.amber}22`}}>
+                  {it.qtd}× {it.nome}{it.variacao?` · ${it.variacao}`:""}
+                </div>
+              ))}
+              <div style={{display:"flex",justifyContent:"space-between",marginTop:8}}>
+                <span style={{fontSize:13,fontWeight:700}}>Total devolvido:</span>
+                <span style={{fontSize:14,fontWeight:900,color:C.amber}}>{fmt(reembolsoModal.total)}</span>
+              </div>
+            </div>
+            <div style={{background:"#ECFDF5",border:`1.5px solid ${C.green}30`,borderRadius:12,padding:"9px 13px",marginBottom:16,display:"flex",gap:8,alignItems:"center"}}>
+              <span style={{fontSize:18,flexShrink:0}}>📦</span>
+              <span style={{fontSize:12,color:"#065F46",fontWeight:600}}>O estoque dos produtos será restaurado automaticamente.</span>
+            </div>
+            <div style={{display:"flex",gap:10}}>
+              <button onClick={()=>setReembolsoModal(null)} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>Cancelar</button>
+              <button onClick={confirmarReembolso} className="tap"
+                style={{flex:2,padding:"11px",borderRadius:14,background:"linear-gradient(135deg,#F59E0B,#D97706)",border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:C.white,cursor:"pointer"}}>
+                ↩ Confirmar Reembolso
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {descontoModal!==null&&(
+        <Modal title="" onClose={()=>setDescontoModal(null)} noPad>
+          <DescontoModal item={itens[descontoModal]} onSave={updated=>setItens(is=>is.map((x,i)=>i===descontoModal?updated:x))} onClose={()=>setDescontoModal(null)}/>
+        </Modal>
+      )}
       {descontoCompraModal&&(
         <Modal title="" onClose={()=>setDescontoCompraModal(false)} noPad>
-          <DescontoCompraModal
-            subtotal={subtotalItens}
-            descAtual={descontoCompra}
-            onSave={v=>setDescontoCompra(v)}
-            onClose={()=>setDescontoCompraModal(false)}
-          />
+          <DescontoCompraModal subtotal={subtotalItens} descAtual={descontoCompra} onSave={v=>setDescontoCompra(v)} onClose={()=>setDescontoCompraModal(false)}/>
         </Modal>
       )}
     </div>
@@ -2106,30 +2517,11 @@ const GraficoCrescimento = ({pontos}) => {
 const Relatorios = ({vendas,produtos}) => {
   const agora = new Date();
 
-  // ── Período helpers
-  const inicioSemana = () => {
-    const d = new Date(agora);
-    d.setDate(d.getDate() - d.getDay()); // domingo
-    d.setHours(0,0,0,0);
-    return d;
-  };
-  const fimSemana = () => {
-    const d = inicioSemana();
-    d.setDate(d.getDate()+6);
-    d.setHours(23,59,59,999);
-    return d;
-  };
-  const inicioMes = () => new Date(agora.getFullYear(), agora.getMonth(), 1, 0,0,0,0);
-  const fimMes    = () => new Date(agora.getFullYear(), agora.getMonth()+1, 0, 23,59,59,999);
-  const inicioHoje= () => { const d=new Date(agora); d.setHours(0,0,0,0); return d; };
-  const fimHoje   = () => { const d=new Date(agora); d.setHours(23,59,59,999); return d; };
-
-  const [tipoPeriodo, setTipoPeriodo] = useState("mes"); // hoje | semana | mes | custom
-  const [offset, setOffset]           = useState(0);  // 0 = corrente, -1 = anterior, etc.
+  const [tipoPeriodo, setTipoPeriodo] = useState("mes"); // hoje | semana | mes | ano | custom
+  const [offset, setOffset]           = useState(0);
   const [customInicio, setCustomInicio] = useState("");
   const [customFim, setCustomFim]       = useState("");
 
-  // Calcula datas de início e fim baseado no tipo e offset
   const calcRange = () => {
     if(tipoPeriodo==="custom"){
       const i = customInicio ? new Date(customInicio+"T00:00:00") : new Date(0);
@@ -2137,13 +2529,20 @@ const Relatorios = ({vendas,produtos}) => {
       return {inicio:i, fim:f};
     }
     if(tipoPeriodo==="hoje"){
-      const i=inicioHoje(); const f=fimHoje();
-      i.setDate(i.getDate()+offset); f.setDate(f.getDate()+offset);
+      const i=new Date(agora); i.setHours(0,0,0,0); i.setDate(i.getDate()+offset);
+      const f=new Date(agora); f.setHours(23,59,59,999); f.setDate(f.getDate()+offset);
       return {inicio:i,fim:f};
     }
     if(tipoPeriodo==="semana"){
-      const i=inicioSemana(); const f=fimSemana();
-      i.setDate(i.getDate()+offset*7); f.setDate(f.getDate()+offset*7);
+      const base=new Date(agora);
+      base.setDate(base.getDate()-base.getDay()+offset*7);
+      const i=new Date(base); i.setHours(0,0,0,0);
+      const f=new Date(base); f.setDate(f.getDate()+6); f.setHours(23,59,59,999);
+      return {inicio:i,fim:f};
+    }
+    if(tipoPeriodo==="ano"){
+      const i=new Date(agora.getFullYear()+offset,0,1,0,0,0,0);
+      const f=new Date(agora.getFullYear()+offset,11,31,23,59,59,999);
       return {inicio:i,fim:f};
     }
     // mes
@@ -2158,80 +2557,76 @@ const Relatorios = ({vendas,produtos}) => {
     if(tipoPeriodo==="custom") return "Período personalizado";
     if(tipoPeriodo==="hoje"){
       if(offset===0) return "Hoje";
-      return inicio.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"});
+      return inicio.toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"short"});
     }
     if(tipoPeriodo==="semana"){
-      const i2=new Date(inicio), f2=new Date(fim);
       if(offset===0) return "Esta semana";
-      return `${i2.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})} – ${f2.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})}`;
+      return `${inicio.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})} – ${fim.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})}`;
+    }
+    if(tipoPeriodo==="ano"){
+      return String(agora.getFullYear()+offset);
     }
     if(offset===0) return "Este mês";
     return inicio.toLocaleDateString("pt-BR",{month:"long",year:"numeric"});
   };
 
   const vendasFiltradas = vendas.filter(v=>{
+    if(v.reembolsada) return false; // reembolsos não entram nos relatórios
     const d=new Date(v.data);
     return d>=inicio && d<=fim;
   });
 
-  const receitaTotal = vendasFiltradas.reduce((s,v)=>s+v.total,0);
-  const custoTotal   = vendasFiltradas.reduce((s,v)=>s+v.custo,0);
-  const descontoTotal= vendasFiltradas.reduce((s,v)=>s+(v.desconto||0),0);
-  const lucroLiquido = receitaTotal-custoTotal;
-  const margemReceita= receitaTotal>0?((lucroLiquido/receitaTotal)*100).toFixed(1):0;
-  const ganhoSobCusto= custoTotal>0?((lucroLiquido/custoTotal)*100).toFixed(1):0;
+  const receitaTotal  = vendasFiltradas.reduce((s,v)=>s+v.total,0);
+  const custoTotal    = vendasFiltradas.reduce((s,v)=>s+(v.custo||0),0);
+  const descontoTotal = vendasFiltradas.reduce((s,v)=>s+(v.desconto||0),0);
+  const lucroLiquido  = receitaTotal-custoTotal;
+  const margemReceita = receitaTotal>0?((lucroLiquido/receitaTotal)*100).toFixed(1):0;
+  const ganhoSobCusto = custoTotal>0?((lucroLiquido/custoTotal)*100).toFixed(1):0;
 
   const contagem={};
   vendasFiltradas.forEach(v=>v.itens?.forEach(i=>{contagem[i.nome]=(contagem[i.nome]||0)+i.qtd;}));
   const maisVendidos=Object.entries(contagem).sort((a,b)=>b[1]-a[1]).slice(0,5);
   const medalhas=["🥇","🥈","🥉","4️⃣","5️⃣"];
 
+  const pagtLabels={dinheiro:"💵 Dinheiro",pix:"📱 Pix",fiado:"📝 Fiado"};
   const pagtRes={};
-  vendasFiltradas.forEach(v=>{pagtRes[v.pagamento||"?"]=(pagtRes[v.pagamento||"?"]||0)+v.total;});
+  vendasFiltradas.forEach(v=>{
+    const k=v.pagamento||"outro";
+    pagtRes[k]=(pagtRes[k]||0)+v.total;
+  });
 
   const vendasComDesconto=vendasFiltradas.filter(v=>(v.desconto||0)>0);
 
-  // ── Pontos para o gráfico de crescimento
-  // Agrupa vendas TODAS (sem filtro de período) por unidade de tempo para mostrar crescimento histórico
   const buildGrafico = () => {
-    if(vendas.length===0) return [];
-    // decide granularidade: se < 14 dias de diferença → por dia; < 90 dias → por semana; senão → por mês
-    const todas = [...vendas].sort((a,b)=>new Date(a.data)-new Date(b.data));
+    const todasValidas = vendas.filter(v=>!v.reembolsada);
+    if(todasValidas.length===0) return [];
+    const todas = [...todasValidas].sort((a,b)=>new Date(a.data)-new Date(b.data));
     const primeiraData = new Date(todas[0].data);
     const diffDias = (agora-primeiraData)/(1000*60*60*24);
-
     const grupos={};
     todas.forEach(v=>{
       const d=new Date(v.data);
       let chave;
-      if(diffDias<=31){
-        chave = d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"});
-      } else if(diffDias<=120){
-        // semana ISO-like: semana do ano
-        const startOfYear = new Date(d.getFullYear(),0,1);
-        const week = Math.ceil(((d-startOfYear)/86400000+startOfYear.getDay()+1)/7);
-        chave = `S${week}/${d.getFullYear().toString().slice(2)}`;
-      } else {
-        chave = d.toLocaleDateString("pt-BR",{month:"short",year:"2-digit"});
-      }
+      if(diffDias<=31)      chave=d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"});
+      else if(diffDias<=120){ const sy=new Date(d.getFullYear(),0,1); const wk=Math.ceil(((d-sy)/86400000+sy.getDay()+1)/7); chave=`S${wk}/${d.getFullYear().toString().slice(2)}`; }
+      else                  chave=d.toLocaleDateString("pt-BR",{month:"short",year:"2-digit"});
       if(!grupos[chave]) grupos[chave]={label:chave,receita:0,custo:0,lucro:0};
       grupos[chave].receita+=v.total;
       grupos[chave].custo+=(v.custo||0);
       grupos[chave].lucro+=(v.total-(v.custo||0));
     });
-    return Object.values(grupos).slice(-12); // máximo 12 pontos
+    return Object.values(grupos).slice(-12);
   };
 
   const pontosGrafico = buildGrafico();
 
   const TIPOS=[
-    {id:"hoje",l:"Dia"},
+    {id:"hoje",  l:"Dia"},
     {id:"semana",l:"Semana"},
-    {id:"mes",l:"Mês"},
+    {id:"mes",   l:"Mês"},
+    {id:"ano",   l:"Ano"},
     {id:"custom",l:"Manual"},
   ];
-
-  const podirAnterior = tipoPeriodo!=="custom";
 
   return (
     <div style={{padding:"14px 14px",display:"flex",flexDirection:"column",gap:14}}>
@@ -2243,10 +2638,10 @@ const Relatorios = ({vendas,produtos}) => {
       {/* ── Seletor de período */}
       <Card style={{padding:12}}>
         <div style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",marginBottom:8}}>Período de análise</div>
-        <div style={{display:"flex",gap:5,marginBottom:10}}>
+        <div style={{display:"flex",gap:4,marginBottom:10,overflowX:"auto"}}>
           {TIPOS.map(t=>(
             <button key={t.id} onClick={()=>{setTipoPeriodo(t.id);setOffset(0);}} className="tap"
-              style={{flex:1,padding:"7px 4px",borderRadius:10,border:`1.5px solid ${tipoPeriodo===t.id?C.pink:C.pinkM}`,background:tipoPeriodo===t.id?C.pinkS:C.white,fontFamily:"inherit",fontWeight:700,fontSize:12,color:tipoPeriodo===t.id?C.pinkD:C.gray,cursor:"pointer",transition:"all .15s"}}>
+              style={{flex:1,minWidth:44,padding:"7px 4px",borderRadius:10,border:`1.5px solid ${tipoPeriodo===t.id?C.pink:C.pinkM}`,background:tipoPeriodo===t.id?C.pinkS:C.white,fontFamily:"inherit",fontWeight:700,fontSize:11,color:tipoPeriodo===t.id?C.pinkD:C.gray,cursor:"pointer",transition:"all .15s",whiteSpace:"nowrap"}}>
               {t.l}
             </button>
           ))}
@@ -2265,9 +2660,11 @@ const Relatorios = ({vendas,produtos}) => {
             </button>
             <div style={{flex:1,textAlign:"center"}}>
               <div style={{fontSize:13,fontWeight:800,color:C.pinkD}}>{labelPeriodo()}</div>
-              {tipoPeriodo!=="hoje"&&<div style={{fontSize:10,color:C.soft,marginTop:1}}>
-                {inicio.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})} – {fim.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})}
-              </div>}
+              {tipoPeriodo!=="hoje"&&tipoPeriodo!=="ano"&&(
+                <div style={{fontSize:10,color:C.soft,marginTop:1}}>
+                  {inicio.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})} – {fim.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})}
+                </div>
+              )}
             </div>
             <button onClick={()=>setOffset(o=>Math.min(0,o+1))} disabled={offset>=0} className="tap"
               style={{width:34,height:34,borderRadius:10,border:`1.5px solid ${C.pinkM}`,background:offset>=0?"#F9F9F9":C.white,cursor:offset>=0?"not-allowed":"pointer",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,opacity:offset>=0?.4:1}}>
@@ -2278,59 +2675,113 @@ const Relatorios = ({vendas,produtos}) => {
 
         {offset!==0&&tipoPeriodo!=="custom"&&(
           <button onClick={()=>setOffset(0)} style={{marginTop:8,width:"100%",background:C.pinkL,border:"none",borderRadius:8,padding:"6px",fontFamily:"inherit",fontWeight:700,fontSize:11,color:C.pinkD,cursor:"pointer"}}>
-            ↩ Voltar ao período atual
+            ↩ Voltar para o período atual
           </button>
         )}
       </Card>
 
-      <InfoBox emoji="🧠" title="Hábito de empreendedora!" text="Analise seus números toda semana. Quem conhece seus números toma decisões melhores!" color={C.pinkD}/>
+      <InfoBox emoji="🧠" title="Dica de empreendedora!" text="Analise seus números toda semana. Quem conhece seus números toma decisões melhores!" color={C.pinkD}/>
 
-      {/* ── Cards de métricas */}
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
-        {[
-          {l:"Receita",v:fmt(receitaTotal),c:C.pink,e:"💰",t:"Tudo que entrou no caixa com as vendas."},
-          {l:"Custo Total",v:fmt(custoTotal),c:C.amber,e:"🏷️",t:"Quanto você pagou pelos produtos já vendidos."},
-          {l:"Lucro Líquido",v:fmt(lucroLiquido),c:C.green,e:"📈",t:"Receita − Custo. O dinheiro que ficou no seu bolso!"},
-          {l:"Ganho s/ custo",v:`${ganhoSobCusto}%`,c:C.purple,e:"📊",t:`Quanto % você ganhou sobre o que pagou. Margem sobre receita: ${margemReceita}%.`},
-        ].map((r,i)=>(
-          <Card key={r.l} style={{padding:13,animation:`fadeUp .3s ease ${i*.06}s both`}}>
-            <div style={{fontSize:22}}>{r.e}</div>
-            <div style={{fontSize:18,fontWeight:900,color:r.c,marginTop:3}}>{r.v}</div>
-            <div style={{fontSize:11,fontWeight:700,color:C.gray,marginTop:1}}>{r.l}</div>
-            <div style={{fontSize:10,color:C.soft,marginTop:3,lineHeight:1.4}}>{r.t}</div>
-          </Card>
-        ))}
-      </div>
+      {/* ── Painel Financeiro */}
+      <Card style={{padding:14,background:`linear-gradient(135deg,#FFF1F5,${C.white})`}}>
+        <div style={{fontWeight:800,color:C.pinkD,fontSize:14,marginBottom:12}}>💰 Resultado Financeiro</div>
+
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:12}}>
+          {[
+            {l:"Receita",v:fmt(receitaTotal),c:C.pink,e:"💰",desc:"Total recebido"},
+            {l:"Custo",v:fmt(custoTotal),c:C.amber,e:"🏷️",desc:"Total pago nos produtos"},
+            {l:"Lucro",v:fmt(lucroLiquido),c:lucroLiquido>=0?C.green:C.red,e:lucroLiquido>=0?"📈":"⚠️",desc:"Ficou no bolso"},
+          ].map(r=>(
+            <div key={r.l} style={{background:r.c+"0F",border:`1.5px solid ${r.c}22`,borderRadius:13,padding:"10px 8px",textAlign:"center"}}>
+              <div style={{fontSize:18}}>{r.e}</div>
+              <div style={{fontSize:14,fontWeight:900,color:r.c,marginTop:3,lineHeight:1.1}}>{r.v}</div>
+              <div style={{fontSize:10,fontWeight:700,color:C.gray,marginTop:2}}>{r.l}</div>
+              <div style={{fontSize:9,color:C.soft,marginTop:1}}>{r.desc}</div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:10}}>
+          <div style={{background:`${C.purple}0F`,border:`1.5px solid ${C.purple}22`,borderRadius:12,padding:"10px 12px"}}>
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+              <div>
+                <div style={{fontSize:10,color:C.soft,fontWeight:700}}>MARGEM DE LUCRO</div>
+                <div style={{fontSize:20,fontWeight:900,color:C.purple,marginTop:2}}>{margemReceita}%</div>
+                <div style={{fontSize:10,color:C.gray,marginTop:2}}>Lucro ÷ Receita</div>
+              </div>
+              <span style={{fontSize:28}}>📊</span>
+            </div>
+          </div>
+          <div style={{background:`${C.green}0F`,border:`1.5px solid ${C.green}22`,borderRadius:12,padding:"10px 12px"}}>
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+              <div>
+                <div style={{fontSize:10,color:C.soft,fontWeight:700}}>RETORNO SOBRE CUSTO</div>
+                <div style={{fontSize:20,fontWeight:900,color:C.green,marginTop:2}}>{ganhoSobCusto}%</div>
+                <div style={{fontSize:10,color:C.gray,marginTop:2}}>Lucro ÷ Custo</div>
+              </div>
+              <span style={{fontSize:28}}>💸</span>
+            </div>
+          </div>
+        </div>
+
+        {receitaTotal>0&&(
+          <div style={{marginBottom:6}}>
+            <div style={{fontSize:10,fontWeight:700,color:C.gray,marginBottom:5,textTransform:"uppercase",letterSpacing:".05em"}}>Como a receita é dividida</div>
+            <div style={{height:14,borderRadius:99,overflow:"hidden",display:"flex",background:C.pinkL}}>
+              {custoTotal>0&&<div style={{width:`${Math.min(100,(custoTotal/receitaTotal)*100).toFixed(1)}%`,background:C.amber,transition:"width .8s ease"}}/>}
+              {lucroLiquido>0&&<div style={{width:`${Math.min(100,(lucroLiquido/receitaTotal)*100).toFixed(1)}%`,background:C.green,transition:"width .8s ease"}}/>}
+            </div>
+            <div style={{display:"flex",gap:10,marginTop:5}}>
+              <div style={{display:"flex",alignItems:"center",gap:4}}><div style={{width:8,height:8,borderRadius:3,background:C.amber}}/><span style={{fontSize:10,color:C.gray}}>Custo ({((custoTotal/receitaTotal)*100).toFixed(0)}%)</span></div>
+              <div style={{display:"flex",alignItems:"center",gap:4}}><div style={{width:8,height:8,borderRadius:3,background:C.green}}/><span style={{fontSize:10,color:C.gray}}>Lucro ({((Math.max(0,lucroLiquido)/receitaTotal)*100).toFixed(0)}%)</span></div>
+            </div>
+          </div>
+        )}
+
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginTop:4,paddingTop:10,borderTop:`1px solid ${C.pinkS}`}}>
+          {[
+            {l:"Vendas",v:vendasFiltradas.length,e:"🛍️"},
+            {l:"Valor médio",v:vendasFiltradas.length>0?fmt(receitaTotal/vendasFiltradas.length):"—",e:"🎯"},
+            {l:"Descontos dados",v:descontoTotal>0?fmt(descontoTotal):"—",e:"🏷️"},
+          ].map(r=>(
+            <div key={r.l} style={{textAlign:"center"}}>
+              <div style={{fontSize:14}}>{r.e}</div>
+              <div style={{fontSize:12,fontWeight:900,color:C.pinkD,marginTop:2}}>{r.v}</div>
+              <div style={{fontSize:9,color:C.soft}}>{r.l}</div>
+            </div>
+          ))}
+        </div>
+      </Card>
 
       {vendasFiltradas.length===0&&(
         <div style={{textAlign:"center",padding:"20px 0",color:C.soft}}>
           <div style={{fontSize:38}}>🔍</div>
-          <div style={{fontSize:13,fontWeight:600,marginTop:6}}>Nenhuma venda nesse período.</div>
-          <div style={{fontSize:11,marginTop:3}}>Tente outro intervalo de datas!</div>
+          <div style={{fontSize:13,fontWeight:600,marginTop:6}}>Nenhuma venda neste período.</div>
+          <div style={{fontSize:11,marginTop:3}}>Selecione outro intervalo de datas.</div>
         </div>
       )}
 
-      {/* ── Gráfico de crescimento histórico */}
+      {/* ── Gráfico de crescimento */}
       <Card style={{padding:13}}>
         <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:4}}>📈 Crescimento do negócio</div>
-        <div style={{fontSize:10,color:C.soft,marginBottom:10}}>Histórico completo de todas as vendas · ative/desative as linhas</div>
+        <div style={{fontSize:10,color:C.soft,marginBottom:10}}>Histórico completo · toque nas legendas para ativar ou desativar</div>
         <GraficoCrescimento pontos={pontosGrafico}/>
       </Card>
 
-      {/* Descontos concedidos */}
+      {/* Descontos dados no período */}
       {descontoTotal>0&&(
         <Card style={{border:`1.5px solid ${C.amber}28`}}>
-          <div style={{fontWeight:800,color:C.amber,fontSize:13,marginBottom:8}}>🏷️ Descontos concedidos</div>
+          <div style={{fontWeight:800,color:C.amber,fontSize:13,marginBottom:8}}>🏷️ Descontos dados no período</div>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
             <span style={{fontSize:13,color:C.text}}>Total de descontos</span>
             <Badge color={C.amber}>{fmt(descontoTotal)}</Badge>
           </div>
-          <div style={{fontSize:12,color:C.gray}}>{vendasComDesconto.length} venda(s) com desconto de {vendasFiltradas.length} no total</div>
+          <div style={{fontSize:12,color:C.gray}}>{vendasComDesconto.length} venda{vendasComDesconto.length!==1?"s":""} com desconto de {vendasFiltradas.length} no período</div>
           {vendasComDesconto.length>0&&(
             <div style={{marginTop:8}}>
               {vendasComDesconto.slice(0,3).map(v=>(
                 <div key={v.id} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderTop:`1px solid ${C.pinkS}`,fontSize:12}}>
-                  <span style={{overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",maxWidth:"65%"}}>{v.clienteNome||"Avulso"} · {new Date(v.data).toLocaleDateString("pt-BR")}</span>
+                  <span style={{overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",maxWidth:"65%"}}>{v.clienteNome||"Sem cadastro"} · {new Date(v.data).toLocaleDateString("pt-BR")}</span>
                   <span style={{color:C.amber,fontWeight:700}}>-{fmt(v.desconto)}</span>
                 </div>
               ))}
@@ -2339,72 +2790,48 @@ const Relatorios = ({vendas,produtos}) => {
         </Card>
       )}
 
-      {/* Mais vendidos */}
+      {/* Produtos mais vendidos */}
       <Card>
         <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:10}}>🏆 Produtos mais vendidos</div>
-        {maisVendidos.length===0?<p style={{color:C.soft,fontSize:13,margin:0}}>Nenhuma venda nesse período!</p>
-          :maisVendidos.map(([nome,qtd],i)=>{
-            const bp=maisVendidos[0][1]>0?(qtd/maisVendidos[0][1])*100:0;
-            return (
-              <div key={nome} style={{marginBottom:10}}>
-                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:4,gap:8}}>
-                  <div style={{display:"flex",gap:7,alignItems:"center",flex:1,minWidth:0}}>
-                    <span style={{fontSize:16,flexShrink:0}}>{medalhas[i]}</span>
-                    <span style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{nome}</span>
+        {maisVendidos.length===0
+          ? <p style={{color:C.soft,fontSize:13,margin:0}}>Nenhuma venda neste período.</p>
+          : maisVendidos.map(([nome,qtd],i)=>{
+              const bp=maisVendidos[0][1]>0?(qtd/maisVendidos[0][1])*100:0;
+              return (
+                <div key={nome} style={{marginBottom:10}}>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:4,gap:8}}>
+                    <div style={{display:"flex",gap:7,alignItems:"center",flex:1,minWidth:0}}>
+                      <span style={{fontSize:16,flexShrink:0}}>{medalhas[i]}</span>
+                      <span style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{nome}</span>
+                    </div>
+                    <Badge>{qtd} un.</Badge>
                   </div>
-                  <Badge>{qtd} un.</Badge>
+                  <div style={{height:6,background:C.pinkL,borderRadius:99,overflow:"hidden"}}>
+                    <div style={{height:"100%",width:`${bp}%`,background:`linear-gradient(90deg,${C.pink},${C.pinkD})`,borderRadius:99,transition:"width .8s ease"}}/>
+                  </div>
                 </div>
-                <div style={{height:6,background:C.pinkL,borderRadius:99,overflow:"hidden"}}>
-                  <div style={{height:"100%",width:`${bp}%`,background:`linear-gradient(90deg,${C.pink},${C.pinkD})`,borderRadius:99,transition:"width .8s ease"}}/>
-                </div>
-              </div>
-            );
-          })
+              );
+            })
         }
       </Card>
 
-      {/* Pagamentos */}
+      {/* Formas de pagamento */}
       {Object.keys(pagtRes).length>0&&(
         <Card>
           <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:10}}>💳 Por forma de pagamento</div>
           {Object.entries(pagtRes).map(([pgt,val])=>(
             <div key={pgt} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"6px 0",borderBottom:`1px solid ${C.pinkS}`}}>
-              <span style={{fontSize:13,fontWeight:600}}>{pgt}</span>
+              <span style={{fontSize:13,fontWeight:600}}>{pagtLabels[pgt]||pgt}</span>
               <Badge>{fmt(val)}</Badge>
             </div>
           ))}
         </Card>
       )}
 
-      {/* Estoque */}
-      <Card>
-        <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:10}}>📦 Situação do estoque</div>
-        {produtos.filter(p=>!p.deleted).length===0
-          ?<p style={{color:C.soft,fontSize:13,margin:0}}>Nenhum produto cadastrado.</p>
-          :produtos.filter(p=>!p.deleted).map(p=>{
-            const est=Number(p.estoqueTotal??0);
-            return (
-              <div key={p.id}>
-                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"6px 0",gap:8}}>
-                  <span style={{fontSize:13,fontWeight:600,flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.nome}</span>
-                  <Badge color={est===0?C.red:est<=5?C.amber:C.green}>{est===0?"Zerado!":est+" un."}</Badge>
-                </div>
-                {p.variacoes?.length>0&&(
-                  <div style={{display:"flex",flexWrap:"wrap",gap:4,paddingBottom:6}}>
-                    {p.variacoes.map(v=><span key={v.id} style={{fontSize:10,background:C.pinkL,color:C.pinkD,borderRadius:8,padding:"2px 7px"}}>{v.nome}: {v.qtd}</span>)}
-                  </div>
-                )}
-                <div style={{height:1,background:C.pinkS}}/>
-              </div>
-            );
-          })
-        }
-      </Card>
-
       <Card style={{background:`linear-gradient(135deg,${C.pinkD},#9D174D)`,border:"none"}}>
         <div style={{color:C.white,fontSize:13,fontWeight:800,marginBottom:6}}>💡 Segredo do sucesso</div>
         <div style={{color:C.pinkM,fontSize:13,lineHeight:1.55}}>
-          Comprar bem + precificar certo + atender bem = <strong style={{color:C.white}}>negócio de sucesso</strong>. Você está construindo isso! 🌸
+          Comprar bem + precificar certo + atender bem = <strong style={{color:C.white}}>negócio próspero</strong>. Você está construindo isso! 🌸
         </div>
       </Card>
     </div>
@@ -2487,7 +2914,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
   };
 
   const exportar = () => {
-    exportarJSON({versao:"1.9.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas}, gerarNomeArquivo());
+    exportarJSON({versao:"2.0.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas}, gerarNomeArquivo());
     setTipoSucesso("exportar");
     setFase("sucesso");
   };
@@ -2588,7 +3015,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
           <InfoBox emoji="💡" title="Dica de ouro" text="Faça backup toda semana! Salve no Google Drive ou WhatsApp pessoal para nunca perder nada." color={C.purple}/>
 
           <div style={{textAlign:"center",paddingTop:4}}>
-            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 1.9.0</span>
+            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 2.1.0</span>
           </div>
         </div>
       )}
@@ -2708,6 +3135,170 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
 };
 
 /* ══════════════════════════════════════════════════════════════════════════════
+   ONBOARDING TUTORIAL
+══════════════════════════════════════════════════════════════════════════════ */
+const PASSOS_ONBOARDING = [
+  {
+    id:1, emoji:"🌸", titulo:"Bem-vinda à Juju Store!",
+    subtitulo:"Seu negócio, organizado com amor",
+    cor:C.pinkD,
+    dica:null,
+    conteudo: [
+      {tipo:"intro", texto:"Este tutorial vai te guiar pelos primeiros passos para deixar sua lojinha funcionando do jeito certo. São apenas 4 passos rápidos!"},
+      {tipo:"lista", itens:[
+        {e:"📦",t:"Cadastrar produto com foto e estoque"},
+        {e:"👥",t:"Adicionar cliente com foto e aniversário"},
+        {e:"🛍️",t:"Registrar sua primeira venda com desconto"},
+        {e:"📊",t:"Analisar seus resultados e finanças"},
+      ]},
+    ],
+  },
+  {
+    id:2, emoji:"📦", titulo:"Passo 1: Cadastre seu Produto",
+    subtitulo:"Produtos bem cadastrados vendem mais",
+    cor:C.purple,
+    dica:"💡 Produto com foto vende até 3× mais! Capriche na imagem.",
+    conteudo: [
+      {tipo:"passo", label:"Vá para a aba", destaque:"📦 Produtos", texto:"na barra inferior"},
+      {tipo:"passo", label:"Toque em", destaque:"✨ Novo", texto:"no canto superior direito"},
+      {tipo:"bloco", titulo:"📸 Foto do produto", texto:"Toque em Câmera para tirar uma foto na hora (câmera traseira) ou em Galeria para escolher uma já salva. A foto é recortada automaticamente em quadrado."},
+      {tipo:"bloco", titulo:"💸 Nome e Preço", texto:"Preencha o nome, a categoria, o custo (quanto você pagou) e o preço de venda. O app calcula automaticamente se você está tendo um bom ganho!"},
+      {tipo:"bloco", titulo:"📦 Variações de Estoque", texto:"Tem o produto em várias cores ou tamanhos? Adicione cada variação com sua quantidade. Use o botão ✏️ para renomear e a câmera para foto individual de cada cor."},
+      {tipo:"bloco", titulo:"🏷️ Desconto na Venda", texto:"Na hora da venda, toque no item no carrinho e escolha o tipo de desconto: % por peça, novo valor unitário ou valor do desconto no total."},
+    ],
+  },
+  {
+    id:3, emoji:"👥", titulo:"Passo 2: Cadastre um Cliente",
+    subtitulo:"Cliente cadastrado = relacionamento de verdade",
+    cor:C.amber,
+    dica:"🎂 Com a data de nascimento, o app avisa automaticamente nos aniversários!",
+    conteudo: [
+      {tipo:"passo", label:"Vá para a aba", destaque:"👥 Clientes", texto:"na barra inferior"},
+      {tipo:"passo", label:"Toque em", destaque:"✨ Novo", texto:"no canto superior direito"},
+      {tipo:"bloco", titulo:"📸 Foto do cliente", texto:"Toque em Tirar foto — a câmera frontal abre automaticamente (ótimo para selfie). Use o botão 🔄 para trocar para a câmera traseira. Ou importe da Galeria."},
+      {tipo:"bloco", titulo:"📅 Data de nascimento", texto:"Digite no formato DD/MM/AAAA direto no teclado. O app vai te avisar no dia do aniversário e na semana antes!"},
+      {tipo:"bloco", titulo:"📝 Venda no Fiado", texto:"Se a cliente comprar fiado, o app registra a dívida e te mostra na dashboard. Você pode cobrar diretamente pelo WhatsApp com um toque!"},
+      {tipo:"bloco", titulo:"💚 Borda do avatar", texto:"Verde = cliente sem dívida. Vermelho = tem fiado pendente. Fácil de identificar na lista!"},
+    ],
+  },
+  {
+    id:4, emoji:"🛍️", titulo:"Passo 3: Realize uma Venda",
+    subtitulo:"Cada venda registrada = negócio crescendo",
+    cor:C.green,
+    dica:"💰 Sempre registre todas as vendas, mesmo as pequenas. Os relatórios dependem disso!",
+    conteudo: [
+      {tipo:"passo", label:"Vá para a aba", destaque:"🛍️ Vendas", texto:"na barra inferior"},
+      {tipo:"passo", label:"Toque em", destaque:"+ Nova Venda", texto:"para abrir o checkout"},
+      {tipo:"bloco", titulo:"🔍 Selecione o produto", texto:"Escolha o produto na lista suspensa. Se ele tem variações (cor, tamanho), escolha a variação desejada. A foto da variação aparece automaticamente!"},
+      {tipo:"bloco", titulo:"🏷️ Aplique descontos", texto:"Toque no ícone de desconto (%) ao lado do item para dar desconto por peça. Toque em Desc. Total para desconto na compra inteira."},
+      {tipo:"bloco", titulo:"💳 Forma de pagamento", texto:"Escolha: Dinheiro 💵, Pix 📱 ou Fiado 📝. O fiado só é liberado se houver uma cliente selecionada!"},
+      {tipo:"bloco", titulo:"✅ Finalize", texto:"Toque em Finalizar Venda. O estoque é deduzido automaticamente e os relatórios são atualizados na hora!"},
+    ],
+  },
+  {
+    id:5, emoji:"📊", titulo:"Passo 4: Acompanhe os Resultados",
+    subtitulo:"Quem conhece seus números cresce mais rápido",
+    cor:C.pinkD,
+    dica:"📂 Configure o Google Drive para salvar seus dados automaticamente na nuvem!",
+    conteudo: [
+      {tipo:"passo", label:"Vá para a aba", destaque:"📊 Relatórios", texto:"na barra inferior"},
+      {tipo:"bloco", titulo:"💰 Painel Financeiro", texto:"Veja Receita, Custo, Lucro Real e Margem de lucro por período. Compare dia, semana ou mês e veja o crescimento do seu negócio!"},
+      {tipo:"bloco", titulo:"📈 Gráfico de crescimento", texto:"Visualize a evolução de receita, custos e lucro ao longo do tempo. Ative e desative cada linha tocando na legenda."},
+      {tipo:"bloco", titulo:"💾 Backup dos seus dados", texto:"Toque no botão 💾 no topo da tela para acessar o backup. Exporte um arquivo JSON com todos os dados e salve no WhatsApp pessoal, e-mail ou onde preferir. Faça backup toda semana!"},
+      {tipo:"bloco", titulo:"📲 Lembrete de Fiado via WhatsApp", texto:"Na dashboard, nos clientes com fiado pendente, toque em 📲 WhatsApp para enviar um lembrete automático de cobrança!"},
+    ],
+  },
+];
+
+const Onboarding = ({onClose}) => {
+  const [passo,setPasso] = useState(0);
+  const total = PASSOS_ONBOARDING.length;
+  const atual = PASSOS_ONBOARDING[passo];
+  const isUltimo = passo===total-1;
+
+  return (
+    <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.62)",zIndex:9500,display:"flex",alignItems:"flex-end",justifyContent:"center"}}>
+      <div style={{background:C.white,borderRadius:"24px 24px 0 0",width:"100%",maxWidth:480,maxHeight:"90vh",overflowY:"auto",animation:"fadeUp .3s ease",paddingBottom:20}}>
+        {/* Header colorido */}
+        <div style={{background:`linear-gradient(135deg,${atual.cor},${atual.cor}CC)`,padding:"22px 20px 18px",position:"relative"}}>
+          <div style={{position:"absolute",top:14,right:14,display:"flex",gap:6,alignItems:"center"}}>
+            <span style={{fontSize:11,color:"rgba(255,255,255,.7)",fontWeight:700}}>{passo+1}/{total}</span>
+            <button onClick={onClose} style={{background:"rgba(255,255,255,.2)",border:"none",borderRadius:50,width:28,height:28,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}>
+              <Icon name="x" size={13} color="#fff"/>
+            </button>
+          </div>
+          <div style={{fontSize:42,marginBottom:8,lineHeight:1}}>{atual.emoji}</div>
+          <div style={{fontSize:17,fontWeight:900,color:"#fff",lineHeight:1.2}}>{atual.titulo}</div>
+          <div style={{fontSize:12,color:"rgba(255,255,255,.8)",marginTop:4}}>{atual.subtitulo}</div>
+          {/* Barra de progresso */}
+          <div style={{height:3,background:"rgba(255,255,255,.25)",borderRadius:99,marginTop:14}}>
+            <div style={{height:"100%",width:`${((passo+1)/total)*100}%`,background:"rgba(255,255,255,.9)",borderRadius:99,transition:"width .4s ease"}}/>
+          </div>
+        </div>
+
+        {/* Conteúdo */}
+        <div style={{padding:"16px 18px",display:"flex",flexDirection:"column",gap:10}}>
+          {atual.conteudo.map((bloco,i)=>{
+            if(bloco.tipo==="intro") return (
+              <div key={i} style={{fontSize:14,color:C.text,lineHeight:1.65,fontWeight:600}}>{bloco.texto}</div>
+            );
+            if(bloco.tipo==="lista") return (
+              <div key={i} style={{display:"flex",flexDirection:"column",gap:7,marginTop:4}}>
+                {bloco.itens.map((it,j)=>(
+                  <div key={j} style={{display:"flex",alignItems:"center",gap:11,background:C.pinkL,borderRadius:13,padding:"10px 13px"}}>
+                    <span style={{fontSize:22,flexShrink:0}}>{it.e}</span>
+                    <span style={{fontSize:13,fontWeight:700,color:C.pinkD}}>{it.t}</span>
+                  </div>
+                ))}
+              </div>
+            );
+            if(bloco.tipo==="passo") return (
+              <div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"8px 12px",background:"#F0FDF4",borderRadius:12,border:`1.5px solid #BBF7D0`}}>
+                <span style={{fontSize:13,color:C.gray}}>{bloco.label}</span>
+                <span style={{fontWeight:900,color:C.green,fontSize:13}}>{bloco.destaque}</span>
+                <span style={{fontSize:13,color:C.gray}}>{bloco.texto}</span>
+              </div>
+            );
+            if(bloco.tipo==="bloco") return (
+              <div key={i} style={{background:C.pinkL,borderRadius:13,padding:"11px 13px",borderLeft:`3px solid ${atual.cor}`}}>
+                <div style={{fontSize:12,fontWeight:800,color:atual.cor,marginBottom:4}}>{bloco.titulo}</div>
+                <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{bloco.texto}</div>
+              </div>
+            );
+            return null;
+          })}
+
+          {/* Dica */}
+          {atual.dica&&(
+            <div style={{background:`${atual.cor}12`,border:`1.5px solid ${atual.cor}30`,borderRadius:13,padding:"10px 13px"}}>
+              <div style={{fontSize:12,color:atual.cor,fontWeight:700,lineHeight:1.55}}>{atual.dica}</div>
+            </div>
+          )}
+
+          {/* Navegação */}
+          <div style={{display:"flex",gap:8,marginTop:6}}>
+            {passo>0&&(
+              <button onClick={()=>setPasso(p=>p-1)} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>
+                ← Anterior
+              </button>
+            )}
+            <button onClick={isUltimo?onClose:()=>setPasso(p=>p+1)} className="tap"
+              style={{flex:2,padding:"12px",borderRadius:14,background:`linear-gradient(135deg,${atual.cor},${atual.cor}CC)`,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:"#fff",cursor:"pointer"}}>
+              {isUltimo?"🚀 Começar agora!":"Próximo →"}
+            </button>
+          </div>
+          {!isUltimo&&(
+            <button onClick={onClose} style={{background:"none",border:"none",color:C.soft,fontSize:12,cursor:"pointer",padding:"4px 0",textAlign:"center",fontFamily:"inherit"}}>
+              Pular tutorial
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════════
    APP ROOT
 ══════════════════════════════════════════════════════════════════════════════ */
 function App() {
@@ -2718,26 +3309,10 @@ function App() {
   const [clientes,setClientes]     = useStorage("mlv3_clientes",[]);
   const [vendas,setVendas]         = useStorage("mlv3_vendas",[]);
   const [showBackup,setShowBackup] = useState(false);
-  const [buscaGlobal,setBuscaGlobal] = useState("");
-  const [showBusca,setShowBusca]   = useState(false);
-  const [buscaTabDestino,setBuscaTabDestino] = useState(null); // {tab, filtro}
+  const [showOnboarding,setShowOnboarding] = useState(()=>{ try{ return !localStorage.getItem("juju_onboarding_done"); }catch{return true;} });
   const celebrate  = useCallback(d=>setCelebration(d),[]);
   const closeCeleb = useCallback(()=>setCelebration(null),[]);
-
-  // ── Busca global: pesquisa em produtos, clientes e vendas simultaneamente
-  const queryBusca = buscaGlobal.trim().toLowerCase();
-  const resProdutos = queryBusca.length>=2
-    ? produtos.filter(p=>!p.deleted&&(p.nome?.toLowerCase().includes(queryBusca)||p.categoria?.toLowerCase().includes(queryBusca))).slice(0,4)
-    : [];
-  const resClientes = queryBusca.length>=2
-    ? clientes.filter(c=>!c.deleted&&c.nome?.toLowerCase().includes(queryBusca)).slice(0,4)
-    : [];
-  const resVendas = queryBusca.length>=2
-    ? vendas.filter(v=>(v.clienteNome||"").toLowerCase().includes(queryBusca)||v.itens?.some(i=>i.nome.toLowerCase().includes(queryBusca))).slice(0,4)
-    : [];
-  const temResultado = resProdutos.length>0||resClientes.length>0||resVendas.length>0;
-
-  const irPara = (novaTab, filtro="") => { setTab(novaTab); setBuscaGlobal(""); setShowBusca(false); if(filtro) setBuscaTabDestino({tab:novaTab,filtro}); };
+  const finishOnboarding = () => { try{localStorage.setItem("juju_onboarding_done","1");}catch{} setShowOnboarding(false); };
 
   const TABS=[
     {id:"home",      label:"Início",     icon:"home" },
@@ -2748,9 +3323,9 @@ function App() {
   ];
 
   const PAGES={
-    home:       <Dashboard  produtos={produtos}  vendas={vendas}   clientes={clientes}/>,
-    produtos:   <Produtos   produtos={produtos}  setProdutos={setProdutos} onCelebrate={celebrate} buscaDestino={buscaTabDestino?.tab==="produtos"?buscaTabDestino.filtro:""} onBuscaDestinoClear={()=>setBuscaTabDestino(null)}/>,
-    clientes:   <Clientes   clientes={clientes}  setClientes={setClientes} vendas={vendas} setVendas={setVendas} onCelebrate={celebrate} buscaDestino={buscaTabDestino?.tab==="clientes"?buscaTabDestino.filtro:""} onBuscaDestinoClear={()=>setBuscaTabDestino(null)}/>,
+    home:       <Dashboard  produtos={produtos}  vendas={vendas}   clientes={clientes} onSetTab={setTab}/>,
+    produtos:   <Produtos   produtos={produtos}  setProdutos={setProdutos} onCelebrate={celebrate}/>,
+    clientes:   <Clientes   clientes={clientes}  setClientes={setClientes} vendas={vendas} setVendas={setVendas} onCelebrate={celebrate}/>,
     vendas:     <Vendas     vendas={vendas}      setVendas={setVendas}     produtos={produtos} setProdutos={setProdutos} clientes={clientes} onCelebrate={celebrate}/>,
     relatorios: <Relatorios vendas={vendas}      produtos={produtos}/>,
   };
@@ -2761,100 +3336,20 @@ function App() {
     <div style={{fontFamily:"'Nunito',sans-serif",background:C.rose,minHeight:"100vh",width:"100%",maxWidth:480,margin:"0 auto",position:"relative",paddingBottom:NAV_H,overflowX:"hidden"}}>
       <div style={{position:"fixed",top:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,height:140,background:`linear-gradient(180deg,${C.pinkM}55 0%,transparent 100%)`,pointerEvents:"none",zIndex:0}}/>
 
-      {/* ── Barra de busca global (flutuante no topo) */}
+      {/* ── Barra de topo */}
       <div style={{position:"sticky",top:0,zIndex:150,padding:"10px 14px 0",background:"transparent",pointerEvents:"none"}}>
-        <div style={{display:"flex",gap:8,pointerEvents:"auto"}}>
-          <div style={{flex:1,position:"relative"}}>
-            <div style={{position:"absolute",left:11,top:"50%",transform:"translateY(-50%)",pointerEvents:"none"}}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={C.soft} strokeWidth="2.5" strokeLinecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            </div>
-            <input
-              value={buscaGlobal}
-              onChange={e=>{setBuscaGlobal(e.target.value);setShowBusca(true);}}
-              onFocus={()=>setShowBusca(true)}
-              placeholder="Buscar em tudo..."
-              style={{width:"100%",border:"none",borderRadius:50,padding:"9px 12px 9px 32px",fontFamily:"inherit",fontSize:13,background:"rgba(255,255,255,.95)",boxShadow:"0 2px 14px rgba(244,114,182,.14)",color:C.text,outline:"none",backdropFilter:"blur(8px)"}}
-            />
-            {buscaGlobal&&(
-              <button onClick={()=>{setBuscaGlobal("");setShowBusca(false);}} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",cursor:"pointer",color:C.soft,fontSize:16,lineHeight:1,padding:2}}>✕</button>
-            )}
-          </div>
+        <div style={{display:"flex",gap:8,pointerEvents:"auto",justifyContent:"flex-end"}}>
+          {/* Botão Tutorial */}
+          <button onClick={()=>setShowOnboarding(true)} className="tap" title="Tutorial"
+            style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)"}}>
+            <span style={{fontSize:18}}>🎓</span>
+          </button>
           {/* Botão Backup */}
           <button onClick={()=>setShowBackup(true)} className="tap" title="Backup dos dados"
             style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)"}}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={C.pinkD} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </button>
         </div>
-
-        {/* Resultados da busca global */}
-        {showBusca&&buscaGlobal.length>=2&&(
-          <>
-            <div onClick={()=>{setBuscaGlobal("");setShowBusca(false);}} style={{position:"fixed",inset:0,zIndex:148}}/>
-            <div style={{position:"relative",zIndex:149,background:C.white,borderRadius:18,marginTop:6,boxShadow:"0 8px 32px rgba(244,114,182,.18)",overflow:"hidden",maxHeight:"60vh",overflowY:"auto"}}>
-              {!temResultado?(
-                <div style={{padding:"20px 16px",textAlign:"center",color:C.soft,fontSize:13}}>
-                  <div style={{fontSize:28,marginBottom:6}}>🔍</div>
-                  Nenhum resultado para "<b style={{color:C.pinkD}}>{buscaGlobal}</b>"
-                </div>
-              ):(
-                <>
-                  {resProdutos.length>0&&(
-                    <div>
-                      <div style={{padding:"10px 14px 4px",fontSize:10,fontWeight:800,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                        <span>📦 Produtos</span>
-                        <button onClick={()=>irPara("produtos")} style={{background:"none",border:"none",fontSize:10,color:C.pink,fontWeight:700,cursor:"pointer",fontFamily:"inherit"}}>Ver todos →</button>
-                      </div>
-                      {resProdutos.map(p=>(
-                        <div key={p.id} onClick={()=>irPara("produtos",p.nome)} style={{display:"flex",alignItems:"center",gap:10,padding:"8px 14px",cursor:"pointer",borderTop:`1px solid ${C.pinkS}`}}>
-                          {p.foto?<img src={p.foto} alt="" style={{width:32,height:32,borderRadius:8,objectFit:"cover",flexShrink:0}}/>:<div style={{width:32,height:32,borderRadius:8,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><Icon name="tag" size={12} color={C.pink}/></div>}
-                          <div style={{flex:1,minWidth:0}}>
-                            <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.nome}</div>
-                            <div style={{fontSize:11,color:C.soft}}>{fmt(p.precoVenda)} · {p.estoqueTotal||0} un.</div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {resClientes.length>0&&(
-                    <div>
-                      <div style={{padding:"10px 14px 4px",fontSize:10,fontWeight:800,color:C.purple,letterSpacing:".05em",textTransform:"uppercase",display:"flex",justifyContent:"space-between",alignItems:"center",borderTop:resProdutos.length?`2px solid ${C.pinkS}`:"none"}}>
-                        <span>👥 Clientes</span>
-                        <button onClick={()=>irPara("clientes")} style={{background:"none",border:"none",fontSize:10,color:C.purple,fontWeight:700,cursor:"pointer",fontFamily:"inherit"}}>Ver todos →</button>
-                      </div>
-                      {resClientes.map(c=>(
-                        <div key={c.id} onClick={()=>irPara("clientes",c.nome)} style={{display:"flex",alignItems:"center",gap:10,padding:"8px 14px",cursor:"pointer",borderTop:`1px solid ${C.pinkS}`}}>
-                          {c.foto?<img src={c.foto} alt="" style={{width:32,height:32,borderRadius:"50%",objectFit:"cover",flexShrink:0}}/>:<div style={{width:32,height:32,borderRadius:"50%",background:`linear-gradient(135deg,${C.purple},#7C3AED)`,display:"flex",alignItems:"center",justifyContent:"center",color:C.white,fontWeight:900,fontSize:12,flexShrink:0}}>{c.nome?.[0]?.toUpperCase()}</div>}
-                          <div style={{flex:1,minWidth:0}}>
-                            <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{c.nome}</div>
-                            <div style={{fontSize:11,color:C.soft}}>{c.telefone||"Sem telefone"}</div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {resVendas.length>0&&(
-                    <div>
-                      <div style={{padding:"10px 14px 4px",fontSize:10,fontWeight:800,color:C.green,letterSpacing:".05em",textTransform:"uppercase",display:"flex",justifyContent:"space-between",alignItems:"center",borderTop:(resProdutos.length||resClientes.length)?`2px solid ${C.pinkS}`:"none"}}>
-                        <span>🛍️ Vendas</span>
-                        <button onClick={()=>irPara("vendas")} style={{background:"none",border:"none",fontSize:10,color:C.green,fontWeight:700,cursor:"pointer",fontFamily:"inherit"}}>Ver todas →</button>
-                      </div>
-                      {resVendas.map(v=>(
-                        <div key={v.id} onClick={()=>irPara("vendas")} style={{display:"flex",alignItems:"center",gap:10,padding:"8px 14px",cursor:"pointer",borderTop:`1px solid ${C.pinkS}`}}>
-                          <div style={{width:32,height:32,borderRadius:8,background:"#ECFDF5",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,fontSize:16}}>{v.pagamento==="pix"?"📱":v.pagamento==="fiado"?"📝":"💵"}</div>
-                          <div style={{flex:1,minWidth:0}}>
-                            <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.clienteNome||"Cliente avulso"}</div>
-                            <div style={{fontSize:11,color:C.soft}}>{new Date(v.data).toLocaleDateString("pt-BR")} · {fmt(v.total)}</div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  <div style={{height:8}}/>
-                </>
-              )}
-            </div>
-          </>
-        )}
       </div>
 
       <div style={{position:"relative",zIndex:1,marginTop:4}}>{PAGES[tab]}</div>
@@ -2872,6 +3367,7 @@ function App() {
         })}
       </nav>
       <Celebration data={celebration} onClose={closeCeleb}/>
+      {showOnboarding&&<Onboarding onClose={finishOnboarding}/>}
       {showBackup&&(
         <Backup
           produtos={produtos} clientes={clientes} vendas={vendas}
