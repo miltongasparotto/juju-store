@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
   <meta name="apple-mobile-web-app-title" content="Juju Store"/>
   <meta name="mobile-web-app-capable" content="yes"/>
-  <title>Juju Store 🌸 v2.3.0</title>
+  <title>Juju Store 🌸 v2.4.0</title>
   <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <script>
-    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.3.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
+    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.4.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
     const mLink=document.createElement('link');mLink.rel='manifest';
     mLink.href=URL.createObjectURL(new Blob([JSON.stringify({name:"Juju Store",short_name:"Juju Store",start_url:"./",display:"standalone",orientation:"portrait",background_color:"#FFF1F5",theme_color:"#DB2777",icons:[{src:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+",sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}]})],{type:'application/manifest+json'}));
     document.head.appendChild(mLink);
@@ -185,10 +185,17 @@
   </script>
   <script type="text/babel" data-presets="env,react">
 /**
- * Lojinha — v2.3.0
- * Atualizado: 2026-05-23
+ * Lojinha — v2.4.0
+ * Atualizado: 2026-05-25
  *
  * Changelog:
+ * v2.4.0 — Atualizações de segurança e UX:
+ *   - Botão "Apagar tudo": contador de 10s bloqueia "Confirmar já" como proteção real
+ *   - "Confirmar já" só é liberado (verde) após a barra completar os 10 segundos
+ *   - Backup: nome do arquivo inclui app (JujuStore), tipo (BACKUP), data e horário
+ *   - Backup exportado inclui campos: app, tipo, versão, exportadoEm e dataHoraLegível
+ *   - Botão ❓ "O que posso fazer aqui?" movido para o topo como ícone único
+ *   - Relatórios: filtro padrão alterado para "Dia" (hoje) ao abrir
  * v2.0.0 — Grande atualização:
  *   - Busca global removida (simplificação da interface)
  *   - Backup local restaurado: exportar/importar JSON + apagar tudo com segurança
@@ -1349,33 +1356,35 @@ const GuiaAcoes = ({tab}) => {
   const guia = GUIA[tab];
   if(!guia) return null;
   return (
-    <div style={{marginBottom:6}}>
-      <button onClick={()=>setAberto(o=>!o)} className="tap"
-        style={{width:"100%",display:"flex",alignItems:"center",gap:9,background:"#EEF2FF",border:`1.5px solid ${C.purple}22`,borderRadius:14,padding:"10px 14px",cursor:"pointer",fontFamily:"inherit",textAlign:"left"}}>
-        <span style={{fontSize:20,flexShrink:0}}>❓</span>
-        <div style={{flex:1,minWidth:0}}>
-          <div style={{fontSize:13,fontWeight:800,color:C.purple}}>O que posso fazer aqui?</div>
-          <div style={{fontSize:11,color:"#6D28D9",opacity:.7,marginTop:1}}>{aberto?"Toque para fechar ▲":"Veja todas as ações disponíveis ▼"}</div>
-        </div>
+    <>
+      <button onClick={()=>setAberto(true)} className="tap" title="O que posso fazer aqui?"
+        style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(139,92,246,.18)",flexShrink:0,backdropFilter:"blur(8px)"}}>
+        <span style={{fontSize:19,lineHeight:1}}>❓</span>
       </button>
-
       {aberto&&(
-        <div style={{background:"#F5F3FF",border:`1.5px solid ${C.purple}22`,borderRadius:14,marginTop:6,padding:"12px 13px",animation:"fadeUp .2s ease"}}>
-          <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:10}}>{guia.titulo}</div>
-          <div style={{display:"flex",flexDirection:"column",gap:8}}>
-            {guia.acoes.map((a,i)=>(
-              <div key={i} style={{display:"flex",gap:10,alignItems:"flex-start",padding:"8px 10px",background:"rgba(255,255,255,.7)",borderRadius:11,border:`1px solid ${C.purple}18`}}>
-                <span style={{fontSize:20,flexShrink:0,lineHeight:1.3}}>{a.e}</span>
-                <div style={{minWidth:0}}>
-                  <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:2}}>{a.t}</div>
-                  <div style={{fontSize:11,color:"#4C1D95",lineHeight:1.55,opacity:.85}}>{a.d}</div>
+        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.48)",zIndex:9200,display:"flex",alignItems:"flex-end",justifyContent:"center"}} onClick={()=>setAberto(false)}>
+          <div onClick={e=>e.stopPropagation()} style={{background:C.white,borderRadius:"22px 22px 0 0",width:"100%",maxWidth:480,maxHeight:"80vh",overflowY:"auto",padding:"20px 16px 90px",animation:"fadeUp .28s ease"}}>
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:14}}>
+              <div style={{fontSize:14,fontWeight:800,color:C.purple}}>{guia.titulo}</div>
+              <button onClick={()=>setAberto(false)} style={{background:C.pinkS,border:"none",borderRadius:50,width:32,height:32,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}>
+                <Icon name="x" size={14} color={C.pinkD}/>
+              </button>
+            </div>
+            <div style={{display:"flex",flexDirection:"column",gap:8}}>
+              {guia.acoes.map((a,i)=>(
+                <div key={i} style={{display:"flex",gap:10,alignItems:"flex-start",padding:"9px 11px",background:"#F5F3FF",borderRadius:12,border:`1px solid ${C.purple}18`}}>
+                  <span style={{fontSize:20,flexShrink:0,lineHeight:1.3}}>{a.e}</span>
+                  <div style={{minWidth:0}}>
+                    <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:2}}>{a.t}</div>
+                    <div style={{fontSize:11,color:"#4C1D95",lineHeight:1.55,opacity:.85}}>{a.d}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
@@ -1457,7 +1466,6 @@ const Dashboard = ({produtos,vendas,clientes,onSetTab}) => {
       </div>
 
       {}
-      <GuiaAcoes tab="home"/>
       <div onClick={()=>setShowLearn(o=>!o)} className="tap" style={{background:`linear-gradient(135deg,${C.pinkD},#9D174D)`,borderRadius:16,padding:"13px 15px",display:"flex",gap:11,alignItems:"center",cursor:"pointer"}}>
         <span style={{fontSize:26,flexShrink:0}}>📚</span>
         <div style={{flex:1,minWidth:0}}>
@@ -1681,7 +1689,6 @@ const Produtos = ({produtos,setProdutos,onCelebrate}) => {
       </div>
 
       <FInput placeholder="🔍 Buscar produto..." value={search} onChange={setSearch} style={{marginBottom:8}}/>
-      <GuiaAcoes tab="produtos"/>
 
       {ativos.length===0?(
         <div style={{textAlign:"center",color:C.soft,marginTop:40}}>
@@ -1966,7 +1973,6 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate}) => {
       </div>
 
       {}
-      <GuiaAcoes tab="clientes"/>
       {aniversariantesHoje.length>0&&(
         <div style={{background:"linear-gradient(135deg,#FEF3C7,#FDE68A)",border:"1.5px solid #F59E0B44",borderRadius:16,padding:"11px 14px",marginBottom:12,display:"flex",gap:10,alignItems:"center"}}>
           <span style={{fontSize:22,flexShrink:0}}>🎂</span>
@@ -2302,7 +2308,6 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
           <button key={f} onClick={()=>setFilter(f)} className="tap" style={{padding:"7px 15px",borderRadius:20,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:13,cursor:"pointer",background:filter===f?C.pink:C.pinkL,color:filter===f?C.white:C.pinkD,transition:"background .2s",flexShrink:0,whiteSpace:"nowrap"}}>{l}</button>
         ))}
       </div>
-      <GuiaAcoes tab="vendas"/>
 
       {filtradas.length===0?(
         <div style={{textAlign:"center",color:C.soft,marginTop:40}}>
@@ -2771,7 +2776,7 @@ const GraficoCrescimento = ({pontos}) => {
 const Relatorios = ({vendas,produtos}) => {
   const agora = new Date();
 
-  const [tipoPeriodo, setTipoPeriodo] = useState("mes"); // hoje | semana | mes | ano | custom
+  const [tipoPeriodo, setTipoPeriodo] = useState("hoje"); // hoje | semana | mes | ano | custom
   const [offset, setOffset]           = useState(0);
   const [customInicio, setCustomInicio] = useState("");
   const [customFim, setCustomFim]       = useState("");
@@ -2901,7 +2906,7 @@ const Relatorios = ({vendas,produtos}) => {
         <h2 style={{margin:0,fontSize:19,fontWeight:900,color:C.pinkD}}>📊 Relatórios</h2>
         <Tip title="Para que servem?" text="Relatórios mostram como seu negócio está indo. Analise toda semana!" color={C.purple}>Para que serve?</Tip>
       </div>
-      <GuiaAcoes tab="relatorios"/>
+      
 
       {}
       <Card style={{padding:12}}>
@@ -3173,14 +3178,15 @@ const BotaoPerigoso = ({label,onConfirm,segundos=10,cor=C.red}) => {
   const [restante,setRestante] = useState(segundos);
   const timerRef = useRef(null);
 
-  const iniciar = () => { setContando(true); setRestante(segundos); };
-  const cancelar = () => { setContando(false); setRestante(segundos); clearInterval(timerRef.current); };
+  const [pronto,setPronto] = useState(false);
+  const iniciar = () => { setContando(true); setRestante(segundos); setPronto(false); };
+  const cancelar = () => { setContando(false); setRestante(segundos); setPronto(false); clearInterval(timerRef.current); };
 
   useEffect(()=>{
     if(!contando) return;
     timerRef.current = setInterval(()=>{
       setRestante(r=>{
-        if(r<=1){ clearInterval(timerRef.current); setContando(false); setRestante(segundos); onConfirm(); return segundos; }
+        if(r<=1){ clearInterval(timerRef.current); setPronto(true); return 0; }
         return r-1;
       });
     },1000);
@@ -3193,24 +3199,35 @@ const BotaoPerigoso = ({label,onConfirm,segundos=10,cor=C.red}) => {
     </button>
   );
 
-  const pct = ((segundos-restante)/segundos)*100;
+  const pct = pronto ? 100 : ((segundos-restante)/segundos)*100;
   return (
     <div style={{borderRadius:14,border:`2px solid ${cor}`,overflow:"hidden",background:cor+"08"}}>
       {}
-      <div style={{height:4,background:cor+"22",position:"relative"}}>
-        <div style={{position:"absolute",left:0,top:0,height:"100%",width:`${pct}%`,background:cor,transition:"width 1s linear",borderRadius:99}}/>
+      <div style={{height:6,background:cor+"22",position:"relative"}}>
+        <div style={{position:"absolute",left:0,top:0,height:"100%",width:`${pct}%`,background:pronto?C.green:cor,transition:"width 1s linear",borderRadius:99}}/>
       </div>
       <div style={{padding:"12px 14px"}}>
-        <div style={{fontSize:13,fontWeight:800,color:cor,marginBottom:10,textAlign:"center"}}>
-          ⏳ Auto-confirmando em <span style={{fontSize:20,fontWeight:900}}>{restante}s</span> — tem certeza?
+        <div style={{fontSize:13,fontWeight:800,color:pronto?C.green:cor,marginBottom:6,textAlign:"center"}}>
+          {pronto
+            ? <span>✅ Pode confirmar agora — barra completa!</span>
+            : <span>⏳ Aguarde <span style={{fontSize:22,fontWeight:900}}>{restante}s</span> — leia antes de confirmar</span>
+          }
         </div>
-        <div style={{display:"flex",gap:8}}>
+        {!pronto&&(
+          <div style={{fontSize:11,color:"#7F1D1D",textAlign:"center",marginBottom:10,lineHeight:1.4}}>
+            🔒 "Confirmar já" fica disponível após a contagem terminar.<br/>Isso é uma proteção para evitar apagar por acidente.
+          </div>
+        )}
+        <div style={{display:"flex",gap:8,marginTop:pronto?0:0}}>
           <button onClick={cancelar} className="tap" style={{flex:1,padding:"10px",borderRadius:12,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:13,color:C.pinkD,cursor:"pointer"}}>
             ✋ Cancelar
           </button>
-          <button onClick={()=>{clearInterval(timerRef.current);setContando(false);setRestante(segundos);onConfirm();}} className="tap"
-            style={{flex:1,padding:"10px",borderRadius:12,background:cor,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:13,color:C.white,cursor:"pointer"}}>
-            ✅ Confirmar já
+          <button
+            disabled={!pronto}
+            onClick={()=>{if(!pronto)return;setContando(false);setRestante(segundos);setPronto(false);onConfirm();}}
+            className="tap"
+            style={{flex:1,padding:"10px",borderRadius:12,background:pronto?C.green:cor+"55",border:"none",fontFamily:"inherit",fontWeight:800,fontSize:13,color:C.white,cursor:pronto?"pointer":"not-allowed",opacity:pronto?1:0.5,transition:"all .3s"}}>
+            {pronto?"✅ Confirmar agora":"🔒 Confirmar já"}
           </button>
         </div>
       </div>
@@ -3225,8 +3242,12 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
   const [erro,setErro] = useState("");
   const fileRef = useRef();
 
-  const gerarNomeArquivo = () =>
-    `juju-store-backup-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`;
+  const gerarNomeArquivo = (prefixo="backup") => {
+    const agora = new Date();
+    const data = agora.toLocaleDateString("pt-BR").replace(/\//g,"-");
+    const hora = agora.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"}).replace(":","h");
+    return `JujuStore-${prefixo.toUpperCase()}-${data}_${hora}.json`;
+  };
 
   const exportarJSON = (dados, nome) => {
     const blob = new Blob([JSON.stringify(dados,null,2)],{type:"application/json"});
@@ -3238,7 +3259,15 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
   };
 
   const exportar = () => {
-    exportarJSON({versao:"2.0.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas}, gerarNomeArquivo());
+    const agora = new Date();
+    exportarJSON({
+      app:"Juju Store",
+      tipo:"BACKUP",
+      versao:"2.4.0",
+      exportadoEm: agora.toISOString(),
+      dataHoraLegivel: agora.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"}),
+      produtos, clientes, vendas
+    }, gerarNomeArquivo("backup"));
     setTipoSucesso("exportar");
     setFase("sucesso");
   };
@@ -3270,9 +3299,17 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
   };
 
   const executarApagar = () => {
+    const agora = new Date();
     exportarJSON(
-      {versao:"1.8.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas},
-      `juju-store-ANTES-DE-APAGAR-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`
+      {
+        app:"Juju Store",
+        tipo:"BACKUP-ANTES-DE-APAGAR",
+        versao:"2.4.0",
+        exportadoEm: agora.toISOString(),
+        dataHoraLegivel: agora.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"}),
+        produtos, clientes, vendas
+      },
+      gerarNomeArquivo("ANTES-DE-APAGAR")
     );
     setTimeout(()=>{
       setProdutos([]);
@@ -3338,7 +3375,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
           <InfoBox emoji="💡" title="Dica importante" text="Faça um backup pelo menos uma vez por semana. Envie o arquivo pelo WhatsApp para você mesma para guardar com segurança." color={C.purple}/>
 
           <div style={{textAlign:"center",paddingTop:4}}>
-            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 2.3.0</span>
+            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 2.4.0</span>
           </div>
         </div>
       )}
@@ -3586,6 +3623,8 @@ function App() {
       {}
       <div style={{position:"sticky",top:0,zIndex:150,padding:"10px 14px 0",background:"transparent",pointerEvents:"none"}}>
         <div style={{display:"flex",gap:8,pointerEvents:"auto",justifyContent:"flex-end"}}>
+          {}
+          <GuiaAcoes tab={tab}/>
           {}
           <button onClick={()=>setShowOnboarding(true)} className="tap" title="Tutorial"
             style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)"}}>
