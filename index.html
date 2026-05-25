@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
   <meta name="apple-mobile-web-app-title" content="Juju Store"/>
   <meta name="mobile-web-app-capable" content="yes"/>
-  <title>Juju Store 🌸 v2.1.0</title>
+  <title>Juju Store 🌸 v2.3.0</title>
   <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <script>
-    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.1.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
+    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.3.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
     const mLink=document.createElement('link');mLink.rel='manifest';
     mLink.href=URL.createObjectURL(new Blob([JSON.stringify({name:"Juju Store",short_name:"Juju Store",start_url:"./",display:"standalone",orientation:"portrait",background_color:"#FFF1F5",theme_color:"#DB2777",icons:[{src:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+",sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}]})],{type:'application/manifest+json'}));
     document.head.appendChild(mLink);
@@ -44,7 +44,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel" data-presets="react">
 /**
- * Lojinha — v2.1.0
+ * Lojinha — v2.3.0
  * Atualizado: 2026-05-23
  *
  * Changelog:
@@ -111,7 +111,7 @@
  *   - Modal de recebimento: escolha do método (Dinheiro, Pix ou Cartão)
  * v1.2.0 — Validações na aba de Vendas:
  *   - Fiado bloqueado sem cliente cadastrado; volta p/ Dinheiro ao desselecionar
- *   - Variação obrigatória em produtos com variações (bloqueia "Adicionar item")
+ *   - ⚠️ Escolha a variação antes de continuar em produtos com variações (bloqueia "Adicionar item")
  * v1.1.0 — Melhorias na aba de Vendas:
  *   - Produto duplicado soma quantidade ao item existente no checkout
  *   - Controles +/− de quantidade diretamente nos itens do checkout
@@ -120,7 +120,7 @@
  *   - Cartão removido das formas de pagamento
  *   - Foto do produto exibida na seleção do checkout
  *   - Desconto por peça com 3 modos: % unitário, novo valor unit., total do item
- *   - Desconto na compra total (% ou R$) separado do desconto por item
+ *   - Dar desconto na compra inteira (% ou R$) separado do desconto por item
  */
 const { useState, useEffect, useRef, useCallback, useMemo } = React;
 
@@ -654,12 +654,16 @@ const VarFotoPicker = ({value, onChange}) => {
 
 /* ─── Estoque com Variações (novo produto) ───────────────────────────────── */
 const EstoqueNovo = ({form,setForm}) => {
-  const [novaVar,setNovaVar] = useState("");
-  const [novaQtd,setNovaQtd] = useState("1");
-  const [editandoId,setEditandoId] = useState(null);
+  const [novaVar,setNovaVar]     = useState("");
+  const [novaQtd,setNovaQtd]     = useState("1");
+  const [editandoId,setEditandoId]   = useState(null);
   const [editandoNome,setEditandoNome] = useState("");
+  const [expandidoId,setExpandidoId] = useState(null); // variação com preços expandidos
   const vars = form.variacoes||[];
   const totalVars = vars.reduce((s,v)=>s+Number(v.qtd||0),0);
+
+  const precoCustoBase  = Number(form.precoCusto||0);
+  const precoVendaBase  = Number(form.precoVenda||0);
 
   const addVar = () => {
     if(!novaVar.trim()) return;
@@ -667,23 +671,35 @@ const EstoqueNovo = ({form,setForm}) => {
     if(ex){
       setForm(f=>({...f,variacoes:f.variacoes.map(v=>v.id===ex.id?{...v,qtd:Number(v.qtd)+Number(novaQtd||1)}:v)}));
     } else {
-      setForm(f=>({...f,variacoes:[...(f.variacoes||[]),{id:uid(),nome:novaVar.trim(),qtd:Number(novaQtd||1),foto:""}]}));
+      setForm(f=>({...f,variacoes:[...(f.variacoes||[]),{
+        id:uid(), nome:novaVar.trim(), qtd:Number(novaQtd||1), foto:"",
+        precoCusto:"", precoVenda:"", // vazios = herda o preço geral
+      }]}));
     }
     setNovaVar(""); setNovaQtd("1");
   };
 
   const iniciarEdicao = (v) => { setEditandoId(v.id); setEditandoNome(v.nome); };
-  const salvarEdicao = () => {
+  const salvarEdicao  = () => {
     if(!editandoNome.trim()) return;
     setForm(f=>({...f,variacoes:f.variacoes.map(v=>v.id===editandoId?{...v,nome:editandoNome.trim()}:v)}));
     setEditandoId(null); setEditandoNome("");
   };
 
+  const updateVar = (id, campo, valor) =>
+    setForm(f=>({...f,variacoes:f.variacoes.map(v=>v.id===id?{...v,[campo]:valor}:v)}));
+
+  // Preço efetivo da variação (próprio ou herda do produto)
+  const precoEfetivo = (v, campo) => {
+    const proprio = Number(v[campo]||0);
+    const base = campo==="precoCusto" ? precoCustoBase : precoVendaBase;
+    return proprio > 0 ? proprio : base;
+  };
+
   return (
     <div style={{background:C.pinkL,borderRadius:16,padding:13,display:"flex",flexDirection:"column",gap:11}}>
-      <SL right={<Tip title="Variações de estoque" text="Adicione cada variação (cor, tamanho) com sua quantidade e foto própria. Ideal para cores diferentes! O total é calculado automaticamente." color={C.pinkD}>Como funciona?</Tip>}>📦 Estoque</SL>
+      <SL right={<Tip title="Variações com preços diferentes" text="Cada variação pode ter preço e custo próprios. Se deixar em branco, herda o preço geral do produto. Ideal para tamanhos, modelos ou kits!" color={C.pinkD}>Como funciona?</Tip>}>📦 Estoque e Variações</SL>
 
-      {/* Total calculado automaticamente das variações */}
       {vars.length===0?(
         <FInput label="Quantidade em estoque" value={form.estoqueTotal||""} onChange={v=>setForm(f=>({...f,estoqueTotal:v}))} type="number" min="0" placeholder="Ex: 50"/>
       ):(
@@ -694,50 +710,127 @@ const EstoqueNovo = ({form,setForm}) => {
       )}
 
       {vars.length>0&&(
-        <div style={{display:"flex",flexDirection:"column",gap:6}}>
+        <div style={{display:"flex",flexDirection:"column",gap:7}}>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:2}}>
-            <span style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase"}}>Variações adicionadas</span>
-            <span style={{fontSize:10,color:C.soft}}>✏️ = editar nome · 📷 = foto</span>
+            <span style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase"}}>Variações</span>
+            <span style={{fontSize:10,color:C.soft}}>Toque em 💲 para preço individual</span>
           </div>
-          {vars.map(v=>(
-            <div key={v.id} style={{display:"flex",alignItems:"center",gap:8,background:C.white,borderRadius:12,padding:"8px 10px",boxShadow:"0 1px 4px rgba(244,114,182,.07)"}}>
-              <VarFotoPicker
-                value={v.foto||""}
-                onChange={foto=>setForm(f=>({...f,variacoes:f.variacoes.map(x=>x.id===v.id?{...x,foto}:x)}))}
-              />
-              {editandoId===v.id ? (
-                <input
-                  autoFocus
-                  value={editandoNome}
-                  onChange={e=>setEditandoNome(e.target.value)}
-                  onKeyDown={e=>{ if(e.key==="Enter") salvarEdicao(); if(e.key==="Escape"){setEditandoId(null);} }}
-                  onBlur={salvarEdicao}
-                  style={{flex:1,border:`1.5px solid ${C.pink}`,borderRadius:8,padding:"4px 8px",fontFamily:"inherit",fontSize:13,fontWeight:600,minWidth:0}}
-                />
-              ) : (
-                <span style={{flex:1,fontSize:13,fontWeight:600,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.nome}</span>
-              )}
-              {/* Botão editar nome */}
-              <button onClick={()=>iniciarEdicao(v)} title="Editar nome" style={{background:C.pinkS,border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",flexShrink:0}}>
-                <Icon name="edit" size={12} color={C.pinkD}/>
-              </button>
-              <input type="number" min="0" value={v.qtd} onChange={e=>setForm(f=>({...f,variacoes:f.variacoes.map(x=>x.id===v.id?{...x,qtd:Number(e.target.value)}:x)}))}
-                style={{width:54,border:`1.5px solid ${C.pinkM}`,borderRadius:8,padding:"4px 6px",fontFamily:"inherit",fontSize:13,textAlign:"center"}}/>
-              <span style={{fontSize:11,color:C.soft,flexShrink:0}}>un.</span>
-              <button onClick={()=>setForm(f=>({...f,variacoes:f.variacoes.filter(x=>x.id!==v.id)}))} style={{background:"#FEE2E2",border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",flexShrink:0}}>
-                <Icon name="x" size={12} color={C.red}/>
-              </button>
-            </div>
-          ))}
-          {/* Preview das fotos das variações */}
+
+          {vars.map(v=>{
+            const temPrecoPropio = Number(v.precoCusto||0)>0||Number(v.precoVenda||0)>0;
+            const expandido = expandidoId===v.id;
+            const custoEfet = precoEfetivo(v,"precoCusto");
+            const vendaEfet = precoEfetivo(v,"precoVenda");
+            const ganho = vendaEfet>0&&custoEfet>0 ? ((vendaEfet-custoEfet)/custoEfet*100).toFixed(0) : null;
+            const ganhoColor = ganho===null?C.soft:Number(ganho)<30?C.red:Number(ganho)<80?C.amber:C.green;
+
+            return (
+              <div key={v.id} style={{background:C.white,borderRadius:13,boxShadow:"0 1px 4px rgba(244,114,182,.07)",overflow:"hidden",border:temPrecoPropio?`1.5px solid ${C.pink}33`:"none"}}>
+                {/* Linha principal */}
+                <div style={{display:"flex",alignItems:"center",gap:8,padding:"8px 10px"}}>
+                  <VarFotoPicker
+                    value={v.foto||""}
+                    onChange={foto=>updateVar(v.id,"foto",foto)}
+                  />
+                  {editandoId===v.id ? (
+                    <input autoFocus value={editandoNome} onChange={e=>setEditandoNome(e.target.value)}
+                      onKeyDown={e=>{if(e.key==="Enter")salvarEdicao();if(e.key==="Escape")setEditandoId(null);}}
+                      onBlur={salvarEdicao}
+                      style={{flex:1,border:`1.5px solid ${C.pink}`,borderRadius:8,padding:"4px 8px",fontFamily:"inherit",fontSize:13,fontWeight:600,minWidth:0}}/>
+                  ) : (
+                    <span style={{flex:1,fontSize:13,fontWeight:600,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.nome}</span>
+                  )}
+
+                  {/* Indicador de preço próprio */}
+                  {temPrecoPropio&&(
+                    <span style={{fontSize:9,background:C.pinkS,color:C.pinkD,borderRadius:6,padding:"2px 5px",fontWeight:700,flexShrink:0}}>preço próprio</span>
+                  )}
+
+                  {/* Botão expandir preços */}
+                  <button onClick={()=>setExpandidoId(expandido?null:v.id)} title="Preço desta variação"
+                    style={{background:expandido?C.pinkS:"#F0FDF4",border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",flexShrink:0,display:"flex",alignItems:"center",gap:2}}>
+                    <span style={{fontSize:13}}>💲</span>
+                  </button>
+                  <button onClick={()=>iniciarEdicao(v)} title="Editar nome"
+                    style={{background:C.pinkS,border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",flexShrink:0}}>
+                    <Icon name="edit" size={12} color={C.pinkD}/>
+                  </button>
+                  <input type="number" min="0" value={v.qtd}
+                    onChange={e=>updateVar(v.id,"qtd",Number(e.target.value))}
+                    style={{width:50,border:`1.5px solid ${C.pinkM}`,borderRadius:8,padding:"4px 5px",fontFamily:"inherit",fontSize:13,textAlign:"center"}}/>
+                  <span style={{fontSize:11,color:C.soft,flexShrink:0}}>un.</span>
+                  <button onClick={()=>setForm(f=>({...f,variacoes:f.variacoes.filter(x=>x.id!==v.id)}))}
+                    style={{background:"#FEE2E2",border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",flexShrink:0}}>
+                    <Icon name="x" size={12} color={C.red}/>
+                  </button>
+                </div>
+
+                {/* Painel de preços expandido */}
+                {expandido&&(
+                  <div style={{borderTop:`1px solid ${C.pinkS}`,padding:"10px 12px",background:"#FAFAFA"}}>
+                    <div style={{fontSize:11,color:C.pinkD,fontWeight:700,marginBottom:8}}>
+                      💲 Preço da variação "{v.nome}"
+                    </div>
+                    <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
+                      <div>
+                        <label style={{fontSize:10,fontWeight:700,color:C.soft,letterSpacing:".04em",display:"block",marginBottom:4}}>
+                          CUSTO (R$)
+                        </label>
+                        <input
+                          type="number" min="0" value={v.precoCusto||""}
+                          onChange={e=>updateVar(v.id,"precoCusto",e.target.value)}
+                          placeholder={precoCustoBase>0?`${fmtN(precoCustoBase)} (geral)`:"Opcional"}
+                          style={{width:"100%",border:`1.5px solid ${C.pinkM}`,borderRadius:10,padding:"8px 10px",fontFamily:"inherit",fontSize:13,background:C.white}}
+                        />
+                      </div>
+                      <div>
+                        <label style={{fontSize:10,fontWeight:700,color:C.soft,letterSpacing:".04em",display:"block",marginBottom:4}}>
+                          VENDA (R$)
+                        </label>
+                        <input
+                          type="number" min="0" value={v.precoVenda||""}
+                          onChange={e=>updateVar(v.id,"precoVenda",e.target.value)}
+                          placeholder={precoVendaBase>0?`${fmtN(precoVendaBase)} (geral)`:"Opcional"}
+                          style={{width:"100%",border:`1.5px solid ${C.pinkM}`,borderRadius:10,padding:"8px 10px",fontFamily:"inherit",fontSize:13,background:C.white}}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Mini PrecBox para a variação */}
+                    {custoEfet>0&&vendaEfet>0&&(
+                      <div style={{background:`${ganhoColor}0F`,border:`1px solid ${ganhoColor}28`,borderRadius:10,padding:"8px 11px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                        <div style={{fontSize:11,color:C.gray}}>
+                          Custo: <b>{fmt(custoEfet)}</b> · Venda: <b style={{color:C.pinkD}}>{fmt(vendaEfet)}</b>
+                          {!temPrecoPropio&&<span style={{color:C.soft}}> (herda do produto)</span>}
+                        </div>
+                        {ganho!==null&&(
+                          <span style={{fontSize:13,fontWeight:900,color:ganhoColor,flexShrink:0,marginLeft:8}}>+{ganho}%</span>
+                        )}
+                      </div>
+                    )}
+
+                    {(v.precoCusto||v.precoVenda)&&(
+                      <button onClick={()=>{updateVar(v.id,"precoCusto","");updateVar(v.id,"precoVenda","");}}
+                        style={{marginTop:7,background:"none",border:"none",fontSize:11,color:C.soft,cursor:"pointer",padding:0,fontFamily:"inherit"}}>
+                        ✕ Remover preço próprio (usar preço geral)
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+
+          {/* Preview fotos das variações */}
           {vars.some(v=>v.foto)&&(
             <div style={{background:C.white,borderRadius:12,padding:"8px 10px"}}>
-              <div style={{fontSize:10,color:C.soft,fontWeight:700,marginBottom:6,textTransform:"uppercase",letterSpacing:".05em"}}>Preview das cores</div>
+              <div style={{fontSize:10,color:C.soft,fontWeight:700,marginBottom:6,textTransform:"uppercase",letterSpacing:".05em"}}>Preview das variações</div>
               <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
                 {vars.filter(v=>v.foto).map(v=>(
                   <div key={v.id} style={{display:"flex",flexDirection:"column",alignItems:"center",gap:3}}>
                     <img src={v.foto} alt={v.nome} style={{width:44,height:44,borderRadius:8,objectFit:"cover",border:`2px solid ${C.pinkM}`}}/>
-                    <span style={{fontSize:9,color:C.gray,fontWeight:600,maxWidth:44,textAlign:"center",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.nome}</span>
+                    <span style={{fontSize:9,color:C.gray,fontWeight:600,maxWidth:48,textAlign:"center",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.nome}</span>
+                    {Number(v.precoVenda||0)>0&&<span style={{fontSize:9,color:C.pinkD,fontWeight:800}}>{fmt(Number(v.precoVenda))}</span>}
                   </div>
                 ))}
               </div>
@@ -747,15 +840,18 @@ const EstoqueNovo = ({form,setForm}) => {
       )}
 
       <div>
-        <SL>Adicionar variação (cor, tamanho…)</SL>
+        <SL>Adicionar variação (cor, tamanho, modelo…)</SL>
         <div style={{display:"flex",gap:6}}>
-          <input value={novaVar} onChange={e=>setNovaVar(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addVar()} placeholder="Ex: Vermelho, P, GG…"
+          <input value={novaVar} onChange={e=>setNovaVar(e.target.value)} onKeyDown={e=>e.key==="Enter"&&addVar()}
+            placeholder="Ex: Pequeno, Grande, Azul…"
             style={{flex:1,border:`1.5px solid ${C.pinkM}`,borderRadius:10,padding:"8px 11px",fontFamily:"inherit",fontSize:13,minWidth:0}}/>
           <input value={novaQtd} onChange={e=>setNovaQtd(e.target.value)} type="number" min="1" placeholder="Qtd"
             style={{width:54,border:`1.5px solid ${C.pinkM}`,borderRadius:10,padding:"8px 8px",fontFamily:"inherit",fontSize:13,textAlign:"center"}}/>
           <Btn small onClick={addVar}><Icon name="plus" size={14}/></Btn>
         </div>
-        <div style={{fontSize:11,color:C.soft,marginTop:4}}>Adicione a foto de cada cor/variação clicando no ícone 📷 · ✏️ para editar o nome</div>
+        <div style={{fontSize:11,color:C.soft,marginTop:4}}>
+          💲 = definir preço individual · ✏️ = renomear · 📷 = foto da variação
+        </div>
       </div>
     </div>
   );
@@ -914,7 +1010,7 @@ const DescontoModal = ({item,onSave,onClose}) => {
   return (
     <div style={{padding:"20px 16px 0"}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:14}}>
-        <h2 style={{margin:0,fontSize:16,fontWeight:800,color:C.pinkD}}>Desconto no item</h2>
+        <h2 style={{margin:0,fontSize:16,fontWeight:800,color:C.pinkD}}>Dar desconto neste produto</h2>
         <button onClick={onClose} style={{background:C.pinkS,border:"none",borderRadius:50,width:32,height:32,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}><Icon name="x" size={14} color={C.pinkD}/></button>
       </div>
 
@@ -939,7 +1035,7 @@ const DescontoModal = ({item,onSave,onClose}) => {
 
       {/* Seleção do tipo de desconto */}
       <div style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",marginBottom:7}}>
-        Tipo de desconto
+        Como quer dar o desconto?
       </div>
       <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:14}}>
         {modosDisponiveis.map(m=>(
@@ -971,14 +1067,14 @@ const DescontoModal = ({item,onSave,onClose}) => {
       {val&&valN>0&&(
         <div style={{marginTop:12,background:"#ECFDF5",border:`1.5px solid ${C.green}30`,borderRadius:12,padding:"12px 13px"}}>
           <div style={{fontSize:11,fontWeight:700,color:C.green,textTransform:"uppercase",letterSpacing:".05em",marginBottom:8}}>
-            Prévia do desconto
+            Veja como ficará
           </div>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
-            <span style={{fontSize:12,color:C.gray}}>Desconto por peça:</span>
+            <span style={{fontSize:12,color:C.gray}}>Desconto em cada peça:</span>
             <span style={{fontSize:13,fontWeight:800,color:C.amber}}>-{fmt(descontoUnit)} ({pctDesconto.toFixed(0)}%)</span>
           </div>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
-            <span style={{fontSize:12,color:C.gray}}>Preço unitário após desconto:</span>
+            <span style={{fontSize:12,color:C.gray}}>Novo preço por unidade:</span>
             <span style={{fontSize:13,fontWeight:800,color:C.green}}>{fmt(novoPrecoUnit)}</span>
           </div>
           {multiPeca&&(
@@ -989,7 +1085,7 @@ const DescontoModal = ({item,onSave,onClose}) => {
           )}
           <div style={{height:1,background:C.green+"22",margin:"6px 0"}}/>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total do item com desconto:</span>
+            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total deste produto com o desconto:</span>
             <span style={{fontSize:16,fontWeight:900,color:C.green}}>{fmt(totalFinal)}</span>
           </div>
         </div>
@@ -1038,7 +1134,7 @@ const DescontoCompraModal = ({subtotal,descAtual,onSave,onClose}) => {
       {/* Subtotal */}
       <div style={{background:C.pinkL,borderRadius:12,padding:"10px 14px",marginBottom:14,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
         <div>
-          <div style={{fontSize:11,color:C.soft,fontWeight:700,textTransform:"uppercase",letterSpacing:".04em"}}>Subtotal dos itens</div>
+          <div style={{fontSize:11,color:C.soft,fontWeight:700,textTransform:"uppercase",letterSpacing:".04em"}}>Total dos produtos no carrinho</div>
           <div style={{fontSize:20,fontWeight:900,color:C.pinkD,marginTop:2}}>{fmt(subtotal)}</div>
         </div>
         {descAtual>0&&(
@@ -1093,12 +1189,12 @@ const DescontoCompraModal = ({subtotal,descAtual,onSave,onClose}) => {
             <span style={{fontSize:13,color:C.gray}}>{fmt(subtotal)}</span>
           </div>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:5}}>
-            <span style={{fontSize:12,color:C.gray}}>Desconto aplicado ({pctResultante.toFixed(0)}%):</span>
+            <span style={{fontSize:12,color:C.gray}}>Desconto dado ({pctResultante.toFixed(0)}%):</span>
             <span style={{fontSize:13,fontWeight:800,color:C.amber}}>-{fmt(desconto)}</span>
           </div>
           <div style={{height:1,background:C.green+"22",margin:"6px 0"}}/>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total final da compra:</span>
+            <span style={{fontSize:13,fontWeight:700,color:C.text}}>Total final que o cliente vai pagar:</span>
             <span style={{fontSize:17,fontWeight:900,color:C.green}}>{fmt(totalFinal)}</span>
           </div>
         </div>
@@ -1110,6 +1206,111 @@ const DescontoCompraModal = ({subtotal,descAtual,onSave,onClose}) => {
         </Btn>
         {descAtual>0&&<Btn onClick={remover} v="danger" full>Remover desconto atual</Btn>}
       </div>
+    </div>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   GUIA DE AÇÕES — cards de instrução por aba
+══════════════════════════════════════════════════════════════════════════════ */
+const GUIA = {
+  home: {
+    titulo:"🏠 Início — o que você pode fazer aqui",
+    acoes:[
+      {e:"📚",t:"Vocabulário do negócio",d:"Toque no banner rosa para abrir o dicionário de termos. Ele explica de forma simples palavras como lucro, margem, fiado e estoque."},
+      {e:"🛍️",t:"Acompanhar vendas do dia",d:"Veja quantas vendas você fez hoje. O número atualiza automaticamente toda vez que você registra uma venda."},
+      {e:"📝",t:"Ver clientes que devem",d:"Se alguém comprou no fiado e ainda não pagou, o nome e o valor aparecem aqui. Toque em 📲 para mandar uma mensagem no WhatsApp cobrando."},
+      {e:"📲",t:"Cobrar fiado pelo WhatsApp",d:"Toque no botão verde ao lado do cliente com fiado. O WhatsApp já abre com uma mensagem pronta — é só enviar!"},
+      {e:"🎂",t:"Ver aniversários da semana",d:"Veja quais clientes fazem aniversário nos próximos 7 dias. Mande uma mensagem especial e fidelize!"},
+      {e:"📦",t:"Alertas de estoque baixo",d:"Quando um produto fica com 3 unidades ou menos, aparece aqui como alerta. Hora de repor!"},
+      {e:"🛍️",t:"Últimas vendas",d:"Veja rapidamente as últimas vendas registradas — quem comprou, o que comprou e quanto pagou."},
+    ]
+  },
+  produtos: {
+    titulo:"📦 Produtos — o que você pode fazer aqui",
+    acoes:[
+      {e:"✨",t:"Cadastrar produto novo",d:"Toque em 'Novo' no canto superior direito. Preencha o nome, categoria, custo (o que você pagou), preço de venda e estoque. Quanto mais completo, melhor!"},
+      {e:"📸",t:"Adicionar foto do produto",d:"Toque em 'Câmera' para tirar uma foto na hora com a câmera traseira, ou em 'Galeria' para escolher uma foto já salva. A foto é recortada em quadrado automaticamente."},
+      {e:"📦",t:"Criar variações (cores, tamanhos, modelos)",d:"Na seção de estoque, adicione cada variação separada — ex: Pequeno, Grande, Vermelho, Azul. Cada uma tem quantidade própria e pode ter preço diferente."},
+      {e:"💲",t:"Definir preço por variação",d:"Toque no botão 💲 ao lado de uma variação para dar um preço diferente para ela. Ótimo para produtos do mesmo tipo mas tamanhos diferentes, como chaveiro P e G."},
+      {e:"✏️",t:"Editar produto",d:"Toque no ícone de lápis no card do produto para alterar qualquer informação — nome, preço, foto ou variações."},
+      {e:"📊",t:"Ajustar estoque",d:"Toque no ícone roxo (setas) no card do produto para adicionar, remover ou corrigir a quantidade em estoque sem precisar editar tudo."},
+      {e:"🗑️",t:"Arquivar produto",d:"Toque no ícone de lixeira para ocultar o produto. Ele não some — fica arquivado e pode ser recuperado a qualquer momento."},
+      {e:"👁️",t:"Ver produtos arquivados",d:"Role para baixo na lista e toque em 'Mostrar produtos arquivados'. Você pode restaurar qualquer produto arquivado com um toque."},
+    ]
+  },
+  clientes: {
+    titulo:"👥 Clientes — o que você pode fazer aqui",
+    acoes:[
+      {e:"✨",t:"Cadastrar cliente novo",d:"Toque em 'Novo'. Preencha o nome e o WhatsApp. O resto é opcional — mas quanto mais info, mais fácil fica o relacionamento!"},
+      {e:"📸",t:"Adicionar foto do cliente",d:"Toque em 'Tirar foto' para usar a câmera frontal (como uma selfie com a cliente) ou 'Galeria' para importar uma foto. Ótimo para lembrar o rosto de cada uma!"},
+      {e:"🎂",t:"Registrar data de aniversário",d:"Digite a data no formato DD/MM/AAAA. O app vai te avisar quando o aniversário estiver chegando para você mandar uma mensagem especial."},
+      {e:"📖",t:"Ver histórico de compras",d:"Toque no nome do cliente para abrir o perfil completo com todas as compras que ela já fez na sua lojinha."},
+      {e:"📲",t:"Cobrar fiado pelo WhatsApp",d:"No perfil do cliente, se ela tiver fiado em aberto, aparece um botão verde para enviar uma mensagem de cobrança diretamente no WhatsApp."},
+      {e:"💚",t:"Identificar situação do cliente",d:"A borda colorida no avatar indica a situação: verde = sem dívida, vermelha = tem fiado pendente. Fácil de ver na lista!"},
+      {e:"✅",t:"Marcar fiado como pago",d:"No perfil do cliente, toque em 'Marcar como recebido' em cada fiado pendente. Escolha a forma de pagamento e pronto — o valor sai do deve."},
+      {e:"🗑️",t:"Arquivar cliente",d:"Toque no ícone de lixeira para ocultar o cliente. O histórico de compras dele é mantido — ele não some dos relatórios."},
+    ]
+  },
+  vendas: {
+    titulo:"🛍️ Vendas — o que você pode fazer aqui",
+    acoes:[
+      {e:"➕",t:"Registrar venda nova",d:"Toque em '+ Nova venda'. Escolha o cliente (ou deixe sem cadastro), a forma de pagamento e adicione os produtos."},
+      {e:"🔍",t:"Escolher produto na venda",d:"Na lista de produtos, selecione o produto. Se ele tem variações (cor, tamanho), escolha qual variação. A foto muda junto!"},
+      {e:"➕➖",t:"Ajustar quantidade",d:"Use os botões + e − no carrinho para aumentar ou diminuir a quantidade de cada item. O total atualiza na hora."},
+      {e:"🏷️",t:"Dar desconto em um produto",d:"Toque no ícone laranja (%) ao lado do item para dar desconto. Escolha se quer informar em porcentagem, valor por peça ou valor total do item."},
+      {e:"💰",t:"Dar desconto na compra toda",d:"Toque em 'Aplicar desconto na compra total' no rodapé do carrinho. Funciona em cima do valor total de todos os itens."},
+      {e:"💵",t:"Calcular troco",d:"Se o pagamento for em Dinheiro, uma calculadora de troco aparece automaticamente. Digite o valor recebido e o app calcula o troco."},
+      {e:"✅",t:"Confirmar a venda",d:"Após revisar tudo, toque em 'Confirmar'. A venda é salva, o estoque é descontado automaticamente e os relatórios são atualizados."},
+      {e:"✏️",t:"Editar venda registrada",d:"Toque em 'Editar' no card de uma venda para corrigir itens, quantidades, preços ou forma de pagamento. O estoque é reajustado automaticamente."},
+      {e:"↩️",t:"Devolver (reembolsar) uma venda",d:"Toque em 'Reembolso' no card da venda. O estoque volta e a venda fica registrada como devolvida no histórico — nunca some."},
+    ]
+  },
+  relatorios: {
+    titulo:"📊 Relatórios — o que você pode fazer aqui",
+    acoes:[
+      {e:"📅",t:"Filtrar por período",d:"Escolha ver os dados de hoje, desta semana, deste mês, deste ano ou defina um período personalizado com datas de início e fim."},
+      {e:"◀▶",t:"Navegar entre períodos",d:"Use as setas para voltar para períodos anteriores. Ex: mês passado, ano passado, semana passada."},
+      {e:"💰",t:"Ver resultado financeiro",d:"Veja quanto entrou (receita), quanto custou os produtos (custo) e quanto ficou no seu bolso (lucro). Todos os valores são apenas do que foi efetivamente recebido."},
+      {e:"📝",t:"Ver fiado em aberto",d:"O card vermelho mostra o total que ainda não recebeu de vendas no fiado — separado do lucro real, porque ainda não entrou no caixa."},
+      {e:"📈",t:"Ver gráfico de crescimento",d:"O gráfico mostra a evolução da receita, custo e lucro ao longo do tempo. Toque nas legendas para ativar ou desativar cada linha."},
+      {e:"🏆",t:"Ver produtos mais vendidos",d:"Ranking dos produtos mais vendidos no período, com barra visual de comparação."},
+      {e:"💳",t:"Ver por forma de pagamento",d:"Veja quanto entrou via Dinheiro, Pix e Fiado (pago) no período selecionado."},
+    ]
+  },
+};
+
+const GuiaAcoes = ({tab}) => {
+  const [aberto,setAberto] = useState(false);
+  const guia = GUIA[tab];
+  if(!guia) return null;
+  return (
+    <div style={{marginBottom:6}}>
+      <button onClick={()=>setAberto(o=>!o)} className="tap"
+        style={{width:"100%",display:"flex",alignItems:"center",gap:9,background:"#EEF2FF",border:`1.5px solid ${C.purple}22`,borderRadius:14,padding:"10px 14px",cursor:"pointer",fontFamily:"inherit",textAlign:"left"}}>
+        <span style={{fontSize:20,flexShrink:0}}>❓</span>
+        <div style={{flex:1,minWidth:0}}>
+          <div style={{fontSize:13,fontWeight:800,color:C.purple}}>O que posso fazer aqui?</div>
+          <div style={{fontSize:11,color:"#6D28D9",opacity:.7,marginTop:1}}>{aberto?"Toque para fechar ▲":"Veja todas as ações disponíveis ▼"}</div>
+        </div>
+      </button>
+
+      {aberto&&(
+        <div style={{background:"#F5F3FF",border:`1.5px solid ${C.purple}22`,borderRadius:14,marginTop:6,padding:"12px 13px",animation:"fadeUp .2s ease"}}>
+          <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:10}}>{guia.titulo}</div>
+          <div style={{display:"flex",flexDirection:"column",gap:8}}>
+            {guia.acoes.map((a,i)=>(
+              <div key={i} style={{display:"flex",gap:10,alignItems:"flex-start",padding:"8px 10px",background:"rgba(255,255,255,.7)",borderRadius:11,border:`1px solid ${C.purple}18`}}>
+                <span style={{fontSize:20,flexShrink:0,lineHeight:1.3}}>{a.e}</span>
+                <div style={{minWidth:0}}>
+                  <div style={{fontSize:12,fontWeight:800,color:C.purple,marginBottom:2}}>{a.t}</div>
+                  <div style={{fontSize:11,color:"#4C1D95",lineHeight:1.55,opacity:.85}}>{a.d}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -1199,6 +1400,7 @@ const Dashboard = ({produtos,vendas,clientes,onSetTab}) => {
       </div>
 
       {/* ── Vocabulário do Negócio (ex-Dica do Dia) */}
+      <GuiaAcoes tab="home"/>
       <div onClick={()=>setShowLearn(o=>!o)} className="tap" style={{background:`linear-gradient(135deg,${C.pinkD},#9D174D)`,borderRadius:16,padding:"13px 15px",display:"flex",gap:11,alignItems:"center",cursor:"pointer"}}>
         <span style={{fontSize:26,flexShrink:0}}>📚</span>
         <div style={{flex:1,minWidth:0}}>
@@ -1213,9 +1415,9 @@ const Dashboard = ({produtos,vendas,clientes,onSetTab}) => {
           {[
             {e:"💰",t:"Receita",d:"Tudo que entra no caixa com as vendas. É o valor total que você cobrou dos clientes — antes de descontar qualquer custo."},
             {e:"🏷️",t:"Custo",d:"Quanto você pagou para ter o produto. É o preço que você pagou à fornecedora. Sem saber o custo, fica impossível saber se está lucrando!"},
-            {e:"📈",t:"Lucro",d:"Receita − Custo. O dinheiro que realmente ficou no seu bolso depois de pagar pelo produto. Esse é o número mais importante!"},
-            {e:"📊",t:"Margem de Lucro",d:"Quanto % do preço de venda é lucro puro. Ex: vende por R$30, lucra R$10 → margem de 33%. Quanto maior, melhor!"},
-            {e:"🔄",t:"Giro de Estoque",d:"Velocidade com que seus produtos saem. Alto giro = produtos saindo rápido. Produto parado é dinheiro preso na prateleira!"},
+            {e:"📈",t:"Lucro",d:"É o que sobrou depois de pagar pelos produtos. Receita menos custo. Esse é o número mais importante do seu negócio!"},
+            {e:"📊",t:"Margem de Lucro",d:"Quanto do preço que você cobra é lucro de verdade. Ex: vende por R$30, lucra R$10 → margem de 33%. Quanto maior, melhor!"},
+            {e:"🔄",t:"Giro de Estoque",d:"O quanto seus produtos estão sendo vendidos. Venda rápida = bom giro. Produto parado na prateleira é dinheiro parado!"},
             {e:"📦",t:"Estoque",d:"Quantidade de produtos disponíveis para vender. Estoque zerado = venda perdida. Estoque demais = dinheiro parado."},
             {e:"📝",t:"Fiado",d:"Venda sem pagamento imediato — o cliente promete pagar depois. Tem risco! Só faça fiado para clientes de total confiança."},
             {e:"🤝",t:"Cliente fiel",d:"Cliente que volta sempre. Custa 5× menos manter um cliente do que conquistar um novo. Vale a pena mimar!"},
@@ -1374,7 +1576,7 @@ const Produtos = ({produtos,setProdutos,onCelebrate}) => {
     const pf = {...form,estoqueTotal:total,id:modal==="add"?uid():modal.id,deleted:false};
     if(modal==="add"){
       setProdutos(ps=>[...ps,pf]);
-      onCelebrate({emoji:"🎁",title:"Produto cadastrado!",message:`"${form.nome}" já está na sua lojinha!`,tip:"Produto com foto vende até 3× mais. Sempre capriche na imagem!"});
+      onCelebrate({emoji:"🎁",title:"Produto cadastrado!",message:`"${form.nome}" já está na sua lojinha!`,tip:"Produto com foto chama muito mais atenção. Sempre coloque uma foto bonita!"});
     } else {
       setProdutos(ps=>ps.map(p=>p.id===modal.id?pf:p));
     }
@@ -1418,18 +1620,19 @@ const Produtos = ({produtos,setProdutos,onCelebrate}) => {
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:12}}>
         <div>
           <h2 style={{margin:0,fontSize:19,fontWeight:900,color:C.pinkD}}>📦 Produtos</h2>
-          <div style={{marginTop:4}}><Tip title="O que é Produto?" text="Produto é tudo que você vende. Informe o custo (o que pagou), o preço de venda (o que vai cobrar) e o estoque (quantas peças tem)." color={C.purple}>O que é produto?</Tip></div>
+          <div style={{marginTop:4}}><Tip title="Sobre os produtos" text="Produto é qualquer coisa que você vende. Coloque o custo (quanto você pagou), o preço (quanto vai cobrar) e a quantidade que tem em estoque." color={C.purple}>O que é produto?</Tip></div>
         </div>
         <Btn onClick={openAdd} small><Icon name="plus" size={14}/>Novo</Btn>
       </div>
 
-      <FInput placeholder="🔍 Buscar produto..." value={search} onChange={setSearch} style={{marginBottom:12}}/>
+      <FInput placeholder="🔍 Buscar produto..." value={search} onChange={setSearch} style={{marginBottom:8}}/>
+      <GuiaAcoes tab="produtos"/>
 
       {ativos.length===0?(
         <div style={{textAlign:"center",color:C.soft,marginTop:40}}>
           <div style={{fontSize:52,animation:"float 3s ease-in-out infinite"}}>📦</div>
           <p style={{fontSize:14,margin:"8px 0 4px"}}>Nenhum produto ainda.</p>
-          <p style={{fontSize:12,margin:0}}>Toque em "Novo" para começar!</p>
+          <p style={{fontSize:12,margin:0}}>Toque em "Novo" para adicionar seu primeiro produto!</p>
         </div>
       ):(
         <div style={{display:"flex",flexDirection:"column",gap:9}}>
@@ -1439,1952 +1642,4 @@ const Produtos = ({produtos,setProdutos,onCelebrate}) => {
             return (
               <Card key={p.id} style={{display:"flex",gap:11,padding:11,animation:`fadeUp .28s ease ${i*.04}s both`}}>
                 {p.foto
-                  ?<img src={p.foto} alt="" style={{width:60,height:60,borderRadius:12,objectFit:"cover",flexShrink:0}}/>
-                  :<div style={{width:60,height:60,borderRadius:12,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><Icon name="tag" color={C.pink}/></div>
-                }
-                <div style={{flex:1,minWidth:0}}>
-                  <div style={{fontWeight:800,fontSize:14,color:C.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.nome}</div>
-                  <div style={{fontSize:11,color:C.soft,marginTop:1}}>{p.categoria}</div>
-                  <div style={{display:"flex",gap:4,marginTop:4,flexWrap:"wrap"}}>
-                    <Badge>{fmt(p.precoVenda)}</Badge>
-                    <Badge color={est<=0?C.red:est<=5?C.amber:C.green}>{est} un.</Badge>
-                    {vars.length>0&&<Badge color={C.purple}>{vars.length} var.</Badge>}
-                  </div>
-                  {vars.length>0&&(
-                    <div style={{display:"flex",gap:3,marginTop:4,flexWrap:"wrap",alignItems:"center"}}>
-                      {vars.some(v=>v.foto)
-                        ? vars.slice(0,5).map(v=>(
-                            v.foto
-                              ? <img key={v.id} src={v.foto} title={v.nome} alt={v.nome} style={{width:22,height:22,borderRadius:5,objectFit:"cover",border:`1.5px solid ${C.pinkM}`}}/>
-                              : <span key={v.id} style={{fontSize:10,background:C.pinkL,color:C.pinkD,borderRadius:8,padding:"2px 6px"}}>{v.nome}: {v.qtd}</span>
-                          ))
-                        : vars.slice(0,3).map(v=>(
-                            <span key={v.id} style={{fontSize:10,background:C.pinkL,color:C.pinkD,borderRadius:8,padding:"2px 6px"}}>{v.nome}: {v.qtd}</span>
-                          ))
-                      }
-                      {vars.length>5&&<span style={{fontSize:10,color:C.soft}}>+{vars.length-5}</span>}
-                      {vars.length>3&&!vars.some(v=>v.foto)&&<span style={{fontSize:10,color:C.soft}}>+{vars.length-3}</span>}
-                    </div>
-                  )}
-                </div>
-                <div style={{display:"flex",flexDirection:"column",gap:5,flexShrink:0}}>
-                  <button onClick={()=>openEdit(p)} style={{background:C.pinkS,border:"none",borderRadius:9,padding:8,cursor:"pointer"}}><Icon name="edit" size={13} color={C.pinkD}/></button>
-                  <button onClick={()=>setAjusteModal(p)} style={{background:"#EEF2FF",border:"none",borderRadius:9,padding:8,cursor:"pointer"}} title="Ajustar estoque"><Icon name="restore" size={13} color={C.purple}/></button>
-                  <button onClick={()=>softDelete(p.id,p.nome)} style={{background:"#FEE2E2",border:"none",borderRadius:9,padding:8,cursor:"pointer"}}><Icon name="trash" size={13} color={C.red}/></button>
-                </div>
-              </Card>
-            );
-          })}
-        </div>
-      )}
-
-      {deletados.length>0&&(
-        <div style={{marginTop:16}}>
-          <button onClick={()=>setShowDeleted(o=>!o)} style={{display:"flex",alignItems:"center",gap:6,background:"none",border:"none",color:C.soft,fontSize:13,cursor:"pointer",padding:0,marginBottom:8}}>
-            <Icon name="eye" size={14} color={C.soft}/>{showDeleted?"Ocultar":"Mostrar"} produtos arquivados ({deletados.length})
-          </button>
-          {showDeleted&&deletados.map(p=>(
-            <Card key={p.id} style={{display:"flex",gap:10,padding:10,opacity:.65,marginBottom:8}}>
-              {p.foto?<img src={p.foto} alt="" style={{width:48,height:48,borderRadius:10,objectFit:"cover",flexShrink:0}}/>:<div style={{width:48,height:48,borderRadius:10,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><Icon name="tag" color={C.pinkM}/></div>}
-              <div style={{flex:1,minWidth:0}}>
-                <div style={{fontSize:13,fontWeight:700,color:C.gray,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.nome}</div>
-                <div style={{fontSize:11,color:C.soft}}>Arquivado</div>
-              </div>
-              <button onClick={()=>restore(p.id)} style={{background:"#ECFDF5",border:"none",borderRadius:9,padding:8,cursor:"pointer",flexShrink:0}}>
-                <Icon name="restore" size={13} color={C.green}/>
-              </button>
-            </Card>
-          ))}
-        </div>
-      )}
-
-      {modal&&(
-        <Modal title={modal==="add"?"✨ Novo Produto":"✏️ Editar Produto"} onClose={()=>setModal(null)}>
-          <div style={{display:"flex",flexDirection:"column",gap:13}}>
-            <ImagePicker value={form.foto} onChange={v=>setForm(f=>({...f,foto:v}))}/>
-            <FInput label="Nome do produto" value={form.nome||""} onChange={v=>setForm(f=>({...f,nome:v}))} placeholder="Ex: Presilha de cabelo floral"/>
-            <FInput label="Categoria" value={form.categoria||""} onChange={v=>setForm(f=>({...f,categoria:v}))} placeholder="Ex: Acessórios, Roupas…"/>
-            <div style={{background:C.pinkL,borderRadius:16,padding:13}}>
-              <SL right={<Tip title="Como precificar?" text="Custo = quanto você pagou. Preço de venda = quanto vai cobrar. A diferença é o seu ganho. Regra dos 3×: venda por 3× o que pagou!" color={C.pinkD}>Como calcular?</Tip>}>💸 Precificação</SL>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:9,marginBottom:10}}>
-                <FInput label="Custo (R$)" value={form.precoCusto||""} onChange={v=>setForm(f=>({...f,precoCusto:v}))} type="number" placeholder="0,00"/>
-                <FInput label="Venda (R$)" value={form.precoVenda||""} onChange={v=>setForm(f=>({...f,precoVenda:v}))} type="number" placeholder="0,00"/>
-              </div>
-              <PrecBox custo={form.precoCusto} venda={form.precoVenda}/>
-            </div>
-            <InfoBox emoji="🧮" title="Regra dos 3× (para começar)" text="Pagou R$10? Venda por R$30. Isso cobre o custo, suas despesas e ainda gera lucro!" color={C.green}/>
-            <EstoqueNovo form={form} setForm={setForm}/>
-            <FInput label="Observações" value={form.obs||""} onChange={v=>setForm(f=>({...f,obs:v}))} placeholder="Fornecedor, dicas, prazo…"/>
-            <Btn onClick={save} full><Icon name="check" size={15}/> Salvar Produto</Btn>
-          </div>
-        </Modal>
-      )}
-
-      {ajusteModal&&(
-        <Modal title="" onClose={()=>setAjusteModal(null)} noPad>
-          <EstoqueAjuste produto={ajusteModal} onSave={applyAjuste} onClose={()=>setAjusteModal(null)}/>
-        </Modal>
-      )}
-
-      {confirmDel&&(
-        <ConfirmModal
-          message={`Ocultar "${confirmDel.nome}"? O produto ficará arquivado e pode ser recuperado depois.`}
-          onConfirm={doDelete}
-          onCancel={()=>setConfirmDel(null)}
-        />
-      )}
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   CLIENTES
-══════════════════════════════════════════════════════════════════════════════ */
-const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate}) => {
-  const [modal,setModal]       = useState(null);
-  const [form,setForm]         = useState({});
-  const [search,setSearch]     = useState("");
-  const [detail,setDetail]     = useState(null);
-  const [showDeleted,setShowDeleted] = useState(false);
-  // hooks para recebimento de fiado — devem ficar no topo, fora de condicionais
-  const [recModal,setRecModal] = useState(null);
-  const [recPagt,setRecPagt]   = useState("dinheiro");
-  const [confirmDelCli,setConfirmDelCli] = useState(null); // id
-
-  const save = ()=>{
-    if(!form.nome?.trim()) return;
-    if(modal==="add"){
-      setClientes(cs=>[...cs,{...form,id:uid(),deleted:false}]);
-      onCelebrate({emoji:"🤝",title:"Cliente cadastrado!",message:`${form.nome} agora faz parte da sua clientela!`,tip:"Cliente cadastrado = histórico de compras. Você saberá o que cada pessoa gosta!"});
-    } else {
-      setClientes(cs=>cs.map(c=>c.id===modal.id?{...form,id:modal.id}:c));
-    }
-    setModal(null);
-  };
-
-  const softDel = (id)=>setConfirmDelCli(id);
-  const doDelCli = ()=>{setClientes(cs=>cs.map(c=>c.id===confirmDelCli?{...c,deleted:true}:c));setConfirmDelCli(null);};
-  const restore = (id)=>setClientes(cs=>cs.map(c=>c.id===id?{...c,deleted:false}:c));
-  const cv = (id)=>vendas.filter(v=>v.clienteId===id);
-  const AVC = [C.pink,C.purple,C.green,C.amber,"#60A5FA","#F87171"];
-
-  // ── Helpers de aniversário
-  const hoje = new Date();
-  const diaHoje = hoje.getDate(), mesHoje = hoje.getMonth()+1;
-  const isBdayHoje = (c)=>{ if(!c.nascimento) return false; const [,m,d]=c.nascimento.split("-"); return Number(d)===diaHoje&&Number(m)===mesHoje; };
-  const isBdayMes  = (c)=>{ if(!c.nascimento) return false; const [,m]=c.nascimento.split("-"); return Number(m)===mesHoje; };
-  const fmtNasc = (n)=>{ if(!n) return null; const [y,m,d]=n.split("-"); return `${d}/${m}/${y}`; };
-  const calcIdade = (n)=>{ if(!n) return null; const [y,m,d]=n.split("-"); const bn=new Date(+y,+m-1,+d); const a=new Date(); let age=a.getFullYear()-bn.getFullYear(); if(a<new Date(a.getFullYear(),bn.getMonth(),bn.getDate()))age--; return age; };
-
-  // ── Helpers de fiado
-  const temFiado       = (cid)=>vendas.some(v=>v.clienteId===cid&&v.pagamento==="fiado"&&!v.fiadoPago);
-  const totalFiado     = (cid)=>vendas.filter(v=>v.clienteId===cid&&v.pagamento==="fiado"&&!v.fiadoPago).reduce((s,v)=>s+v.total,0);
-
-  const filtered = clientes.filter(c=>!c.deleted&&c.nome?.toLowerCase().includes(search.toLowerCase()));
-  const deletados = clientes.filter(c=>c.deleted);
-  const aniversariantesHoje = clientes.filter(c=>!c.deleted&&isBdayHoje(c));
-
-  const pagtIcons={dinheiro:"💵",pix:"📱",cartao:"💳",fiado:"📝"};
-  const pagtNomes={dinheiro:"Dinheiro",pix:"Pix",cartao:"Cartão",fiado:"Fiado"};
-  const receberFiado = (vendaId)=>{
-    setVendas(vs=>vs.map(v=>v.id===vendaId?{...v,fiadoPago:true,fiadoPagtMetodo:recPagt,fiadoPagtData:new Date().toISOString()}:v));
-    setRecModal(null);
-  };
-
-  if(detail){
-    const cvendas=cv(detail.id);
-    const totalGasto=cvendas.reduce((s,v)=>s+v.total,0);
-    const bdHoje=isBdayHoje(detail);
-    const bdMes=isBdayMes(detail);
-    const idade=calcIdade(detail.nascimento);
-    const fiadoPend=temFiado(detail.id);
-    const totalFiadoVal=totalFiado(detail.id);
-    const ringColor=fiadoPend?C.red:C.green;
-    const ringGlow=fiadoPend?C.red+"28":C.green+"28";
-
-    return (
-      <div style={{padding:"14px 14px"}}>
-        <button onClick={()=>setDetail(null)} style={{display:"flex",alignItems:"center",gap:6,background:"none",border:"none",color:C.pinkD,fontWeight:700,fontSize:14,cursor:"pointer",marginBottom:14,padding:0}}>
-          <Icon name="back" size={16}/> Voltar
-        </button>
-        <Card style={{textAlign:"center",marginBottom:12}}>
-          <div style={{position:"relative",display:"inline-block",margin:"0 auto 10px"}}>
-            {detail.foto
-              ?<img src={detail.foto} alt="" style={{width:80,height:80,borderRadius:"50%",objectFit:"cover",border:`3px solid ${ringColor}`,boxShadow:`0 0 0 5px ${ringGlow}`}}/>
-              :<div style={{width:80,height:80,borderRadius:"50%",background:`linear-gradient(135deg,${C.pink},${C.pinkD})`,display:"flex",alignItems:"center",justifyContent:"center",color:C.white,fontSize:30,fontWeight:900,border:`3px solid ${ringColor}`,boxShadow:`0 0 0 5px ${ringGlow}`}}>{detail.nome[0].toUpperCase()}</div>
-            }
-            {bdHoje&&<div style={{position:"absolute",bottom:-2,right:-2,fontSize:20}}>🎂</div>}
-          </div>
-          <div style={{fontSize:18,fontWeight:900,color:C.text}}>{detail.nome}</div>
-          {fiadoPend&&(
-            <div style={{display:"flex",alignItems:"center",gap:8,justifyContent:"center",marginTop:5,flexWrap:"wrap"}}>
-              <div style={{background:"#FEE2E2",color:C.red,borderRadius:20,padding:"4px 14px",fontSize:12,fontWeight:700}}>📝 Fiado pendente: {fmt(totalFiadoVal)}</div>
-              <button onClick={()=>lembreteWpp(detail,totalFiadoVal)} className="tap" title="Enviar lembrete WhatsApp"
-                style={{background:"#DCF8C6",border:"none",borderRadius:20,padding:"5px 13px",fontFamily:"inherit",fontWeight:700,fontSize:12,color:"#1a7a1a",cursor:"pointer",display:"flex",alignItems:"center",gap:5}}>
-                📲 WhatsApp
-              </button>
-            </div>
-          )}
-          {bdHoje&&<div style={{background:"#FEF3C7",color:"#92400E",borderRadius:20,padding:"3px 12px",fontSize:12,fontWeight:700,display:"inline-block",marginTop:4}}>🎉 Aniversário hoje!</div>}
-          {!bdHoje&&bdMes&&<div style={{background:C.pinkS,color:C.pinkD,borderRadius:20,padding:"3px 12px",fontSize:12,fontWeight:700,display:"inline-block",marginTop:4}}>🎈 Aniversário este mês</div>}
-          {detail.nascimento&&<div style={{color:C.soft,fontSize:12,marginTop:6}}>🎂 {fmtNasc(detail.nascimento)}{idade!==null?` · ${idade} anos`:""}</div>}
-          {detail.telefone&&<div style={{color:C.soft,fontSize:13,marginTop:4}}>{detail.telefone}</div>}
-          {detail.obs&&<div style={{fontSize:12,color:C.gray,marginTop:4,fontStyle:"italic"}}>{detail.obs}</div>}
-          <div style={{display:"flex",justifyContent:"center",gap:24,marginTop:14}}>
-            <div><div style={{fontWeight:900,color:C.pinkD,fontSize:20}}>{cvendas.length}</div><div style={{fontSize:11,color:C.soft}}>compras</div></div>
-            <div><div style={{fontWeight:900,color:C.green,fontSize:20}}>{fmt(totalGasto)}</div><div style={{fontSize:11,color:C.soft}}>total gasto</div></div>
-          </div>
-        </Card>
-        <InfoBox emoji="💡" title="Cliente fiel vale ouro!" text="Saber o histórico do cliente ajuda a oferecer o produto certo na hora certa." color={C.purple}/>
-        <h3 style={{color:C.pinkD,fontSize:13,fontWeight:800,margin:"12px 0 8px"}}>Histórico de compras</h3>
-        {cvendas.length===0?<p style={{color:C.soft,fontSize:13}}>Ainda não realizou nenhuma compra.</p>
-          :[...cvendas].reverse().map(v=>{
-            const ehFiado=v.pagamento==="fiado";
-            const quitado=ehFiado&&v.fiadoPago;
-            const pendente=ehFiado&&!v.fiadoPago;
-            return (
-              <Card key={v.id} style={{marginBottom:8,padding:12,border:pendente?`2px solid ${C.red}55`:quitado?`2px solid ${C.green}44`:"none",background:pendente?"#FFF5F5":quitado?"#F0FDF4":C.white}}>
-                <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:8}}>
-                  <div style={{flex:1,minWidth:0}}>
-                    <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.itens?.map(i=>i.nome).join(", ")}</div>
-                    <div style={{fontSize:11,marginTop:3,display:"flex",alignItems:"center",gap:4,flexWrap:"wrap"}}>
-                      <span style={{color:C.soft}}>{new Date(v.data).toLocaleDateString("pt-BR")}</span>
-                      <span style={{color:C.soft}}>·</span>
-                      <span style={{fontWeight:pendente||quitado?700:400,color:pendente?C.red:quitado?C.green:C.soft}}>
-                        {pagtIcons[v.pagamento]||"💰"} {pagtNomes[v.pagamento]||v.pagamento}
-                      </span>
-                      {pendente&&<span style={{fontSize:10,background:"#FEE2E2",color:C.red,borderRadius:8,padding:"1px 7px",fontWeight:700}}>Pendente</span>}
-                      {quitado&&<span style={{fontSize:10,background:"#DCFCE7",color:C.green,borderRadius:8,padding:"1px 7px",fontWeight:700}}>✓ Recebido via {pagtNomes[v.fiadoPagtMetodo]||v.fiadoPagtMetodo}</span>}
-                      {v.desconto>0&&<><span style={{color:C.soft}}>·</span><span style={{color:C.soft}}>Desc: {fmt(v.desconto)}</span></>}
-                    </div>
-                  </div>
-                  <Badge color={pendente?C.red:quitado?C.green:C.pink}>{fmt(v.total)}</Badge>
-                </div>
-                {pendente&&(
-                  <button onClick={()=>{setRecPagt("dinheiro");setRecModal(v.id);}} className="tap"
-                    style={{marginTop:10,width:"100%",background:`linear-gradient(135deg,${C.green},#059669)`,color:C.white,border:"none",borderRadius:10,padding:"9px 14px",fontFamily:"inherit",fontWeight:700,fontSize:13,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
-                    ✅ Marcar como recebido
-                  </button>
-                )}
-              </Card>
-            );
-          })
-        }
-
-        {recModal&&(
-          <Modal title="💰 Confirmar Recebimento" onClose={()=>setRecModal(null)}>
-            <div style={{display:"flex",flexDirection:"column",gap:14}}>
-              <InfoBox emoji="✅" title="Como o cliente pagou?" text="Informe a forma de pagamento usada para quitar o fiado." color={C.green}/>
-              <div>
-                <SL>Forma de Pagamento</SL>
-                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:7}}>
-                  {[["dinheiro","💵","Dinheiro"],["pix","📱","Pix"]].map(([id,ico,l])=>(
-                    <button key={id} onClick={()=>setRecPagt(id)} className="tap"
-                      style={{display:"flex",flexDirection:"column",alignItems:"center",gap:3,padding:"10px 2px",borderRadius:11,border:`2px solid ${recPagt===id?C.green:"#D1D5DB"}`,background:recPagt===id?"#F0FDF4":C.white,cursor:"pointer",fontFamily:"inherit"}}>
-                      <span style={{fontSize:20}}>{ico}</span>
-                      <span style={{fontSize:11,fontWeight:700,color:recPagt===id?C.green:C.gray}}>{l}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-              <Btn onClick={()=>receberFiado(recModal)} full style={{background:`linear-gradient(135deg,${C.green},#059669)`}}>
-                <Icon name="check" size={15}/> Confirmar Recebimento
-              </Btn>
-            </div>
-          </Modal>
-        )}
-      </div>
-    );
-  }
-
-  return (
-    <div style={{padding:"14px 14px"}}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:12}}>
-        <div>
-          <h2 style={{margin:0,fontSize:19,fontWeight:900,color:C.pinkD}}>👥 Clientes</h2>
-          <div style={{marginTop:4}}><Tip title="Por que cadastrar?" text="Com clientes cadastrados você vê o histórico de compras, sabe o que gostam e pode atendê-los melhor. Cliente feliz volta sempre!" color={C.purple}>Por que cadastrar?</Tip></div>
-        </div>
-        <Btn onClick={()=>{setForm({});setModal("add");}} small><Icon name="plus" size={14}/>Novo</Btn>
-      </div>
-
-      {/* Banner aniversariantes de hoje */}
-      {aniversariantesHoje.length>0&&(
-        <div style={{background:"linear-gradient(135deg,#FEF3C7,#FDE68A)",border:"1.5px solid #F59E0B44",borderRadius:16,padding:"11px 14px",marginBottom:12,display:"flex",gap:10,alignItems:"center"}}>
-          <span style={{fontSize:22,flexShrink:0}}>🎂</span>
-          <div>
-            <div style={{fontSize:12,fontWeight:800,color:"#92400E"}}>Aniversário hoje!</div>
-            <div style={{fontSize:12,color:"#78350F"}}>{aniversariantesHoje.map(c=>c.nome).join(", ")} 🎉</div>
-          </div>
-        </div>
-      )}
-
-      <FInput placeholder="🔍 Buscar cliente..." value={search} onChange={setSearch} style={{marginBottom:12}}/>
-
-      {filtered.length===0?(
-        <div style={{textAlign:"center",color:C.soft,marginTop:40}}>
-          <div style={{fontSize:52,animation:"float 3s ease-in-out infinite"}}>👥</div>
-          <p style={{fontSize:14,margin:"8px 0 4px"}}>Nenhum cliente ainda.</p>
-          <p style={{fontSize:12,margin:0}}>Cadastre seu primeiro cliente!</p>
-        </div>
-      ):filtered.map((c,i)=>{
-        const nc=cv(c.id).length;
-        const ac=AVC[i%AVC.length];
-        const bdHoje=isBdayHoje(c);
-        const bdMes=isBdayMes(c);
-        const hasFiado=temFiado(c.id);
-        const ringColor=hasFiado?C.red:C.green;
-        return (
-          <Card key={c.id} style={{display:"flex",alignItems:"center",gap:11,marginBottom:9,padding:11,animation:`fadeUp .28s ease ${i*.04}s both`,border:bdHoje?`2px solid ${C.amber}`:hasFiado?`2px solid ${C.red}33`:"none",background:bdHoje?"#FFFBEB":hasFiado?"#FFF8F8":C.white}}>
-            {/* Avatar com foto, borda verde ou vermelha */}
-            <div onClick={()=>setDetail(c)} style={{position:"relative",flexShrink:0,cursor:"pointer"}}>
-              {c.foto
-                ?<img src={c.foto} alt="" style={{width:46,height:46,borderRadius:"50%",objectFit:"cover",border:`2.5px solid ${bdHoje?C.amber:ringColor}`,boxShadow:`0 0 0 3px ${bdHoje?C.amber+"44":ringColor+"33"}`}}/>
-                :<div style={{width:46,height:46,borderRadius:"50%",background:`linear-gradient(135deg,${ac},${ac}BB)`,display:"flex",alignItems:"center",justifyContent:"center",color:C.white,fontWeight:900,fontSize:17,border:`2.5px solid ${bdHoje?C.amber:ringColor}`,boxShadow:`0 0 0 3px ${bdHoje?C.amber+"44":ringColor+"33"}`}}>{c.nome?.[0]?.toUpperCase()}</div>
-              }
-              {bdHoje&&<div style={{position:"absolute",bottom:-3,right:-3,fontSize:13,lineHeight:1}}>🎂</div>}
-              {hasFiado&&!bdHoje&&<div style={{position:"absolute",bottom:-3,right:-3,fontSize:13,lineHeight:1}}>📝</div>}
-            </div>
-            <div style={{flex:1,minWidth:0,cursor:"pointer"}} onClick={()=>setDetail(c)}>
-              <div style={{display:"flex",alignItems:"center",gap:5,flexWrap:"wrap"}}>
-                <span style={{fontWeight:800,fontSize:14,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{c.nome}</span>
-                {bdHoje&&<span style={{fontSize:10,background:"#FEF3C7",color:"#92400E",borderRadius:10,padding:"1px 7px",fontWeight:700,whiteSpace:"nowrap"}}>🎉 Hoje!</span>}
-                {!bdHoje&&bdMes&&<span style={{fontSize:10,background:C.pinkS,color:C.pinkD,borderRadius:10,padding:"1px 7px",fontWeight:700,whiteSpace:"nowrap"}}>🎈 Este mês</span>}
-                {hasFiado&&<span style={{fontSize:10,background:"#FEE2E2",color:C.red,borderRadius:10,padding:"1px 7px",fontWeight:700,whiteSpace:"nowrap"}}>Fiado</span>}
-              </div>
-              <div style={{fontSize:12,color:C.soft}}>{c.telefone||"—"} · {nc} compra(s)</div>
-            </div>
-            <div style={{display:"flex",gap:5,flexShrink:0}}>
-              <button onClick={()=>{setForm({...c});setModal(c);}} style={{background:C.pinkS,border:"none",borderRadius:9,padding:8,cursor:"pointer"}}><Icon name="edit" size={13} color={C.pinkD}/></button>
-              <button onClick={()=>softDel(c.id)} style={{background:"#FEE2E2",border:"none",borderRadius:9,padding:8,cursor:"pointer"}}><Icon name="trash" size={13} color={C.red}/></button>
-            </div>
-          </Card>
-        );
-      })}
-
-      {deletados.length>0&&(
-        <div style={{marginTop:14}}>
-          <button onClick={()=>setShowDeleted(o=>!o)} style={{display:"flex",alignItems:"center",gap:6,background:"none",border:"none",color:C.soft,fontSize:13,cursor:"pointer",padding:0,marginBottom:8}}>
-            <Icon name="eye" size={14} color={C.soft}/>{showDeleted?"Ocultar":"Mostrar"} clientes arquivados ({deletados.length})
-          </button>
-          {showDeleted&&deletados.map(c=>(
-            <Card key={c.id} style={{display:"flex",alignItems:"center",gap:10,marginBottom:8,padding:10,opacity:.65}}>
-              {c.foto
-                ?<img src={c.foto} alt="" style={{width:40,height:40,borderRadius:"50%",objectFit:"cover",flexShrink:0}}/>
-                :<div style={{width:40,height:40,borderRadius:"50%",background:C.pinkM,display:"flex",alignItems:"center",justifyContent:"center",color:C.white,fontWeight:900,flexShrink:0}}>{c.nome?.[0]?.toUpperCase()}</div>
-              }
-              <div style={{flex:1,minWidth:0}}><div style={{fontSize:13,fontWeight:700,color:C.gray}}>{c.nome}</div><div style={{fontSize:11,color:C.soft}}>Arquivado</div></div>
-              <button onClick={()=>restore(c.id)} style={{background:"#ECFDF5",border:"none",borderRadius:9,padding:8,cursor:"pointer",flexShrink:0}}><Icon name="restore" size={13} color={C.green}/></button>
-            </Card>
-          ))}
-        </div>
-      )}
-
-      {modal&&(
-        <Modal title={modal==="add"?"🤝 Novo Cliente":"✏️ Editar Cliente"} onClose={()=>setModal(null)}>
-          <div style={{display:"flex",flexDirection:"column",gap:14}}>
-            <InfoBox emoji="👑" title="Cliente é tudo!" text="Um cliente feliz indica sua loja para amigos — marketing gratuito e poderoso!" color={C.pink}/>
-            <ProfilePicker value={form.foto||""} onChange={v=>setForm(f=>({...f,foto:v}))} nome={form.nome}/>
-            <FInput label="Nome" value={form.nome||""} onChange={v=>setForm(f=>({...f,nome:v}))} placeholder="Nome completo"/>
-            <FInput label="WhatsApp / Telefone" value={form.telefone||""} onChange={v=>setForm(f=>({...f,telefone:v}))} placeholder="(44) 99999-9999"/>
-            <div style={{display:"flex",flexDirection:"column",gap:4}}>
-              <label style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase"}}>Data de Nascimento</label>
-              <input
-                value={form._nascDisplay !== undefined ? form._nascDisplay : (form.nascimento ? form.nascimento.split("-").reverse().join("/") : "")}
-                onChange={e=>{
-                  // Formata automaticamente: DD/MM/AAAA → AAAA-MM-DD para armazenamento
-                  let v = e.target.value.replace(/\D/g,"");
-                  if(v.length>8) v=v.slice(0,8);
-                  let nascFmt = v;
-                  if(v.length>=5) nascFmt=v.slice(0,2)+"/"+v.slice(2,4)+"/"+v.slice(4);
-                  else if(v.length>=3) nascFmt=v.slice(0,2)+"/"+v.slice(2);
-                  // Armazena como AAAA-MM-DD se completo
-                  if(v.length===8){
-                    const iso=`${v.slice(4)}-${v.slice(2,4)}-${v.slice(0,2)}`;
-                    setForm(f=>({...f,nascimento:iso,_nascDisplay:nascFmt}));
-                  } else {
-                    setForm(f=>({...f,nascimento:"",_nascDisplay:nascFmt}));
-                  }
-                }}
-                placeholder="DD/MM/AAAA"
-                inputMode="numeric"
-                maxLength={10}
-                style={{border:`1.5px solid ${C.pinkM}`,borderRadius:12,padding:"10px 13px",fontFamily:"inherit",fontSize:14,color:C.text,outline:"none",background:"#fff",width:"100%"}}
-                onFocus={e=>{e.target.style.borderColor=C.pink;e.target.style.boxShadow=`0 0 0 3px ${C.pink}18`;}}
-                onBlur={e=>{e.target.style.borderColor=C.pinkM;e.target.style.boxShadow="none";}}
-              />
-              <span style={{fontSize:10,color:C.soft}}>Digite no formato DD/MM/AAAA</span>
-            </div>
-            <FInput label="Observações" value={form.obs||""} onChange={v=>setForm(f=>({...f,obs:v}))} placeholder="Tamanho favorito, cor preferida…"/>
-            <Btn onClick={save} full><Icon name="check" size={15}/> Salvar Cliente</Btn>
-          </div>
-        </Modal>
-      )}
-
-      {confirmDelCli&&(
-        <ConfirmModal
-          message="Ocultar este cliente? Ele ficará arquivado e pode ser recuperado depois."
-          onConfirm={doDelCli}
-          onCancel={()=>setConfirmDelCli(null)}
-        />
-      )}
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   VENDAS
-══════════════════════════════════════════════════════════════════════════════ */
-const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) => {
-  const [modal,setModal]               = useState(false);   // nova venda
-  const [editModal,setEditModal]       = useState(null);    // venda sendo editada
-  const [confirmModal,setConfirmModal] = useState(false);   // confirmação antes de salvar
-  const [trocoModal,setTrocoModal]     = useState(false);   // calculadora de troco
-  const [reembolsoModal,setReembolsoModal] = useState(null); // venda a reembolsar
-  const [clienteId,setClienteId]       = useState("");
-  const [itens,setItens]               = useState([]);
-  const [prodSel,setProdSel]           = useState("");
-  const [varSel,setVarSel]             = useState("");
-  const [qtd,setQtd]                   = useState("1");
-  const [pagamento,setPagamento]       = useState("dinheiro");
-  const [filter,setFilter]             = useState("todos");
-  const [descontoModal,setDescontoModal]           = useState(null);
-  const [descontoCompraModal,setDescontoCompraModal] = useState(false);
-  const [descontoCompra,setDescontoCompra]           = useState(0);
-  const [recebido,setRecebido]         = useState(""); // valor recebido na calculadora de troco
-
-  const prodSelecionado = produtos.filter(p=>!p.deleted).find(x=>x.id===prodSel);
-  const subtotalItens   = itens.reduce((s,i)=>s+i.precoVenda*i.qtd,0);
-  const total           = Math.max(0,subtotalItens-descontoCompra);
-  const totalOriginal   = itens.reduce((s,i)=>s+(i.precoOriginal||i.precoVenda)*i.qtd,0);
-  const totalDesconto   = totalOriginal-subtotalItens+descontoCompra;
-  const custoItens      = itens.reduce((s,i)=>s+i.precoCusto*i.qtd,0);
-
-  const resetModal = () => {
-    setModal(false); setEditModal(null); setConfirmModal(false); setTrocoModal(false);
-    setItens([]); setClienteId(""); setPagamento("dinheiro");
-    setProdSel(""); setVarSel(""); setQtd("1"); setDescontoCompra(0); setRecebido("");
-  };
-
-  const estoqueDisp = (prodId, variacao) => {
-    const p = produtos.find(x=>x.id===prodId);
-    if(!p) return 0;
-    // Na edição, o estoque visível deve incluir o que já estava comprometido
-    // na venda original — pois esse estoque "volta" ao salvar a edição.
-    const qtdOriginal = editModal
-      ? (editModal.itens||[]).filter(i=>i.produtoId===prodId&&(i.variacao||"")===(variacao||"")).reduce((s,i)=>s+i.qtd,0)
-      : 0;
-    if(variacao && p.variacoes?.length>0) return Number(p.variacoes.find(v=>v.nome===variacao)?.qtd||0) + qtdOriginal;
-    return Number(p.estoqueTotal||0) + qtdOriginal;
-  };
-
-  const estoqueInsuf = itens.filter(it=>estoqueDisp(it.produtoId,it.variacao)<it.qtd);
-
-  const addItem = () => {
-    if(!prodSelecionado) return;
-    const novaQtd = Number(qtd)||1;
-    const varObj = prodSelecionado.variacoes?.find(v=>v.nome===varSel);
-    const dispAtual = varSel ? Number(varObj?.qtd||0) : Number(prodSelecionado.estoqueTotal||0);
-    setItens(is=>{
-      const idx = is.findIndex(x=>x.produtoId===prodSelecionado.id&&x.variacao===(varSel||""));
-      if(idx>=0) return is.map((x,i)=>i===idx?{...x,qtd:x.qtd+novaQtd}:x);
-      return [...is,{produtoId:prodSelecionado.id,nome:prodSelecionado.nome,variacao:varSel,varFoto:varObj?.foto||"",foto:prodSelecionado.foto||"",qtd:novaQtd,precoVenda:Number(prodSelecionado.precoVenda),precoCusto:Number(prodSelecionado.precoCusto),precoOriginal:Number(prodSelecionado.precoVenda),desconto:0,pctDesconto:0,estoqueDisp:dispAtual}];
-    });
-    setProdSel(""); setVarSel(""); setQtd("1");
-  };
-
-  // Abre modal de confirmação ou calculadora de troco
-  const solicitarFinalizacao = () => {
-    if(itens.length===0||estoqueInsuf.length>0) return;
-    if(pagamento==="dinheiro") { setRecebido(""); setTrocoModal(true); }
-    else setConfirmModal(true);
-  };
-
-  const confirmarVenda = (vendaEditada=null) => {
-    const isEdit = !!vendaEditada;
-    const cl = clientes.find(c=>c.id===clienteId);
-    const novaVenda = {
-      id: isEdit ? vendaEditada.id : uid(),
-      clienteId, clienteNome:cl?.nome||"",
-      itens, total, custo:custoItens, desconto:totalDesconto, pagamento,
-      data: isEdit ? vendaEditada.data : new Date().toISOString(),
-      editadaEm: isEdit ? new Date().toISOString() : undefined,
-    };
-
-    if(isEdit) {
-      // Edição: opera produto a produto em dois passos independentes.
-      // Passo 1 — devolve estoque dos itens da venda ORIGINAL.
-      // Passo 2 — desconta estoque dos itens da venda NOVA.
-      // Os passos são aplicados sequencialmente via reduce para garantir
-      // que o estado intermediário de um passo alimenta o próximo.
-      setProdutos(ps => {
-        // Cria uma cópia mutável do array de produtos para operar
-        let estado = ps.map(p => ({
-          ...p,
-          estoqueTotal: Number(p.estoqueTotal||0),
-          variacoes: p.variacoes ? p.variacoes.map(v=>({...v, qtd:Number(v.qtd||0)})) : [],
-        }));
-
-        // PASSO 1 — devolver estoque da venda original
-        vendaEditada.itens.forEach(item => {
-          estado = estado.map(p => {
-            if(p.id !== item.produtoId) return p;
-            if(item.variacao) {
-              // Produto com variação: devolve na variação específica e recalcula total
-              const novasVars = p.variacoes.map(v =>
-                v.nome === item.variacao ? {...v, qtd: v.qtd + item.qtd} : v
-              );
-              return {...p, variacoes: novasVars, estoqueTotal: novasVars.reduce((s,v)=>s+v.qtd,0)};
-            } else {
-              // Produto sem variação: soma diretamente no total
-              return {...p, estoqueTotal: p.estoqueTotal + item.qtd};
-            }
-          });
-        });
-
-        // PASSO 2 — descontar estoque da venda nova
-        itens.forEach(item => {
-          estado = estado.map(p => {
-            if(p.id !== item.produtoId) return p;
-            if(item.variacao) {
-              const novasVars = p.variacoes.map(v =>
-                v.nome === item.variacao ? {...v, qtd: Math.max(0, v.qtd - item.qtd)} : v
-              );
-              return {...p, variacoes: novasVars, estoqueTotal: novasVars.reduce((s,v)=>s+v.qtd,0)};
-            } else {
-              return {...p, estoqueTotal: Math.max(0, p.estoqueTotal - item.qtd)};
-            }
-          });
-        });
-
-        return estado;
-      });
-      setVendas(vs=>vs.map(v=>v.id===novaVenda.id?novaVenda:v));
-    } else {
-      // Nova venda — apenas desconta estoque
-      setProdutos(ps=>ps.map(p=>{
-        const vendidos=itens.filter(i=>i.produtoId===p.id);
-        if(!vendidos.length) return p;
-        if(p.variacoes?.length>0) {
-          // Com variação: opera variação por variação e recalcula total
-          let novasVars = p.variacoes.map(v=>({...v,qtd:Number(v.qtd||0)}));
-          vendidos.forEach(item=>{
-            if(item.variacao) novasVars=novasVars.map(v=>v.nome===item.variacao?{...v,qtd:Math.max(0,v.qtd-item.qtd)}:v);
-          });
-          const semVar = vendidos.filter(i=>!i.variacao).reduce((s,i)=>s+i.qtd,0);
-          const novoTotal = novasVars.reduce((s,v)=>s+v.qtd,0) - semVar;
-          return {...p, estoqueTotal:Math.max(0,novoTotal), variacoes:novasVars};
-        } else {
-          // Sem variação: desconta direto no total
-          const tv=vendidos.reduce((s,i)=>s+i.qtd,0);
-          return {...p, estoqueTotal:Math.max(0,Number(p.estoqueTotal||0)-tv)};
-        }
-      }));
-      setVendas(vs=>[...vs,novaVenda]);
-      const msgs=[
-        {emoji:"🎉",title:"Venda realizada!",message:`${fmt(total)} no caixa! Parabéns!`,tip:"Continue registrando suas vendas para acompanhar o crescimento do negócio!"},
-        {emoji:"💸",title:"Ka-ching!",message:`Você faturou ${fmt(total)}! Incrível!`,tip:"Cada venda registrada é um dado valioso para o seu negócio!"},
-        {emoji:"🚀",title:"Mais uma venda!",message:`${fmt(total)} faturados — você está arrasando!`,tip:"Guarde parte do lucro para reinvestir no estoque!"},
-      ];
-      onCelebrate(msgs[Math.floor(Math.random()*msgs.length)]);
-    }
-    resetModal();
-  };
-
-  // Abre modal de edição preenchendo o estado com os dados da venda
-  const abrirEdicao = (venda) => {
-    if(venda.reembolsada) return;
-    setEditModal(venda);
-    setItens(venda.itens.map(it=>({...it})));
-    setClienteId(venda.clienteId||"");
-    setPagamento(venda.pagamento||"dinheiro");
-    setDescontoCompra(venda.desconto&&venda.desconto>0?venda.desconto:0); // simplificação: desconto da compra
-    setModal(true);
-  };
-
-  // Reembolso: devolve estoque e marca venda como reembolsada
-  const confirmarReembolso = () => {
-    const v = reembolsoModal;
-    setProdutos(ps=>ps.map(p=>{
-      const devolvidos=v.itens.filter(i=>i.produtoId===p.id);
-      if(!devolvidos.length) return p;
-      if(p.variacoes?.length>0) {
-        // Com variação: devolve por variação e recalcula total pelo somatório
-        let novasVars = p.variacoes.map(vr=>({...vr,qtd:Number(vr.qtd||0)}));
-        devolvidos.forEach(item=>{
-          if(item.variacao) novasVars=novasVars.map(vr=>vr.nome===item.variacao?{...vr,qtd:vr.qtd+item.qtd}:vr);
-        });
-        return {...p, variacoes:novasVars, estoqueTotal:novasVars.reduce((s,vr)=>s+vr.qtd,0)};
-      } else {
-        // Sem variação: soma direto
-        const tv=devolvidos.reduce((s,i)=>s+i.qtd,0);
-        return {...p, estoqueTotal:Number(p.estoqueTotal||0)+tv};
-      }
-    }));
-    setVendas(vs=>vs.map(venda=>venda.id===v.id?{...venda,reembolsada:true,reembolsadaEm:new Date().toISOString()}:venda));
-    setReembolsoModal(null);
-  };
-
-  const hoje = new Date().toDateString();
-  const agora = Date.now();
-  const filtradas = filter==="hoje"
-    ? vendas.filter(v=>new Date(v.data).toDateString()===hoje)
-    : filter==="7d"  ? vendas.filter(v=>agora-new Date(v.data).getTime()<=7*864e5)
-    : filter==="30d" ? vendas.filter(v=>agora-new Date(v.data).getTime()<=30*864e5)
-    : vendas;
-  const pagtIcons  = {dinheiro:"💵",pix:"📱",fiado:"📝"};
-  const produtosAtivos = produtos.filter(p=>!p.deleted);
-  const isEdicao = !!editModal;
-
-  // Calculadora de troco
-  const recebidoN = Number(recebido||0);
-  const troco = Math.max(0, recebidoN - total);
-  const trocoInsuf = recebidoN > 0 && recebidoN < total;
-
-  return (
-    <div style={{padding:"14px 14px"}}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:12}}>
-        <div>
-          <h2 style={{margin:0,fontSize:19,fontWeight:900,color:C.pinkD}}>🛍️ Vendas</h2>
-          <div style={{marginTop:4}}><Tip title="Por que registrar?" text="Cada venda registrada dá baixa no estoque automaticamente e fica no histórico do cliente. Registre sempre!" color={C.pink}>Por que registrar?</Tip></div>
-        </div>
-        <Btn onClick={()=>setModal(true)} small><Icon name="plus" size={14}/>Nova venda</Btn>
-      </div>
-
-      <div style={{display:"flex",gap:6,marginBottom:12,overflowX:"auto",paddingBottom:2}}>
-        {[["todos","Todas"],["hoje","Hoje"],["7d","7 dias"],["30d","30 dias"]].map(([f,l])=>(
-          <button key={f} onClick={()=>setFilter(f)} className="tap" style={{padding:"7px 15px",borderRadius:20,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:13,cursor:"pointer",background:filter===f?C.pink:C.pinkL,color:filter===f?C.white:C.pinkD,transition:"background .2s",flexShrink:0,whiteSpace:"nowrap"}}>{l}</button>
-        ))}
-      </div>
-
-      {filtradas.length===0?(
-        <div style={{textAlign:"center",color:C.soft,marginTop:40}}>
-          <div style={{fontSize:52,animation:"float 3s ease-in-out infinite"}}>🛍️</div>
-          <p style={{fontSize:14,margin:"8px 0 4px"}}>Nenhuma venda ainda.</p>
-          <p style={{fontSize:12,margin:0}}>Registre sua primeira venda!</p>
-        </div>
-      ):[...filtradas].reverse().map((v,i)=>(
-        <Card key={v.id} style={{marginBottom:9,padding:12,animation:`fadeUp .28s ease ${i*.03}s both`,opacity:v.reembolsada?.7:1,border:v.reembolsada?`1.5px solid ${C.amber}44`:v.editadaEm?`1.5px solid ${C.purple}22`:"none",background:v.reembolsada?"#FFFBEB":C.white}}>
-          <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:8}}>
-            <div style={{flex:1,minWidth:0}}>
-              <div style={{display:"flex",alignItems:"center",gap:5,flexWrap:"wrap"}}>
-                <span style={{fontWeight:800,fontSize:13,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.clienteNome||"Cliente avulso"}</span>
-                {v.reembolsada&&<span style={{fontSize:10,background:"#FEF3C7",color:"#92400E",borderRadius:8,padding:"1px 7px",fontWeight:700,flexShrink:0}}>↩ Reembolsada</span>}
-                {v.editadaEm&&!v.reembolsada&&<span style={{fontSize:10,background:"#EEF2FF",color:C.purple,borderRadius:8,padding:"1px 7px",fontWeight:700,flexShrink:0}}>✏️ Editada</span>}
-              </div>
-              <div style={{fontSize:11,color:C.soft,marginTop:1}}>{new Date(v.data).toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})} · {pagtIcons[v.pagamento]||"💰"} {v.pagamento}</div>
-              <div style={{marginTop:5,display:"flex",flexWrap:"wrap",gap:3}}>
-                {v.itens?.map((it,j)=>(
-                  <span key={j} style={{fontSize:10,background:C.pinkL,color:C.pinkD,borderRadius:7,padding:"2px 7px"}}>
-                    {it.qtd}× {it.nome}{it.variacao?` · ${it.variacao}`:""}
-                  </span>
-                ))}
-              </div>
-              {v.desconto>0&&<div style={{fontSize:10,color:C.amber,marginTop:3,fontWeight:700}}>Desconto: {fmt(v.desconto)}</div>}
-            </div>
-            <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:5,flexShrink:0}}>
-              <Badge color={v.reembolsada?C.amber:C.pink}>{fmt(v.total)}</Badge>
-              {!v.reembolsada&&(
-                <div style={{display:"flex",gap:5}}>
-                  <button onClick={()=>abrirEdicao(v)} title="Editar venda" className="tap"
-                    style={{background:"#EEF2FF",border:"none",borderRadius:8,padding:"5px 8px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
-                    <Icon name="edit" size={12} color={C.purple}/>
-                    <span style={{fontSize:10,fontWeight:700,color:C.purple}}>Editar</span>
-                  </button>
-                  <button onClick={()=>setReembolsoModal(v)} title="Reembolsar" className="tap"
-                    style={{background:"#FEF3C7",border:"none",borderRadius:8,padding:"5px 8px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
-                    <span style={{fontSize:12}}>↩</span>
-                    <span style={{fontSize:10,fontWeight:700,color:"#92400E"}}>Reembolso</span>
-                  </button>
-                </div>
-              )}
-              {v.reembolsada&&<span style={{fontSize:10,color:C.soft}}>{new Date(v.reembolsadaEm).toLocaleDateString("pt-BR")}</span>}
-            </div>
-          </div>
-        </Card>
-      ))}
-
-      {/* ── MODAL NOVA VENDA / EDIÇÃO */}
-      {modal&&(
-        <Modal title={isEdicao?"✏️ Editar Venda":"🛍️ Nova Venda"} onClose={resetModal}>
-          <div style={{display:"flex",flexDirection:"column",gap:13}}>
-
-            {isEdicao&&(
-              <InfoBox emoji="✏️" title="Modo edição" text="Corrija os itens, quantidades, preços ou forma de pagamento. O estoque será reajustado automaticamente." color={C.purple}/>
-            )}
-
-            {/* Cliente */}
-            <div>
-              <SL right={<Tip title="Associar ao cliente" text="Vincular a venda a um cliente cria o histórico de compras dele automaticamente." color={C.purple}>Associar?</Tip>}>Cliente</SL>
-              <select value={clienteId} onChange={e=>{setClienteId(e.target.value);if(!e.target.value&&pagamento==="fiado")setPagamento("dinheiro");}} style={{width:"100%",border:`1.5px solid ${C.pinkM}`,borderRadius:12,padding:"10px 13px",fontFamily:"inherit",fontSize:14,background:C.white,color:C.text}}>
-                <option value="">Avulso (sem cadastro)</option>
-                {clientes.filter(c=>!c.deleted).map(c=><option key={c.id} value={c.id}>{c.nome}</option>)}
-              </select>
-            </div>
-
-            {/* Pagamento */}
-            <div>
-              <SL right={<Tip title="Qual usar?" text="Dinheiro e Pix entram na hora. Fiado tem risco de não receber — exige cliente cadastrado. Prefira dinheiro ou Pix!" color={C.amber}>Qual usar?</Tip>}>Forma de Pagamento</SL>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:7}}>
-                {[["dinheiro","💵","Dinheiro"],["pix","📱","Pix"],["fiado","📝","Fiado"]].map(([id,ico,l])=>{
-                  const bloqueado=id==="fiado"&&!clienteId;
-                  return (
-                    <button key={id} onClick={()=>!bloqueado&&setPagamento(id)} className="tap"
-                      style={{display:"flex",flexDirection:"column",alignItems:"center",gap:3,padding:"8px 2px",borderRadius:11,
-                        border:`2px solid ${pagamento===id?C.pink:bloqueado?C.pinkM+"80":C.pinkM}`,
-                        background:pagamento===id?C.pinkS:bloqueado?"#F9FAFB":C.white,
-                        cursor:bloqueado?"not-allowed":"pointer",fontFamily:"inherit",opacity:bloqueado?.5:1}}>
-                      <span style={{fontSize:18}}>{ico}</span>
-                      <span style={{fontSize:10,fontWeight:700,color:pagamento===id?C.pinkD:bloqueado?C.soft:C.gray}}>{l}</span>
-                    </button>
-                  );
-                })}
-              </div>
-              {pagamento==="fiado"&&<div style={{marginTop:8}}><InfoBox emoji="⚠️" title="Atenção com o Fiado!" text="Fiado significa que o cliente vai pagar depois. Só faça fiado para pessoas de total confiança!" color={C.red}/></div>}
-              {!clienteId&&<div style={{marginTop:6,fontSize:11,color:C.soft,textAlign:"center"}}>Selecione um cliente para habilitar o Fiado</div>}
-            </div>
-
-            {/* Produto */}
-            <div style={{background:C.pinkL,borderRadius:14,padding:13}}>
-              <SL>Adicionar Produto</SL>
-              <select value={prodSel} onChange={e=>{setProdSel(e.target.value);setVarSel("");}} style={{width:"100%",border:`1.5px solid ${C.pinkM}`,borderRadius:10,padding:"9px 12px",fontFamily:"inherit",fontSize:13,background:C.white,marginBottom:8}}>
-                <option value="">Selecione um produto…</option>
-                {produtosAtivos.map(p=><option key={p.id} value={p.id}>{p.nome} — {fmt(p.precoVenda)} ({p.estoqueTotal??0} un.)</option>)}
-              </select>
-              {prodSelecionado&&(
-                <div style={{display:"flex",gap:9,alignItems:"center",marginBottom:8,background:C.white,borderRadius:10,padding:"7px 10px"}}>
-                  {(()=>{const varObj=prodSelecionado.variacoes?.find(v=>v.nome===varSel);const fotoExibida=varObj?.foto||prodSelecionado.foto;return fotoExibida?<img src={fotoExibida} alt="" style={{width:40,height:40,borderRadius:8,objectFit:"cover",flexShrink:0,border:`2px solid ${varObj?.foto?C.pink:C.pinkM}`}}/>:<div style={{width:40,height:40,borderRadius:8,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}><Icon name="tag" size={14} color={C.pink}/></div>;})()}
-                  <div style={{flex:1,minWidth:0}}>
-                    <div style={{fontSize:12,fontWeight:800,color:C.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{prodSelecionado.nome}</div>
-                    <div style={{fontSize:11,color:C.gray}}>{fmt(prodSelecionado.precoVenda)} · {prodSelecionado.estoqueTotal??0} un. em estoque</div>
-                  </div>
-                </div>
-              )}
-              {prodSelecionado&&(
-                <div style={{display:"grid",gridTemplateColumns:prodSelecionado.variacoes?.length?"1fr 70px":"1fr 70px",gap:7,marginBottom:8}}>
-                  {prodSelecionado.variacoes?.length>0&&(
-                    <div style={{display:"flex",flexDirection:"column",gap:5}}>
-                      {prodSelecionado.variacoes.some(v=>v.foto)?(
-                        <>
-                          <div style={{display:"flex",gap:5,flexWrap:"wrap"}}>
-                            {prodSelecionado.variacoes.map(v=>(
-                              <button key={v.id} onClick={()=>setVarSel(v.nome)} className="tap"
-                                style={{display:"flex",flexDirection:"column",alignItems:"center",gap:3,padding:3,borderRadius:10,border:`2px solid ${varSel===v.nome?C.pink:C.pinkM}`,background:varSel===v.nome?C.pinkS:C.white,cursor:"pointer",transition:"all .18s"}}>
-                                {v.foto?<img src={v.foto} alt={v.nome} style={{width:42,height:42,borderRadius:7,objectFit:"cover",display:"block"}}/>:<div style={{width:42,height:42,borderRadius:7,background:C.pinkL,display:"flex",alignItems:"center",justifyContent:"center"}}><Icon name="tag" size={13} color={C.pink}/></div>}
-                                <span style={{fontSize:9,fontWeight:700,color:varSel===v.nome?C.pinkD:C.gray,maxWidth:48,textAlign:"center",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",fontFamily:"inherit"}}>{v.nome}</span>
-                                <span style={{fontSize:8,color:C.soft,fontFamily:"inherit"}}>{v.qtd} un.</span>
-                              </button>
-                            ))}
-                          </div>
-                          {!varSel&&<span style={{fontSize:10,color:C.red,fontWeight:700}}>Toque para escolher a variação</span>}
-                        </>
-                      ):(
-                        <>
-                          <select value={varSel} onChange={e=>setVarSel(e.target.value)} style={{border:`1.5px solid ${!varSel?C.red:C.pinkM}`,borderRadius:10,padding:"8px 10px",fontFamily:"inherit",fontSize:13,background:!varSel?"#FFF5F5":C.white,color:!varSel?C.red:C.text}}>
-                            <option value="">⚠️ Escolha a variação…</option>
-                            {prodSelecionado.variacoes.map(v=><option key={v.id} value={v.nome}>{v.nome} — {v.qtd} un.</option>)}
-                          </select>
-                          {!varSel&&<span style={{fontSize:10,color:C.red,fontWeight:700}}>Variação obrigatória</span>}
-                        </>
-                      )}
-                    </div>
-                  )}
-                  <input value={qtd} onChange={e=>setQtd(e.target.value)} type="number" min="1" placeholder="Qtd" style={{border:`1.5px solid ${C.pinkM}`,borderRadius:10,padding:"8px 8px",fontFamily:"inherit",fontSize:13,textAlign:"center",width:"100%"}}/>
-                </div>
-              )}
-              <Btn onClick={addItem} v="ghost" small disabled={!prodSel||(prodSelecionado?.variacoes?.length>0&&!varSel)}><Icon name="plus" size={14}/>Adicionar item</Btn>
-            </div>
-
-            {/* Itens da venda */}
-            {itens.length>0&&(
-              <div style={{border:`1.5px solid ${C.pinkM}`,borderRadius:13,padding:12}}>
-                <SL>Itens da Venda</SL>
-                {itens.map((it,i)=>(
-                  <div key={i} style={{padding:"8px 0",borderBottom:`1px solid ${C.pinkS}`}}>
-                    <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:6}}>
-                      {(it.varFoto||it.foto)&&<img src={it.varFoto||it.foto} alt="" style={{width:34,height:34,borderRadius:7,objectFit:"cover",flexShrink:0,border:`1.5px solid ${it.varFoto?C.pink:C.pinkM}`}}/>}
-                      <div style={{flex:1,minWidth:0}}>
-                        <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{it.nome}{it.variacao?` · ${it.variacao}`:""}</div>
-                        <div style={{fontSize:12,color:C.gray,marginTop:1}}>{fmt(it.precoVenda)} × {it.qtd} = <b style={{color:C.pinkD}}>{fmt(it.precoVenda*it.qtd)}</b></div>
-                        {it.desconto>0&&<div style={{fontSize:11,color:C.amber,marginTop:1}}>Desconto: -{fmt(it.desconto*it.qtd)}</div>}
-                      </div>
-                      <div style={{display:"flex",gap:4,alignItems:"center",flexShrink:0}}>
-                        <div style={{display:"flex",alignItems:"center",gap:1,background:C.pinkL,borderRadius:9,padding:"2px"}}>
-                          <button onClick={()=>setItens(is=>is.map((x,j)=>j===i?{...x,qtd:Math.max(1,x.qtd-1)}:x))} className="tap" style={{background:C.white,border:"none",borderRadius:7,width:26,height:26,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",fontWeight:900,color:C.pinkD,fontSize:16,lineHeight:1}}>−</button>
-                          <span style={{fontSize:13,fontWeight:800,color:C.pinkD,minWidth:22,textAlign:"center"}}>{it.qtd}</span>
-                          <button onClick={()=>setItens(is=>is.map((x,j)=>j===i?{...x,qtd:x.qtd+1}:x))} className="tap" style={{background:C.white,border:"none",borderRadius:7,width:26,height:26,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",fontWeight:900,color:C.pinkD,fontSize:16,lineHeight:1}}>+</button>
-                        </div>
-                        <button onClick={()=>setDescontoModal(i)} className="tap" title="Desconto" style={{background:"#FEF3C7",border:"none",borderRadius:8,padding:"5px 7px",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>
-                          <Icon name="percent" size={12} color="#92400E"/>
-                        </button>
-                        <button onClick={()=>setItens(is=>is.filter((_,j)=>j!==i))} style={{background:"none",border:"none",cursor:"pointer",color:C.red,fontSize:18,lineHeight:1,padding:"2px 4px"}}>✕</button>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-                <div style={{marginTop:10,paddingTop:8,borderTop:`2px solid ${C.pinkM}`}}>
-                  {totalDesconto>0&&<div style={{fontSize:12,color:C.amber,fontWeight:700,textAlign:"right",marginBottom:4}}>Descontos nos itens: -{fmt(totalOriginal-subtotalItens)}</div>}
-                  {descontoCompra>0&&<div style={{fontSize:12,color:C.amber,fontWeight:700,textAlign:"right",marginBottom:4}}>Desconto na compra: -{fmt(descontoCompra)}</div>}
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                    <span style={{fontWeight:800,fontSize:15,color:C.pinkD}}>Total</span>
-                    <span style={{fontWeight:900,fontSize:16,color:C.pinkD}}>{fmt(total)}</span>
-                  </div>
-                  <button onClick={()=>setDescontoCompraModal(true)} className="tap" style={{marginTop:8,width:"100%",background:"#FEF3C7",border:"none",borderRadius:10,padding:"7px 12px",cursor:"pointer",fontFamily:"inherit",fontWeight:700,fontSize:12,color:"#92400E",display:"flex",alignItems:"center",justifyContent:"center",gap:5}}>
-                    <Icon name="percent" size={13} color="#92400E"/>
-                    {descontoCompra>0?`Desconto na compra: -${fmt(descontoCompra)} (alterar)`:"Aplicar desconto na compra total"}
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {estoqueInsuf.length>0&&(
-              <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:12,padding:"10px 13px",display:"flex",flexDirection:"column",gap:4}}>
-                <div style={{fontSize:12,fontWeight:800,color:C.red}}>⚠️ Estoque insuficiente!</div>
-                {estoqueInsuf.map((it,i)=>{
-                  const disp=estoqueDisp(it.produtoId,it.variacao);
-                  return <div key={i} style={{fontSize:11,color:C.red}}>{it.nome}{it.variacao?` (${it.variacao})`:""}: pedido {it.qtd}, disponível {disp}</div>;
-                })}
-                <div style={{fontSize:11,color:"#7F1D1D",marginTop:2}}>Ajuste as quantidades para continuar.</div>
-              </div>
-            )}
-
-            <Btn onClick={solicitarFinalizacao} disabled={itens.length===0||estoqueInsuf.length>0} full>
-              <Icon name="check" size={15}/>{isEdicao?"Salvar alterações":"Finalizar Venda"} {!isEdicao&&"🎉"}
-            </Btn>
-          </div>
-        </Modal>
-      )}
-
-      {/* ── CALCULADORA DE TROCO (dinheiro) */}
-      {trocoModal&&(
-        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.52)",zIndex:9200,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
-          <div style={{background:C.white,borderRadius:22,padding:"24px 20px",width:"100%",maxWidth:340,animation:"confirmPop .28s cubic-bezier(.34,1.56,.64,1) forwards",boxShadow:"0 16px 48px rgba(0,0,0,.22)"}}>
-            <div style={{textAlign:"center",marginBottom:16}}>
-              <div style={{fontSize:42,marginBottom:6}}>💵</div>
-              <div style={{fontSize:17,fontWeight:900,color:C.pinkD}}>Calculadora de Troco</div>
-              <div style={{fontSize:13,color:C.gray,marginTop:4}}>Total da compra: <b style={{color:C.pinkD}}>{fmt(total)}</b></div>
-            </div>
-            <div style={{marginBottom:14}}>
-              <label style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",display:"block",marginBottom:5}}>Valor recebido (R$)</label>
-              <input
-                autoFocus
-                type="number" min="0" step="0.01"
-                value={recebido}
-                onChange={e=>setRecebido(e.target.value)}
-                placeholder={fmtN(total)}
-                style={{width:"100%",border:`2px solid ${C.pink}`,borderRadius:12,padding:"12px 14px",fontFamily:"inherit",fontSize:20,fontWeight:900,textAlign:"center",color:C.pinkD,outline:"none",background:C.pinkL}}
-              />
-            </div>
-            {/* Atalhos de valores */}
-            <div style={{display:"flex",gap:6,marginBottom:14,flexWrap:"wrap"}}>
-              {[Math.ceil(total/10)*10, Math.ceil(total/50)*50, Math.ceil(total/100)*100].filter((v,i,a)=>a.indexOf(v)===i&&v>=total).slice(0,4).map(v=>(
-                <button key={v} onClick={()=>setRecebido(String(v))} className="tap"
-                  style={{flex:1,padding:"7px 4px",borderRadius:10,border:`1.5px solid ${C.pinkM}`,background:Number(recebido)===v?C.pinkS:C.white,fontFamily:"inherit",fontWeight:700,fontSize:13,color:C.pinkD,cursor:"pointer",minWidth:60}}>
-                  {fmt(v)}
-                </button>
-              ))}
-            </div>
-            {/* Troco */}
-            <div style={{background:trocoInsuf?"#FEF2F2":troco>0?"#ECFDF5":C.pinkL,borderRadius:14,padding:"12px 16px",marginBottom:16,textAlign:"center"}}>
-              {trocoInsuf?(
-                <>
-                  <div style={{fontSize:12,color:C.red,fontWeight:700}}>⚠️ Valor insuficiente</div>
-                  <div style={{fontSize:13,color:C.red,marginTop:2}}>Faltam <b>{fmt(total-recebidoN)}</b></div>
-                </>
-              ):troco>0?(
-                <>
-                  <div style={{fontSize:12,color:C.green,fontWeight:700}}>Troco a devolver</div>
-                  <div style={{fontSize:28,fontWeight:900,color:C.green,marginTop:2}}>{fmt(troco)}</div>
-                </>
-              ):(
-                <div style={{fontSize:13,color:C.gray,fontWeight:600}}>Informe o valor recebido</div>
-              )}
-            </div>
-            <div style={{display:"flex",gap:8}}>
-              <button onClick={()=>setTrocoModal(false)} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>Voltar</button>
-              <button onClick={()=>{setTrocoModal(false);setConfirmModal(true);}} disabled={trocoInsuf} className="tap"
-                style={{flex:2,padding:"11px",borderRadius:14,background:trocoInsuf?"#F3F4F6":`linear-gradient(135deg,${C.pink},${C.pinkD})`,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:trocoInsuf?C.soft:C.white,cursor:trocoInsuf?"not-allowed":"pointer"}}>
-                Confirmar →
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* ── MODAL CONFIRMAÇÃO FINAL */}
-      {confirmModal&&(
-        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.52)",zIndex:9200,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
-          <div style={{background:C.white,borderRadius:22,padding:"24px 20px",width:"100%",maxWidth:340,animation:"confirmPop .28s cubic-bezier(.34,1.56,.64,1) forwards",boxShadow:"0 16px 48px rgba(0,0,0,.22)"}}>
-            <div style={{textAlign:"center",marginBottom:18}}>
-              <div style={{fontSize:48,marginBottom:8}}>🛍️</div>
-              <div style={{fontSize:17,fontWeight:900,color:C.pinkD,marginBottom:4}}>{isEdicao?"Salvar alterações?":"Confirmar venda?"}</div>
-              <div style={{fontSize:13,color:C.gray,lineHeight:1.6}}>
-                {isEdicao?"As alterações serão salvas e o estoque reajustado.":"Confira os detalhes antes de confirmar."}
-              </div>
-            </div>
-            {/* Resumo */}
-            <div style={{background:C.pinkL,borderRadius:14,padding:"12px 14px",marginBottom:16}}>
-              <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
-                <span style={{fontSize:12,color:C.gray}}>Itens</span>
-                <span style={{fontSize:12,fontWeight:700}}>{itens.reduce((s,i)=>s+i.qtd,0)} peças</span>
-              </div>
-              <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
-                <span style={{fontSize:12,color:C.gray}}>Pagamento</span>
-                <span style={{fontSize:12,fontWeight:700}}>{pagtIcons[pagamento]} {pagamento}</span>
-              </div>
-              {pagamento==="dinheiro"&&recebido&&(
-                <>
-                  <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
-                    <span style={{fontSize:12,color:C.gray}}>Recebido</span>
-                    <span style={{fontSize:12,fontWeight:700,color:C.green}}>{fmt(Number(recebido))}</span>
-                  </div>
-                  {troco>0&&<div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
-                    <span style={{fontSize:12,color:C.gray}}>Troco</span>
-                    <span style={{fontSize:12,fontWeight:700,color:C.amber}}>{fmt(troco)}</span>
-                  </div>}
-                </>
-              )}
-              <div style={{height:1,background:C.pinkM,margin:"8px 0"}}/>
-              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                <span style={{fontSize:14,fontWeight:800,color:C.pinkD}}>Total</span>
-                <span style={{fontSize:20,fontWeight:900,color:C.pinkD}}>{fmt(total)}</span>
-              </div>
-            </div>
-            <div style={{display:"flex",gap:10}}>
-              <button onClick={()=>{setConfirmModal(false);if(pagamento==="dinheiro")setTrocoModal(true);}} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>Voltar</button>
-              <button onClick={()=>confirmarVenda(isEdicao?editModal:null)} className="tap"
-                style={{flex:2,padding:"11px",borderRadius:14,background:`linear-gradient(135deg,${C.green},#059669)`,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:C.white,cursor:"pointer"}}>
-                ✅ {isEdicao?"Salvar":"Confirmar"}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* ── MODAL REEMBOLSO */}
-      {reembolsoModal&&(
-        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.52)",zIndex:9200,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
-          <div style={{background:C.white,borderRadius:22,padding:"24px 20px",width:"100%",maxWidth:340,animation:"confirmPop .28s cubic-bezier(.34,1.56,.64,1) forwards",boxShadow:"0 16px 48px rgba(0,0,0,.22)"}}>
-            <div style={{textAlign:"center",marginBottom:16}}>
-              <div style={{fontSize:42,marginBottom:6}}>↩️</div>
-              <div style={{fontSize:17,fontWeight:900,color:"#92400E",marginBottom:4}}>Confirmar Reembolso?</div>
-              <div style={{fontSize:13,color:C.gray,lineHeight:1.6}}>O estoque voltará e a venda ficará marcada como reembolsada no histórico.</div>
-            </div>
-            <div style={{background:"#FFFBEB",border:`1.5px solid ${C.amber}44`,borderRadius:14,padding:"12px 14px",marginBottom:6}}>
-              <div style={{fontSize:13,fontWeight:700,color:C.text,marginBottom:6}}>{reembolsoModal.clienteNome||"Cliente avulso"}</div>
-              {reembolsoModal.itens?.map((it,i)=>(
-                <div key={i} style={{fontSize:12,color:C.gray,padding:"3px 0",borderBottom:`1px solid ${C.amber}22`}}>
-                  {it.qtd}× {it.nome}{it.variacao?` · ${it.variacao}`:""}
-                </div>
-              ))}
-              <div style={{display:"flex",justifyContent:"space-between",marginTop:8}}>
-                <span style={{fontSize:13,fontWeight:700}}>Total devolvido:</span>
-                <span style={{fontSize:14,fontWeight:900,color:C.amber}}>{fmt(reembolsoModal.total)}</span>
-              </div>
-            </div>
-            <div style={{background:"#ECFDF5",border:`1.5px solid ${C.green}30`,borderRadius:12,padding:"9px 13px",marginBottom:16,display:"flex",gap:8,alignItems:"center"}}>
-              <span style={{fontSize:18,flexShrink:0}}>📦</span>
-              <span style={{fontSize:12,color:"#065F46",fontWeight:600}}>O estoque dos produtos será restaurado automaticamente.</span>
-            </div>
-            <div style={{display:"flex",gap:10}}>
-              <button onClick={()=>setReembolsoModal(null)} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>Cancelar</button>
-              <button onClick={confirmarReembolso} className="tap"
-                style={{flex:2,padding:"11px",borderRadius:14,background:"linear-gradient(135deg,#F59E0B,#D97706)",border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:C.white,cursor:"pointer"}}>
-                ↩ Confirmar Reembolso
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {descontoModal!==null&&(
-        <Modal title="" onClose={()=>setDescontoModal(null)} noPad>
-          <DescontoModal item={itens[descontoModal]} onSave={updated=>setItens(is=>is.map((x,i)=>i===descontoModal?updated:x))} onClose={()=>setDescontoModal(null)}/>
-        </Modal>
-      )}
-      {descontoCompraModal&&(
-        <Modal title="" onClose={()=>setDescontoCompraModal(false)} noPad>
-          <DescontoCompraModal subtotal={subtotalItens} descAtual={descontoCompra} onSave={v=>setDescontoCompra(v)} onClose={()=>setDescontoCompraModal(false)}/>
-        </Modal>
-      )}
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   GRÁFICO DE CRESCIMENTO SVG
-══════════════════════════════════════════════════════════════════════════════ */
-const GraficoCrescimento = ({pontos}) => {
-  // pontos: [{label, receita, custo, lucro}]
-  const [ativas,setAtivas] = useState({receita:true,custo:true,lucro:true});
-  const W=320, H=160, PAD={t:12,r:12,b:32,l:46};
-  const iW=W-PAD.l-PAD.r, iH=H-PAD.t-PAD.b;
-
-  if(pontos.length<2) return (
-    <div style={{textAlign:"center",padding:"28px 0",color:C.soft}}>
-      <div style={{fontSize:32,marginBottom:6}}>📈</div>
-      <div style={{fontSize:12,fontWeight:600}}>Registre vendas em pelo menos 2 períodos para ver o gráfico de crescimento!</div>
-    </div>
-  );
-
-  const series = [
-    {key:"receita",label:"Receita",color:C.pink},
-    {key:"custo",label:"Custos",color:C.amber},
-    {key:"lucro",label:"Lucro",color:C.green},
-  ];
-
-  const allVals = pontos.flatMap(p=>series.filter(s=>ativas[s.key]).map(s=>p[s.key]||0));
-  const maxV = Math.max(...allVals, 1);
-  const minV = Math.min(...allVals.filter(v=>v>0), 0);
-  const range = maxV - minV || 1;
-
-  const xPos = (i) => PAD.l + (i/(pontos.length-1))*iW;
-  const yPos = (v) => PAD.t + iH - ((v-minV)/range)*iH;
-
-  const makePath = (key) => pontos.map((p,i)=>`${i===0?"M":"L"}${xPos(i).toFixed(1)},${yPos(p[key]||0).toFixed(1)}`).join(" ");
-  const makeArea = (key) => {
-    const line = pontos.map((p,i)=>`${i===0?"M":"L"}${xPos(i).toFixed(1)},${yPos(p[key]||0).toFixed(1)}`).join(" ");
-    const base = `L${xPos(pontos.length-1).toFixed(1)},${(PAD.t+iH).toFixed(1)} L${PAD.l.toFixed(1)},${(PAD.t+iH).toFixed(1)} Z`;
-    return line+" "+base;
-  };
-
-  // grid lines
-  const gridCount = 4;
-  const gridLines = Array.from({length:gridCount+1},(_,i)=>minV+(range/gridCount)*i);
-
-  const fmtK = (v) => v>=1000?`${(v/1000).toFixed(1)}k`:`${v.toFixed(0)}`;
-
-  const toggler = (key) => setAtivas(a=>({...a,[key]:!a[key]}));
-
-  return (
-    <div>
-      {/* Legenda com toggles */}
-      <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:10}}>
-        {series.map(s=>(
-          <button key={s.key} onClick={()=>toggler(s.key)} className="tap"
-            style={{display:"flex",alignItems:"center",gap:5,padding:"5px 11px",borderRadius:20,border:`1.5px solid ${ativas[s.key]?s.color:C.pinkM}`,background:ativas[s.key]?s.color+"18":C.white,cursor:"pointer",fontFamily:"inherit",transition:"all .18s"}}>
-            <div style={{width:10,height:10,borderRadius:3,background:ativas[s.key]?s.color:C.soft,transition:"background .18s",flexShrink:0}}/>
-            <span style={{fontSize:11,fontWeight:700,color:ativas[s.key]?s.color:C.soft}}>{s.label}</span>
-          </button>
-        ))}
-      </div>
-      {/* SVG Chart */}
-      <div style={{overflowX:"auto",width:"100%"}}>
-        <svg width="100%" viewBox={`0 0 ${W} ${H}`} style={{display:"block",fontFamily:"inherit"}}>
-          <defs>
-            {series.map(s=>(
-              <linearGradient key={s.key} id={`grad-${s.key}`} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={s.color} stopOpacity="0.22"/>
-                <stop offset="100%" stopColor={s.color} stopOpacity="0.01"/>
-              </linearGradient>
-            ))}
-          </defs>
-          {/* Grid lines */}
-          {gridLines.map((v,i)=>(
-            <g key={i}>
-              <line x1={PAD.l} y1={yPos(v)} x2={W-PAD.r} y2={yPos(v)} stroke={C.pinkM} strokeWidth="0.7" strokeDasharray="3,3"/>
-              <text x={PAD.l-4} y={yPos(v)+4} textAnchor="end" fontSize="8" fill={C.soft} fontFamily="inherit">{fmtK(v)}</text>
-            </g>
-          ))}
-          {/* Areas */}
-          {series.filter(s=>ativas[s.key]).map(s=>(
-            <path key={s.key+"-area"} d={makeArea(s.key)} fill={`url(#grad-${s.key})`}/>
-          ))}
-          {/* Lines */}
-          {series.filter(s=>ativas[s.key]).map(s=>(
-            <path key={s.key} d={makePath(s.key)} fill="none" stroke={s.color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-          ))}
-          {/* Dots */}
-          {series.filter(s=>ativas[s.key]).map(s=>
-            pontos.map((p,i)=>(
-              <circle key={s.key+i} cx={xPos(i)} cy={yPos(p[s.key]||0)} r="3.5" fill={C.white} stroke={s.color} strokeWidth="2"/>
-            ))
-          )}
-          {/* X labels — espaçados para evitar sobreposição */}
-          {pontos.map((p,i)=>{
-            const step = pontos.length<=6?1:pontos.length<=10?2:3;
-            if(i!==0&&i!==pontos.length-1&&i%step!==0) return null;
-            return <text key={i} x={xPos(i)} y={H-PAD.b+14} textAnchor="middle" fontSize="8" fill={C.gray} fontFamily="inherit">{p.label}</text>;
-          })}
-        </svg>
-      </div>
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   RELATÓRIOS
-══════════════════════════════════════════════════════════════════════════════ */
-const Relatorios = ({vendas,produtos}) => {
-  const agora = new Date();
-
-  const [tipoPeriodo, setTipoPeriodo] = useState("mes"); // hoje | semana | mes | ano | custom
-  const [offset, setOffset]           = useState(0);
-  const [customInicio, setCustomInicio] = useState("");
-  const [customFim, setCustomFim]       = useState("");
-
-  const calcRange = () => {
-    if(tipoPeriodo==="custom"){
-      const i = customInicio ? new Date(customInicio+"T00:00:00") : new Date(0);
-      const f = customFim    ? new Date(customFim+"T23:59:59")    : new Date();
-      return {inicio:i, fim:f};
-    }
-    if(tipoPeriodo==="hoje"){
-      const i=new Date(agora); i.setHours(0,0,0,0); i.setDate(i.getDate()+offset);
-      const f=new Date(agora); f.setHours(23,59,59,999); f.setDate(f.getDate()+offset);
-      return {inicio:i,fim:f};
-    }
-    if(tipoPeriodo==="semana"){
-      const base=new Date(agora);
-      base.setDate(base.getDate()-base.getDay()+offset*7);
-      const i=new Date(base); i.setHours(0,0,0,0);
-      const f=new Date(base); f.setDate(f.getDate()+6); f.setHours(23,59,59,999);
-      return {inicio:i,fim:f};
-    }
-    if(tipoPeriodo==="ano"){
-      const i=new Date(agora.getFullYear()+offset,0,1,0,0,0,0);
-      const f=new Date(agora.getFullYear()+offset,11,31,23,59,59,999);
-      return {inicio:i,fim:f};
-    }
-    // mes
-    const i=new Date(agora.getFullYear(), agora.getMonth()+offset, 1, 0,0,0,0);
-    const f=new Date(agora.getFullYear(), agora.getMonth()+offset+1, 0, 23,59,59,999);
-    return {inicio:i,fim:f};
-  };
-
-  const {inicio,fim} = calcRange();
-
-  const labelPeriodo = () => {
-    if(tipoPeriodo==="custom") return "Período personalizado";
-    if(tipoPeriodo==="hoje"){
-      if(offset===0) return "Hoje";
-      return inicio.toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"short"});
-    }
-    if(tipoPeriodo==="semana"){
-      if(offset===0) return "Esta semana";
-      return `${inicio.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})} – ${fim.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"})}`;
-    }
-    if(tipoPeriodo==="ano"){
-      return String(agora.getFullYear()+offset);
-    }
-    if(offset===0) return "Este mês";
-    return inicio.toLocaleDateString("pt-BR",{month:"long",year:"numeric"});
-  };
-
-  const vendasFiltradas = vendas.filter(v=>{
-    if(v.reembolsada) return false; // reembolsos não entram nos relatórios
-    const d=new Date(v.data);
-    return d>=inicio && d<=fim;
-  });
-
-  const receitaTotal  = vendasFiltradas.reduce((s,v)=>s+v.total,0);
-  const custoTotal    = vendasFiltradas.reduce((s,v)=>s+(v.custo||0),0);
-  const descontoTotal = vendasFiltradas.reduce((s,v)=>s+(v.desconto||0),0);
-  const lucroLiquido  = receitaTotal-custoTotal;
-  const margemReceita = receitaTotal>0?((lucroLiquido/receitaTotal)*100).toFixed(1):0;
-  const ganhoSobCusto = custoTotal>0?((lucroLiquido/custoTotal)*100).toFixed(1):0;
-
-  const contagem={};
-  vendasFiltradas.forEach(v=>v.itens?.forEach(i=>{contagem[i.nome]=(contagem[i.nome]||0)+i.qtd;}));
-  const maisVendidos=Object.entries(contagem).sort((a,b)=>b[1]-a[1]).slice(0,5);
-  const medalhas=["🥇","🥈","🥉","4️⃣","5️⃣"];
-
-  const pagtLabels={dinheiro:"💵 Dinheiro",pix:"📱 Pix",fiado:"📝 Fiado"};
-  const pagtRes={};
-  vendasFiltradas.forEach(v=>{
-    const k=v.pagamento||"outro";
-    pagtRes[k]=(pagtRes[k]||0)+v.total;
-  });
-
-  const vendasComDesconto=vendasFiltradas.filter(v=>(v.desconto||0)>0);
-
-  const buildGrafico = () => {
-    const todasValidas = vendas.filter(v=>!v.reembolsada);
-    if(todasValidas.length===0) return [];
-    const todas = [...todasValidas].sort((a,b)=>new Date(a.data)-new Date(b.data));
-    const primeiraData = new Date(todas[0].data);
-    const diffDias = (agora-primeiraData)/(1000*60*60*24);
-    const grupos={};
-    todas.forEach(v=>{
-      const d=new Date(v.data);
-      let chave;
-      if(diffDias<=31)      chave=d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"});
-      else if(diffDias<=120){ const sy=new Date(d.getFullYear(),0,1); const wk=Math.ceil(((d-sy)/86400000+sy.getDay()+1)/7); chave=`S${wk}/${d.getFullYear().toString().slice(2)}`; }
-      else                  chave=d.toLocaleDateString("pt-BR",{month:"short",year:"2-digit"});
-      if(!grupos[chave]) grupos[chave]={label:chave,receita:0,custo:0,lucro:0};
-      grupos[chave].receita+=v.total;
-      grupos[chave].custo+=(v.custo||0);
-      grupos[chave].lucro+=(v.total-(v.custo||0));
-    });
-    return Object.values(grupos).slice(-12);
-  };
-
-  const pontosGrafico = buildGrafico();
-
-  const TIPOS=[
-    {id:"hoje",  l:"Dia"},
-    {id:"semana",l:"Semana"},
-    {id:"mes",   l:"Mês"},
-    {id:"ano",   l:"Ano"},
-    {id:"custom",l:"Manual"},
-  ];
-
-  return (
-    <div style={{padding:"14px 14px",display:"flex",flexDirection:"column",gap:14}}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start"}}>
-        <h2 style={{margin:0,fontSize:19,fontWeight:900,color:C.pinkD}}>📊 Relatórios</h2>
-        <Tip title="Para que servem?" text="Relatórios mostram como seu negócio está indo. Analise toda semana!" color={C.purple}>Para que serve?</Tip>
-      </div>
-
-      {/* ── Seletor de período */}
-      <Card style={{padding:12}}>
-        <div style={{fontSize:11,fontWeight:700,color:C.pinkD,letterSpacing:".05em",textTransform:"uppercase",marginBottom:8}}>Período de análise</div>
-        <div style={{display:"flex",gap:4,marginBottom:10,overflowX:"auto"}}>
-          {TIPOS.map(t=>(
-            <button key={t.id} onClick={()=>{setTipoPeriodo(t.id);setOffset(0);}} className="tap"
-              style={{flex:1,minWidth:44,padding:"7px 4px",borderRadius:10,border:`1.5px solid ${tipoPeriodo===t.id?C.pink:C.pinkM}`,background:tipoPeriodo===t.id?C.pinkS:C.white,fontFamily:"inherit",fontWeight:700,fontSize:11,color:tipoPeriodo===t.id?C.pinkD:C.gray,cursor:"pointer",transition:"all .15s",whiteSpace:"nowrap"}}>
-              {t.l}
-            </button>
-          ))}
-        </div>
-
-        {tipoPeriodo==="custom"?(
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
-            <FInput label="De" value={customInicio} onChange={setCustomInicio} type="date"/>
-            <FInput label="Até" value={customFim} onChange={setCustomFim} type="date"/>
-          </div>
-        ):(
-          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",gap:8}}>
-            <button onClick={()=>setOffset(o=>o-1)} className="tap"
-              style={{width:34,height:34,borderRadius:10,border:`1.5px solid ${C.pinkM}`,background:C.white,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={C.pinkD} strokeWidth="2.5" strokeLinecap="round"><path d="M15 18l-6-6 6-6"/></svg>
-            </button>
-            <div style={{flex:1,textAlign:"center"}}>
-              <div style={{fontSize:13,fontWeight:800,color:C.pinkD}}>{labelPeriodo()}</div>
-              {tipoPeriodo!=="hoje"&&tipoPeriodo!=="ano"&&(
-                <div style={{fontSize:10,color:C.soft,marginTop:1}}>
-                  {inicio.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})} – {fim.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})}
-                </div>
-              )}
-            </div>
-            <button onClick={()=>setOffset(o=>Math.min(0,o+1))} disabled={offset>=0} className="tap"
-              style={{width:34,height:34,borderRadius:10,border:`1.5px solid ${C.pinkM}`,background:offset>=0?"#F9F9F9":C.white,cursor:offset>=0?"not-allowed":"pointer",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,opacity:offset>=0?.4:1}}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={C.pinkD} strokeWidth="2.5" strokeLinecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            </button>
-          </div>
-        )}
-
-        {offset!==0&&tipoPeriodo!=="custom"&&(
-          <button onClick={()=>setOffset(0)} style={{marginTop:8,width:"100%",background:C.pinkL,border:"none",borderRadius:8,padding:"6px",fontFamily:"inherit",fontWeight:700,fontSize:11,color:C.pinkD,cursor:"pointer"}}>
-            ↩ Voltar para o período atual
-          </button>
-        )}
-      </Card>
-
-      <InfoBox emoji="🧠" title="Dica de empreendedora!" text="Analise seus números toda semana. Quem conhece seus números toma decisões melhores!" color={C.pinkD}/>
-
-      {/* ── Painel Financeiro */}
-      <Card style={{padding:14,background:`linear-gradient(135deg,#FFF1F5,${C.white})`}}>
-        <div style={{fontWeight:800,color:C.pinkD,fontSize:14,marginBottom:12}}>💰 Resultado Financeiro</div>
-
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:12}}>
-          {[
-            {l:"Receita",v:fmt(receitaTotal),c:C.pink,e:"💰",desc:"Total recebido"},
-            {l:"Custo",v:fmt(custoTotal),c:C.amber,e:"🏷️",desc:"Total pago nos produtos"},
-            {l:"Lucro",v:fmt(lucroLiquido),c:lucroLiquido>=0?C.green:C.red,e:lucroLiquido>=0?"📈":"⚠️",desc:"Ficou no bolso"},
-          ].map(r=>(
-            <div key={r.l} style={{background:r.c+"0F",border:`1.5px solid ${r.c}22`,borderRadius:13,padding:"10px 8px",textAlign:"center"}}>
-              <div style={{fontSize:18}}>{r.e}</div>
-              <div style={{fontSize:14,fontWeight:900,color:r.c,marginTop:3,lineHeight:1.1}}>{r.v}</div>
-              <div style={{fontSize:10,fontWeight:700,color:C.gray,marginTop:2}}>{r.l}</div>
-              <div style={{fontSize:9,color:C.soft,marginTop:1}}>{r.desc}</div>
-            </div>
-          ))}
-        </div>
-
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:10}}>
-          <div style={{background:`${C.purple}0F`,border:`1.5px solid ${C.purple}22`,borderRadius:12,padding:"10px 12px"}}>
-            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-              <div>
-                <div style={{fontSize:10,color:C.soft,fontWeight:700}}>MARGEM DE LUCRO</div>
-                <div style={{fontSize:20,fontWeight:900,color:C.purple,marginTop:2}}>{margemReceita}%</div>
-                <div style={{fontSize:10,color:C.gray,marginTop:2}}>Lucro ÷ Receita</div>
-              </div>
-              <span style={{fontSize:28}}>📊</span>
-            </div>
-          </div>
-          <div style={{background:`${C.green}0F`,border:`1.5px solid ${C.green}22`,borderRadius:12,padding:"10px 12px"}}>
-            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-              <div>
-                <div style={{fontSize:10,color:C.soft,fontWeight:700}}>RETORNO SOBRE CUSTO</div>
-                <div style={{fontSize:20,fontWeight:900,color:C.green,marginTop:2}}>{ganhoSobCusto}%</div>
-                <div style={{fontSize:10,color:C.gray,marginTop:2}}>Lucro ÷ Custo</div>
-              </div>
-              <span style={{fontSize:28}}>💸</span>
-            </div>
-          </div>
-        </div>
-
-        {receitaTotal>0&&(
-          <div style={{marginBottom:6}}>
-            <div style={{fontSize:10,fontWeight:700,color:C.gray,marginBottom:5,textTransform:"uppercase",letterSpacing:".05em"}}>Como a receita é dividida</div>
-            <div style={{height:14,borderRadius:99,overflow:"hidden",display:"flex",background:C.pinkL}}>
-              {custoTotal>0&&<div style={{width:`${Math.min(100,(custoTotal/receitaTotal)*100).toFixed(1)}%`,background:C.amber,transition:"width .8s ease"}}/>}
-              {lucroLiquido>0&&<div style={{width:`${Math.min(100,(lucroLiquido/receitaTotal)*100).toFixed(1)}%`,background:C.green,transition:"width .8s ease"}}/>}
-            </div>
-            <div style={{display:"flex",gap:10,marginTop:5}}>
-              <div style={{display:"flex",alignItems:"center",gap:4}}><div style={{width:8,height:8,borderRadius:3,background:C.amber}}/><span style={{fontSize:10,color:C.gray}}>Custo ({((custoTotal/receitaTotal)*100).toFixed(0)}%)</span></div>
-              <div style={{display:"flex",alignItems:"center",gap:4}}><div style={{width:8,height:8,borderRadius:3,background:C.green}}/><span style={{fontSize:10,color:C.gray}}>Lucro ({((Math.max(0,lucroLiquido)/receitaTotal)*100).toFixed(0)}%)</span></div>
-            </div>
-          </div>
-        )}
-
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginTop:4,paddingTop:10,borderTop:`1px solid ${C.pinkS}`}}>
-          {[
-            {l:"Vendas",v:vendasFiltradas.length,e:"🛍️"},
-            {l:"Valor médio",v:vendasFiltradas.length>0?fmt(receitaTotal/vendasFiltradas.length):"—",e:"🎯"},
-            {l:"Descontos dados",v:descontoTotal>0?fmt(descontoTotal):"—",e:"🏷️"},
-          ].map(r=>(
-            <div key={r.l} style={{textAlign:"center"}}>
-              <div style={{fontSize:14}}>{r.e}</div>
-              <div style={{fontSize:12,fontWeight:900,color:C.pinkD,marginTop:2}}>{r.v}</div>
-              <div style={{fontSize:9,color:C.soft}}>{r.l}</div>
-            </div>
-          ))}
-        </div>
-      </Card>
-
-      {vendasFiltradas.length===0&&(
-        <div style={{textAlign:"center",padding:"20px 0",color:C.soft}}>
-          <div style={{fontSize:38}}>🔍</div>
-          <div style={{fontSize:13,fontWeight:600,marginTop:6}}>Nenhuma venda neste período.</div>
-          <div style={{fontSize:11,marginTop:3}}>Selecione outro intervalo de datas.</div>
-        </div>
-      )}
-
-      {/* ── Gráfico de crescimento */}
-      <Card style={{padding:13}}>
-        <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:4}}>📈 Crescimento do negócio</div>
-        <div style={{fontSize:10,color:C.soft,marginBottom:10}}>Histórico completo · toque nas legendas para ativar ou desativar</div>
-        <GraficoCrescimento pontos={pontosGrafico}/>
-      </Card>
-
-      {/* Descontos dados no período */}
-      {descontoTotal>0&&(
-        <Card style={{border:`1.5px solid ${C.amber}28`}}>
-          <div style={{fontWeight:800,color:C.amber,fontSize:13,marginBottom:8}}>🏷️ Descontos dados no período</div>
-          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
-            <span style={{fontSize:13,color:C.text}}>Total de descontos</span>
-            <Badge color={C.amber}>{fmt(descontoTotal)}</Badge>
-          </div>
-          <div style={{fontSize:12,color:C.gray}}>{vendasComDesconto.length} venda{vendasComDesconto.length!==1?"s":""} com desconto de {vendasFiltradas.length} no período</div>
-          {vendasComDesconto.length>0&&(
-            <div style={{marginTop:8}}>
-              {vendasComDesconto.slice(0,3).map(v=>(
-                <div key={v.id} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderTop:`1px solid ${C.pinkS}`,fontSize:12}}>
-                  <span style={{overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",maxWidth:"65%"}}>{v.clienteNome||"Sem cadastro"} · {new Date(v.data).toLocaleDateString("pt-BR")}</span>
-                  <span style={{color:C.amber,fontWeight:700}}>-{fmt(v.desconto)}</span>
-                </div>
-              ))}
-            </div>
-          )}
-        </Card>
-      )}
-
-      {/* Produtos mais vendidos */}
-      <Card>
-        <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:10}}>🏆 Produtos mais vendidos</div>
-        {maisVendidos.length===0
-          ? <p style={{color:C.soft,fontSize:13,margin:0}}>Nenhuma venda neste período.</p>
-          : maisVendidos.map(([nome,qtd],i)=>{
-              const bp=maisVendidos[0][1]>0?(qtd/maisVendidos[0][1])*100:0;
-              return (
-                <div key={nome} style={{marginBottom:10}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:4,gap:8}}>
-                    <div style={{display:"flex",gap:7,alignItems:"center",flex:1,minWidth:0}}>
-                      <span style={{fontSize:16,flexShrink:0}}>{medalhas[i]}</span>
-                      <span style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{nome}</span>
-                    </div>
-                    <Badge>{qtd} un.</Badge>
-                  </div>
-                  <div style={{height:6,background:C.pinkL,borderRadius:99,overflow:"hidden"}}>
-                    <div style={{height:"100%",width:`${bp}%`,background:`linear-gradient(90deg,${C.pink},${C.pinkD})`,borderRadius:99,transition:"width .8s ease"}}/>
-                  </div>
-                </div>
-              );
-            })
-        }
-      </Card>
-
-      {/* Formas de pagamento */}
-      {Object.keys(pagtRes).length>0&&(
-        <Card>
-          <div style={{fontWeight:800,color:C.pinkD,fontSize:13,marginBottom:10}}>💳 Por forma de pagamento</div>
-          {Object.entries(pagtRes).map(([pgt,val])=>(
-            <div key={pgt} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"6px 0",borderBottom:`1px solid ${C.pinkS}`}}>
-              <span style={{fontSize:13,fontWeight:600}}>{pagtLabels[pgt]||pgt}</span>
-              <Badge>{fmt(val)}</Badge>
-            </div>
-          ))}
-        </Card>
-      )}
-
-      <Card style={{background:`linear-gradient(135deg,${C.pinkD},#9D174D)`,border:"none"}}>
-        <div style={{color:C.white,fontSize:13,fontWeight:800,marginBottom:6}}>💡 Segredo do sucesso</div>
-        <div style={{color:C.pinkM,fontSize:13,lineHeight:1.55}}>
-          Comprar bem + precificar certo + atender bem = <strong style={{color:C.white}}>negócio próspero</strong>. Você está construindo isso! 🌸
-        </div>
-      </Card>
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   BACKUP / RESTAURAÇÃO
-══════════════════════════════════════════════════════════════════════════════ */
-/* ─── BotaoPerigoso — botão com contagem regressiva de 10s ───────────────── */
-const BotaoPerigoso = ({label,onConfirm,segundos=10,cor=C.red}) => {
-  const [contando,setContando] = useState(false);
-  const [restante,setRestante] = useState(segundos);
-  const timerRef = useRef(null);
-
-  const iniciar = () => { setContando(true); setRestante(segundos); };
-  const cancelar = () => { setContando(false); setRestante(segundos); clearInterval(timerRef.current); };
-
-  useEffect(()=>{
-    if(!contando) return;
-    timerRef.current = setInterval(()=>{
-      setRestante(r=>{
-        if(r<=1){ clearInterval(timerRef.current); setContando(false); setRestante(segundos); onConfirm(); return segundos; }
-        return r-1;
-      });
-    },1000);
-    return ()=>clearInterval(timerRef.current);
-  },[contando]);
-
-  if(!contando) return (
-    <button onClick={iniciar} className="tap" style={{width:"100%",padding:"12px",borderRadius:14,background:cor+"18",border:`2px solid ${cor}44`,fontFamily:"inherit",fontWeight:800,fontSize:14,color:cor,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:8}}>
-      <Icon name="trash" size={16} color={cor}/>{label}
-    </button>
-  );
-
-  // Contagem regressiva ativa — botões disponíveis imediatamente
-  const pct = ((segundos-restante)/segundos)*100;
-  return (
-    <div style={{borderRadius:14,border:`2px solid ${cor}`,overflow:"hidden",background:cor+"08"}}>
-      {/* Barra de progresso */}
-      <div style={{height:4,background:cor+"22",position:"relative"}}>
-        <div style={{position:"absolute",left:0,top:0,height:"100%",width:`${pct}%`,background:cor,transition:"width 1s linear",borderRadius:99}}/>
-      </div>
-      <div style={{padding:"12px 14px"}}>
-        <div style={{fontSize:13,fontWeight:800,color:cor,marginBottom:10,textAlign:"center"}}>
-          ⏳ Auto-confirmando em <span style={{fontSize:20,fontWeight:900}}>{restante}s</span> — tem certeza?
-        </div>
-        <div style={{display:"flex",gap:8}}>
-          <button onClick={cancelar} className="tap" style={{flex:1,padding:"10px",borderRadius:12,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:13,color:C.pinkD,cursor:"pointer"}}>
-            ✋ Cancelar
-          </button>
-          <button onClick={()=>{clearInterval(timerRef.current);setContando(false);setRestante(segundos);onConfirm();}} className="tap"
-            style={{flex:1,padding:"10px",borderRadius:12,background:cor,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:13,color:C.white,cursor:"pointer"}}>
-            ✅ Confirmar já
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onClose}) => {
-  // menu | importando | preview | sucesso | apagar
-  const [fase,setFase] = useState("menu");
-  const [preview,setPreview] = useState(null);
-  const [tipoSucesso,setTipoSucesso] = useState(""); // exportar | importar | apagar
-  const [erro,setErro] = useState("");
-  const fileRef = useRef();
-
-  const gerarNomeArquivo = () =>
-    `juju-store-backup-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`;
-
-  const exportarJSON = (dados, nome) => {
-    const blob = new Blob([JSON.stringify(dados,null,2)],{type:"application/json"});
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = nome;
-    a.click();
-    URL.revokeObjectURL(a.href);
-  };
-
-  const exportar = () => {
-    exportarJSON({versao:"2.0.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas}, gerarNomeArquivo());
-    setTipoSucesso("exportar");
-    setFase("sucesso");
-  };
-
-  const lerArquivo = (file) => {
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onload = ev => {
-      try {
-        const dados = JSON.parse(ev.target.result);
-        if(!dados.produtos||!dados.clientes||!dados.vendas) throw new Error("Arquivo inválido ou corrompido.");
-        if(!Array.isArray(dados.produtos)||!Array.isArray(dados.clientes)||!Array.isArray(dados.vendas))
-          throw new Error("Formato de dados incorreto.");
-        setPreview(dados); setFase("preview"); setErro("");
-      } catch(e) {
-        setErro(e.message||"Não foi possível ler o arquivo. Verifique se é um backup válido.");
-        setFase("importando");
-      }
-    };
-    reader.readAsText(file);
-  };
-
-  const confirmarImport = () => {
-    setProdutos(preview.produtos);
-    setClientes(preview.clientes);
-    setVendas(preview.vendas);
-    setTipoSucesso("importar");
-    setFase("sucesso");
-  };
-
-  // Apagar tudo: gera backup automático antes de limpar
-  const executarApagar = () => {
-    exportarJSON(
-      {versao:"1.8.0",exportadoEm:new Date().toISOString(),produtos,clientes,vendas},
-      `juju-store-ANTES-DE-APAGAR-${new Date().toLocaleDateString("pt-BR").replace(/\//g,"-")}.json`
-    );
-    setTimeout(()=>{
-      setProdutos([]);
-      setClientes([]);
-      setVendas([]);
-      setTipoSucesso("apagar");
-      setFase("sucesso");
-    }, 600);
-  };
-
-  const fmtData = (iso) => {
-    try { return new Date(iso).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}); }
-    catch { return iso; }
-  };
-
-  const totalDados = produtos.filter(p=>!p.deleted).length + clientes.filter(c=>!c.deleted).length + vendas.length;
-
-  return (
-    <Modal title="💾 Backup e Restauração" onClose={onClose}>
-
-      {/* ── MENU PRINCIPAL */}
-      {fase==="menu"&&(
-        <div style={{display:"flex",flexDirection:"column",gap:13}}>
-          <InfoBox emoji="🛡️" title="Seus dados são preciosos!" text="Faça backup regularmente. Se trocar de celular ou limpar o navegador, seus dados serão perdidos sem backup!" color={C.pinkD}/>
-
-          {/* Exportar */}
-          <div style={{background:C.pinkL,borderRadius:16,padding:14}}>
-            <div style={{fontWeight:800,color:C.pinkD,fontSize:14,marginBottom:4}}>📤 Exportar backup</div>
-            <div style={{fontSize:12,color:C.gray,marginBottom:10,lineHeight:1.5}}>
-              Salva um arquivo com <b>{produtos.filter(p=>!p.deleted).length}</b> produtos, <b>{clientes.filter(c=>!c.deleted).length}</b> clientes e <b>{vendas.length}</b> vendas.
-            </div>
-            <Btn onClick={exportar} full><Icon name="check" size={15}/>Baixar backup agora</Btn>
-          </div>
-
-          {/* Importar */}
-          <div style={{background:"#F0FDF4",border:"1.5px solid #BBF7D0",borderRadius:16,padding:14}}>
-            <div style={{fontWeight:800,color:C.green,fontSize:14,marginBottom:4}}>📥 Restaurar backup</div>
-            <div style={{fontSize:12,color:C.gray,marginBottom:10,lineHeight:1.5}}>
-              Selecione um arquivo .json para restaurar seus dados. <b style={{color:C.red}}>Substitui tudo!</b>
-            </div>
-            <Btn onClick={()=>{setFase("importando");fileRef.current?.click();}} v="ghost" full>
-              <Icon name="restore" size={15}/>Selecionar arquivo de backup
-            </Btn>
-            <input ref={fileRef} type="file" accept=".json,application/json" style={{display:"none"}}
-              onChange={e=>{lerArquivo(e.target.files[0]); e.target.value="";}}/>
-          </div>
-
-          {/* Apagar tudo */}
-          <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:16,padding:14}}>
-            <div style={{fontWeight:800,color:C.red,fontSize:14,marginBottom:4}}>🗑️ Apagar todos os dados</div>
-            <div style={{fontSize:12,color:"#7F1D1D",marginBottom:10,lineHeight:1.5}}>
-              Remove <b>todos</b> os produtos, clientes e vendas. Um backup é gerado automaticamente antes de apagar — não vai perder nada por acidente!
-            </div>
-            {totalDados===0
-              ? <div style={{fontSize:12,color:C.soft,textAlign:"center",padding:"6px 0"}}>Nenhum dado para apagar.</div>
-              : <button onClick={()=>setFase("apagar")} className="tap"
-                  style={{width:"100%",padding:"11px",borderRadius:12,background:"#FEE2E2",border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:C.red,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:8}}>
-                  <Icon name="trash" size={16} color={C.red}/>Apagar tudo…
-                </button>
-            }
-          </div>
-
-          <InfoBox emoji="💡" title="Dica de ouro" text="Faça backup toda semana! Salve no Google Drive ou WhatsApp pessoal para nunca perder nada." color={C.purple}/>
-
-          <div style={{textAlign:"center",paddingTop:4}}>
-            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 2.1.0</span>
-          </div>
-        </div>
-      )}
-
-      {/* ── AGUARDANDO ARQUIVO */}
-      {fase==="importando"&&(
-        <div style={{display:"flex",flexDirection:"column",gap:13}}>
-          <InfoBox emoji="📁" title="Aguardando arquivo..." text="Selecione o arquivo .json de backup da sua lojinha." color={C.green}/>
-          {erro&&(
-            <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:12,padding:"12px 14px"}}>
-              <div style={{fontSize:13,fontWeight:800,color:C.red,marginBottom:4}}>❌ Erro ao ler arquivo</div>
-              <div style={{fontSize:12,color:C.red}}>{erro}</div>
-            </div>
-          )}
-          <Btn onClick={()=>fileRef.current?.click()} full><Icon name="restore" size={15}/>Selecionar arquivo</Btn>
-          <input ref={fileRef} type="file" accept=".json,application/json" style={{display:"none"}}
-            onChange={e=>{lerArquivo(e.target.files[0]); e.target.value="";}}/>
-          <Btn onClick={()=>{setFase("menu");setErro("");}} v="outline" full>Voltar</Btn>
-        </div>
-      )}
-
-      {/* ── PREVIEW DO BACKUP */}
-      {fase==="preview"&&preview&&(
-        <div style={{display:"flex",flexDirection:"column",gap:13}}>
-          <div style={{background:"#FFFBEB",border:"1.5px solid #FDE68A",borderRadius:14,padding:"12px 14px"}}>
-            <div style={{fontWeight:800,color:"#92400E",fontSize:13,marginBottom:8}}>📋 Prévia do backup</div>
-            {[
-              {e:"📅",l:"Exportado em",v:fmtData(preview.exportadoEm)},
-              {e:"📦",l:"Produtos",v:`${preview.produtos?.length||0} (${preview.produtos?.filter(p=>!p.deleted).length||0} ativos)`},
-              {e:"👥",l:"Clientes",v:`${preview.clientes?.length||0} (${preview.clientes?.filter(c=>!c.deleted).length||0} ativos)`},
-              {e:"🛍️",l:"Vendas",v:`${preview.vendas?.length||0} registros`},
-            ].map(r=>(
-              <div key={r.l} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid #FDE68A"}}>
-                <span style={{fontSize:12,color:"#78350F"}}>{r.e} {r.l}</span>
-                <span style={{fontSize:12,fontWeight:700,color:"#92400E"}}>{r.v}</span>
-              </div>
-            ))}
-          </div>
-          <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:12,padding:"10px 13px"}}>
-            <div style={{fontSize:12,fontWeight:800,color:C.red,marginBottom:3}}>⚠️ Atenção!</div>
-            <div style={{fontSize:11,color:C.red,lineHeight:1.5}}>Esta ação substitui <b>todos os seus dados atuais</b> pelos dados do backup.</div>
-          </div>
-          {/* Botão com contagem regressiva para restaurar */}
-          <BotaoPerigoso
-            label="Restaurar este backup"
-            cor={C.green}
-            onConfirm={confirmarImport}
-          />
-          <Btn onClick={()=>setFase("menu")} v="outline" full>Cancelar</Btn>
-        </div>
-      )}
-
-      {/* ── CONFIRMAR APAGAR TUDO */}
-      {fase==="apagar"&&(
-        <div style={{display:"flex",flexDirection:"column",gap:13}}>
-          <div style={{textAlign:"center",padding:"8px 0"}}>
-            <div style={{fontSize:52,marginBottom:6}}>🗑️</div>
-            <div style={{fontSize:16,fontWeight:900,color:C.red,marginBottom:4}}>Apagar todos os dados?</div>
-            <div style={{fontSize:13,color:C.gray,lineHeight:1.55}}>Esta ação apaga <b style={{color:C.red}}>tudo</b> permanentemente.</div>
-          </div>
-
-          {/* Resumo do que será apagado */}
-          <div style={{background:"#FEF2F2",border:"1.5px solid #FECACA",borderRadius:14,padding:"12px 14px"}}>
-            <div style={{fontWeight:800,color:C.red,fontSize:12,marginBottom:8}}>O que será apagado:</div>
-            {[
-              {e:"📦",l:"Produtos",v:produtos.filter(p=>!p.deleted).length},
-              {e:"👥",l:"Clientes",v:clientes.filter(c=>!c.deleted).length},
-              {e:"🛍️",l:"Vendas",v:vendas.length},
-            ].map(r=>(
-              <div key={r.l} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderBottom:"1px solid #FECACA"}}>
-                <span style={{fontSize:12,color:"#7F1D1D"}}>{r.e} {r.l}</span>
-                <span style={{fontSize:12,fontWeight:800,color:C.red}}>{r.v} registros</span>
-              </div>
-            ))}
-          </div>
-
-          <div style={{background:"#ECFDF5",border:"1.5px solid #BBF7D0",borderRadius:12,padding:"10px 13px",display:"flex",gap:9,alignItems:"center"}}>
-            <span style={{fontSize:20,flexShrink:0}}>✅</span>
-            <div style={{fontSize:12,color:"#065F46",lineHeight:1.5,fontWeight:600}}>
-              Um backup será baixado automaticamente <b>antes</b> de apagar tudo. Você não vai perder nada por acidente!
-            </div>
-          </div>
-
-          {/* Botão perigoso com 10 segundos */}
-          <BotaoPerigoso
-            label="Apagar tudo e baixar backup"
-            cor={C.red}
-            segundos={10}
-            onConfirm={executarApagar}
-          />
-          <Btn onClick={()=>setFase("menu")} v="outline" full>Cancelar — voltar</Btn>
-        </div>
-      )}
-
-      {/* ── SUCESSO */}
-      {fase==="sucesso"&&(
-        <div style={{textAlign:"center",padding:"20px 0"}}>
-          <div style={{fontSize:60,marginBottom:12,animation:"float 2s ease-in-out infinite"}}>
-            {tipoSucesso==="apagar"?"🧹":"✅"}
-          </div>
-          <div style={{fontSize:17,fontWeight:900,color:tipoSucesso==="apagar"?C.green:C.green,marginBottom:8}}>
-            {tipoSucesso==="exportar"&&"Backup exportado!"}
-            {tipoSucesso==="importar"&&"Dados restaurados!"}
-            {tipoSucesso==="apagar"&&"Dados apagados com sucesso!"}
-          </div>
-          <div style={{fontSize:13,color:C.gray,marginBottom:20,lineHeight:1.6}}>
-            {tipoSucesso==="exportar"&&"Salve o arquivo em local seguro — Google Drive, WhatsApp ou e-mail."}
-            {tipoSucesso==="importar"&&"Todos os registros foram atualizados com os dados do backup."}
-            {tipoSucesso==="apagar"&&"O backup foi baixado antes de apagar. Sua lojinha está zerada e pronta para recomeçar!"}
-          </div>
-          <Btn onClick={onClose} full>Fechar</Btn>
-        </div>
-      )}
-
-    </Modal>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   ONBOARDING TUTORIAL
-══════════════════════════════════════════════════════════════════════════════ */
-const PASSOS_ONBOARDING = [
-  {
-    id:1, emoji:"🌸", titulo:"Bem-vinda à Juju Store!",
-    subtitulo:"Seu negócio, organizado com amor",
-    cor:C.pinkD,
-    dica:null,
-    conteudo: [
-      {tipo:"intro", texto:"Este tutorial vai te guiar pelos primeiros passos para deixar sua lojinha funcionando do jeito certo. São apenas 4 passos rápidos!"},
-      {tipo:"lista", itens:[
-        {e:"📦",t:"Cadastrar produto com foto e estoque"},
-        {e:"👥",t:"Adicionar cliente com foto e aniversário"},
-        {e:"🛍️",t:"Registrar sua primeira venda com desconto"},
-        {e:"📊",t:"Analisar seus resultados e finanças"},
-      ]},
-    ],
-  },
-  {
-    id:2, emoji:"📦", titulo:"Passo 1: Cadastre seu Produto",
-    subtitulo:"Produtos bem cadastrados vendem mais",
-    cor:C.purple,
-    dica:"💡 Produto com foto vende até 3× mais! Capriche na imagem.",
-    conteudo: [
-      {tipo:"passo", label:"Vá para a aba", destaque:"📦 Produtos", texto:"na barra inferior"},
-      {tipo:"passo", label:"Toque em", destaque:"✨ Novo", texto:"no canto superior direito"},
-      {tipo:"bloco", titulo:"📸 Foto do produto", texto:"Toque em Câmera para tirar uma foto na hora (câmera traseira) ou em Galeria para escolher uma já salva. A foto é recortada automaticamente em quadrado."},
-      {tipo:"bloco", titulo:"💸 Nome e Preço", texto:"Preencha o nome, a categoria, o custo (quanto você pagou) e o preço de venda. O app calcula automaticamente se você está tendo um bom ganho!"},
-      {tipo:"bloco", titulo:"📦 Variações de Estoque", texto:"Tem o produto em várias cores ou tamanhos? Adicione cada variação com sua quantidade. Use o botão ✏️ para renomear e a câmera para foto individual de cada cor."},
-      {tipo:"bloco", titulo:"🏷️ Desconto na Venda", texto:"Na hora da venda, toque no item no carrinho e escolha o tipo de desconto: % por peça, novo valor unitário ou valor do desconto no total."},
-    ],
-  },
-  {
-    id:3, emoji:"👥", titulo:"Passo 2: Cadastre um Cliente",
-    subtitulo:"Cliente cadastrado = relacionamento de verdade",
-    cor:C.amber,
-    dica:"🎂 Com a data de nascimento, o app avisa automaticamente nos aniversários!",
-    conteudo: [
-      {tipo:"passo", label:"Vá para a aba", destaque:"👥 Clientes", texto:"na barra inferior"},
-      {tipo:"passo", label:"Toque em", destaque:"✨ Novo", texto:"no canto superior direito"},
-      {tipo:"bloco", titulo:"📸 Foto do cliente", texto:"Toque em Tirar foto — a câmera frontal abre automaticamente (ótimo para selfie). Use o botão 🔄 para trocar para a câmera traseira. Ou importe da Galeria."},
-      {tipo:"bloco", titulo:"📅 Data de nascimento", texto:"Digite no formato DD/MM/AAAA direto no teclado. O app vai te avisar no dia do aniversário e na semana antes!"},
-      {tipo:"bloco", titulo:"📝 Venda no Fiado", texto:"Se a cliente comprar fiado, o app registra a dívida e te mostra na dashboard. Você pode cobrar diretamente pelo WhatsApp com um toque!"},
-      {tipo:"bloco", titulo:"💚 Borda do avatar", texto:"Verde = cliente sem dívida. Vermelho = tem fiado pendente. Fácil de identificar na lista!"},
-    ],
-  },
-  {
-    id:4, emoji:"🛍️", titulo:"Passo 3: Realize uma Venda",
-    subtitulo:"Cada venda registrada = negócio crescendo",
-    cor:C.green,
-    dica:"💰 Sempre registre todas as vendas, mesmo as pequenas. Os relatórios dependem disso!",
-    conteudo: [
-      {tipo:"passo", label:"Vá para a aba", destaque:"🛍️ Vendas", texto:"na barra inferior"},
-      {tipo:"passo", label:"Toque em", destaque:"+ Nova Venda", texto:"para abrir o checkout"},
-      {tipo:"bloco", titulo:"🔍 Selecione o produto", texto:"Escolha o produto na lista suspensa. Se ele tem variações (cor, tamanho), escolha a variação desejada. A foto da variação aparece automaticamente!"},
-      {tipo:"bloco", titulo:"🏷️ Aplique descontos", texto:"Toque no ícone de desconto (%) ao lado do item para dar desconto por peça. Toque em Desc. Total para desconto na compra inteira."},
-      {tipo:"bloco", titulo:"💳 Forma de pagamento", texto:"Escolha: Dinheiro 💵, Pix 📱 ou Fiado 📝. O fiado só é liberado se houver uma cliente selecionada!"},
-      {tipo:"bloco", titulo:"✅ Finalize", texto:"Toque em Finalizar Venda. O estoque é deduzido automaticamente e os relatórios são atualizados na hora!"},
-    ],
-  },
-  {
-    id:5, emoji:"📊", titulo:"Passo 4: Acompanhe os Resultados",
-    subtitulo:"Quem conhece seus números cresce mais rápido",
-    cor:C.pinkD,
-    dica:"📂 Configure o Google Drive para salvar seus dados automaticamente na nuvem!",
-    conteudo: [
-      {tipo:"passo", label:"Vá para a aba", destaque:"📊 Relatórios", texto:"na barra inferior"},
-      {tipo:"bloco", titulo:"💰 Painel Financeiro", texto:"Veja Receita, Custo, Lucro Real e Margem de lucro por período. Compare dia, semana ou mês e veja o crescimento do seu negócio!"},
-      {tipo:"bloco", titulo:"📈 Gráfico de crescimento", texto:"Visualize a evolução de receita, custos e lucro ao longo do tempo. Ative e desative cada linha tocando na legenda."},
-      {tipo:"bloco", titulo:"💾 Backup dos seus dados", texto:"Toque no botão 💾 no topo da tela para acessar o backup. Exporte um arquivo JSON com todos os dados e salve no WhatsApp pessoal, e-mail ou onde preferir. Faça backup toda semana!"},
-      {tipo:"bloco", titulo:"📲 Lembrete de Fiado via WhatsApp", texto:"Na dashboard, nos clientes com fiado pendente, toque em 📲 WhatsApp para enviar um lembrete automático de cobrança!"},
-    ],
-  },
-];
-
-const Onboarding = ({onClose}) => {
-  const [passo,setPasso] = useState(0);
-  const total = PASSOS_ONBOARDING.length;
-  const atual = PASSOS_ONBOARDING[passo];
-  const isUltimo = passo===total-1;
-
-  return (
-    <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.62)",zIndex:9500,display:"flex",alignItems:"flex-end",justifyContent:"center"}}>
-      <div style={{background:C.white,borderRadius:"24px 24px 0 0",width:"100%",maxWidth:480,maxHeight:"90vh",overflowY:"auto",animation:"fadeUp .3s ease",paddingBottom:20}}>
-        {/* Header colorido */}
-        <div style={{background:`linear-gradient(135deg,${atual.cor},${atual.cor}CC)`,padding:"22px 20px 18px",position:"relative"}}>
-          <div style={{position:"absolute",top:14,right:14,display:"flex",gap:6,alignItems:"center"}}>
-            <span style={{fontSize:11,color:"rgba(255,255,255,.7)",fontWeight:700}}>{passo+1}/{total}</span>
-            <button onClick={onClose} style={{background:"rgba(255,255,255,.2)",border:"none",borderRadius:50,width:28,height:28,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}>
-              <Icon name="x" size={13} color="#fff"/>
-            </button>
-          </div>
-          <div style={{fontSize:42,marginBottom:8,lineHeight:1}}>{atual.emoji}</div>
-          <div style={{fontSize:17,fontWeight:900,color:"#fff",lineHeight:1.2}}>{atual.titulo}</div>
-          <div style={{fontSize:12,color:"rgba(255,255,255,.8)",marginTop:4}}>{atual.subtitulo}</div>
-          {/* Barra de progresso */}
-          <div style={{height:3,background:"rgba(255,255,255,.25)",borderRadius:99,marginTop:14}}>
-            <div style={{height:"100%",width:`${((passo+1)/total)*100}%`,background:"rgba(255,255,255,.9)",borderRadius:99,transition:"width .4s ease"}}/>
-          </div>
-        </div>
-
-        {/* Conteúdo */}
-        <div style={{padding:"16px 18px",display:"flex",flexDirection:"column",gap:10}}>
-          {atual.conteudo.map((bloco,i)=>{
-            if(bloco.tipo==="intro") return (
-              <div key={i} style={{fontSize:14,color:C.text,lineHeight:1.65,fontWeight:600}}>{bloco.texto}</div>
-            );
-            if(bloco.tipo==="lista") return (
-              <div key={i} style={{display:"flex",flexDirection:"column",gap:7,marginTop:4}}>
-                {bloco.itens.map((it,j)=>(
-                  <div key={j} style={{display:"flex",alignItems:"center",gap:11,background:C.pinkL,borderRadius:13,padding:"10px 13px"}}>
-                    <span style={{fontSize:22,flexShrink:0}}>{it.e}</span>
-                    <span style={{fontSize:13,fontWeight:700,color:C.pinkD}}>{it.t}</span>
-                  </div>
-                ))}
-              </div>
-            );
-            if(bloco.tipo==="passo") return (
-              <div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"8px 12px",background:"#F0FDF4",borderRadius:12,border:`1.5px solid #BBF7D0`}}>
-                <span style={{fontSize:13,color:C.gray}}>{bloco.label}</span>
-                <span style={{fontWeight:900,color:C.green,fontSize:13}}>{bloco.destaque}</span>
-                <span style={{fontSize:13,color:C.gray}}>{bloco.texto}</span>
-              </div>
-            );
-            if(bloco.tipo==="bloco") return (
-              <div key={i} style={{background:C.pinkL,borderRadius:13,padding:"11px 13px",borderLeft:`3px solid ${atual.cor}`}}>
-                <div style={{fontSize:12,fontWeight:800,color:atual.cor,marginBottom:4}}>{bloco.titulo}</div>
-                <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{bloco.texto}</div>
-              </div>
-            );
-            return null;
-          })}
-
-          {/* Dica */}
-          {atual.dica&&(
-            <div style={{background:`${atual.cor}12`,border:`1.5px solid ${atual.cor}30`,borderRadius:13,padding:"10px 13px"}}>
-              <div style={{fontSize:12,color:atual.cor,fontWeight:700,lineHeight:1.55}}>{atual.dica}</div>
-            </div>
-          )}
-
-          {/* Navegação */}
-          <div style={{display:"flex",gap:8,marginTop:6}}>
-            {passo>0&&(
-              <button onClick={()=>setPasso(p=>p-1)} className="tap" style={{flex:1,padding:"11px",borderRadius:14,background:C.pinkL,border:"none",fontFamily:"inherit",fontWeight:700,fontSize:14,color:C.pinkD,cursor:"pointer"}}>
-                ← Anterior
-              </button>
-            )}
-            <button onClick={isUltimo?onClose:()=>setPasso(p=>p+1)} className="tap"
-              style={{flex:2,padding:"12px",borderRadius:14,background:`linear-gradient(135deg,${atual.cor},${atual.cor}CC)`,border:"none",fontFamily:"inherit",fontWeight:800,fontSize:14,color:"#fff",cursor:"pointer"}}>
-              {isUltimo?"🚀 Começar agora!":"Próximo →"}
-            </button>
-          </div>
-          {!isUltimo&&(
-            <button onClick={onClose} style={{background:"none",border:"none",color:C.soft,fontSize:12,cursor:"pointer",padding:"4px 0",textAlign:"center",fontFamily:"inherit"}}>
-              Pular tutorial
-            </button>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-/* ══════════════════════════════════════════════════════════════════════════════
-   APP ROOT
-══════════════════════════════════════════════════════════════════════════════ */
-function App() {
-  useEffect(()=>{injectStyles();},[]);
-  const [tab,setTab]               = useState("home");
-  const [celebration,setCelebration] = useState(null);
-  const [produtos,setProdutos]     = useStorage("mlv3_produtos",[]);
-  const [clientes,setClientes]     = useStorage("mlv3_clientes",[]);
-  const [vendas,setVendas]         = useStorage("mlv3_vendas",[]);
-  const [showBackup,setShowBackup] = useState(false);
-  const [showOnboarding,setShowOnboarding] = useState(()=>{ try{ return !localStorage.getItem("juju_onboarding_done"); }catch{return true;} });
-  const celebrate  = useCallback(d=>setCelebration(d),[]);
-  const closeCeleb = useCallback(()=>setCelebration(null),[]);
-  const finishOnboarding = () => { try{localStorage.setItem("juju_onboarding_done","1");}catch{} setShowOnboarding(false); };
-
-  const TABS=[
-    {id:"home",      label:"Início",     icon:"home" },
-    {id:"produtos",  label:"Produtos",   icon:"box"  },
-    {id:"clientes",  label:"Clientes",   icon:"users"},
-    {id:"vendas",    label:"Vendas",     icon:"cart" },
-    {id:"relatorios",label:"Relatórios", icon:"chart"},
-  ];
-
-  const PAGES={
-    home:       <Dashboard  produtos={produtos}  vendas={vendas}   clientes={clientes} onSetTab={setTab}/>,
-    produtos:   <Produtos   produtos={produtos}  setProdutos={setProdutos} onCelebrate={celebrate}/>,
-    clientes:   <Clientes   clientes={clientes}  setClientes={setClientes} vendas={vendas} setVendas={setVendas} onCelebrate={celebrate}/>,
-    vendas:     <Vendas     vendas={vendas}      setVendas={setVendas}     produtos={produtos} setProdutos={setProdutos} clientes={clientes} onCelebrate={celebrate}/>,
-    relatorios: <Relatorios vendas={vendas}      produtos={produtos}/>,
-  };
-
-  const NAV_H = 62;
-
-  return (
-    <div style={{fontFamily:"'Nunito',sans-serif",background:C.rose,minHeight:"100vh",width:"100%",maxWidth:480,margin:"0 auto",position:"relative",paddingBottom:NAV_H,overflowX:"hidden"}}>
-      <div style={{position:"fixed",top:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,height:140,background:`linear-gradient(180deg,${C.pinkM}55 0%,transparent 100%)`,pointerEvents:"none",zIndex:0}}/>
-
-      {/* ── Barra de topo */}
-      <div style={{position:"sticky",top:0,zIndex:150,padding:"10px 14px 0",background:"transparent",pointerEvents:"none"}}>
-        <div style={{display:"flex",gap:8,pointerEvents:"auto",justifyContent:"flex-end"}}>
-          {/* Botão Tutorial */}
-          <button onClick={()=>setShowOnboarding(true)} className="tap" title="Tutorial"
-            style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)"}}>
-            <span style={{fontSize:18}}>🎓</span>
-          </button>
-          {/* Botão Backup */}
-          <button onClick={()=>setShowBackup(true)} className="tap" title="Backup dos dados"
-            style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)"}}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={C.pinkD} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <div style={{position:"relative",zIndex:1,marginTop:4}}>{PAGES[tab]}</div>
-      <nav className="safe-nav" style={{position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,height:NAV_H,background:"rgba(255,255,255,.97)",backdropFilter:"blur(10px)",borderTop:`1px solid ${C.pinkM}`,display:"flex",justifyContent:"space-around",alignItems:"center",zIndex:100,boxShadow:"0 -2px 20px rgba(244,114,182,.12)"}}>
-        {TABS.map(t=>{
-          const active=tab===t.id;
-          return (
-            <button key={t.id} onClick={()=>setTab(t.id)} className="tap" style={{display:"flex",flexDirection:"column",alignItems:"center",gap:2,background:"none",border:"none",cursor:"pointer",padding:"4px 6px",flex:1,minWidth:0,color:active?C.pinkD:C.soft}}>
-              <div style={{padding:6,borderRadius:12,background:active?C.pinkS:"transparent",transform:active?"scale(1.1)":"scale(1)",transition:"all .2s"}}>
-                <Icon name={t.icon} size={19} color={active?C.pinkD:C.soft}/>
-              </div>
-              <span style={{fontSize:9,fontWeight:active?800:500}}>{t.label}</span>
-            </button>
-          );
-        })}
-      </nav>
-      <Celebration data={celebration} onClose={closeCeleb}/>
-      {showOnboarding&&<Onboarding onClose={finishOnboarding}/>}
-      {showBackup&&(
-        <Backup
-          produtos={produtos} clientes={clientes} vendas={vendas}
-          setProdutos={setProdutos} setClientes={setClientes} setVendas={setVendas}
-          onClose={()=>setShowBackup(false)}
-        />
-      )}
-    </div>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(React.createElement(App));
-
-  </script>
-  <script>
-    window.addEventListener('load',()=>{setTimeout(()=>{const s=document.getElementById('splash');if(s){s.classList.add('hide');setTimeout(()=>s.remove(),450);}},1800);});
-  </script>
-</body>
-</html>
+                  ?<img src={p.foto} alt
