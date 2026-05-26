@@ -1,1 +1,1 @@
-# jujustore
+# juju-store
