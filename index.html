@@ -2274,7 +2274,12 @@ const Vendas = ({vendas,setVendas,produtos,setProdutos,clientes,onCelebrate}) =>
         return {...p, estoqueTotal:Number(p.estoqueTotal||0)+tv};
       }
     }));
-    setVendas(vs=>vs.map(venda=>venda.id===v.id?{...venda,reembolsada:true,reembolsadaEm:new Date().toISOString()}:venda));
+    setVendas(vs=>vs.map(venda=>venda.id===v.id?{
+      ...venda,
+      reembolsada:true,
+      reembolsadaEm:new Date().toISOString(),
+      ...(venda.pagamento==="fiado"?{fiadoPago:true,fiadoPagtMetodo:"reembolso",fiadoPagtData:new Date().toISOString()}:{})
+    }:venda));
     setReembolsoModal(null);
   };
 
