@@ -1905,13 +1905,25 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate}) => {
         {cvendas.length===0?<p style={{color:C.soft,fontSize:13}}>Ainda não realizou nenhuma compra.</p>
           :[...cvendas].reverse().map(v=>{
             const ehFiado=v.pagamento==="fiado";
-            const quitado=ehFiado&&v.fiadoPago;
-            const pendente=ehFiado&&!v.fiadoPago;
+            const reembolsada=!!v.reembolsada;
+            const quitado=ehFiado&&v.fiadoPago&&!reembolsada;
+            const pendente=ehFiado&&!v.fiadoPago&&!reembolsada;
             return (
-              <Card key={v.id} style={{marginBottom:8,padding:12,border:pendente?`2px solid ${C.red}55`:quitado?`2px solid ${C.green}44`:"none",background:pendente?"#FFF5F5":quitado?"#F0FDF4":C.white}}>
+              <Card key={v.id} style={{marginBottom:8,padding:12,
+                border:reembolsada?`2px solid ${C.amber}88`:pendente?`2px solid ${C.red}55`:quitado?`2px solid ${C.green}44`:"none",
+                background:reembolsada?"#FFFBEB":pendente?"#FFF5F5":quitado?"#F0FDF4":C.white,
+                opacity:reembolsada?.75:1
+              }}>
+                {reembolsada&&(
+                  <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:7,background:"#FEF3C7",borderRadius:8,padding:"5px 9px",border:`1px solid ${C.amber}55`}}>
+                    <span style={{fontSize:14}}>↩️</span>
+                    <span style={{fontSize:11,fontWeight:800,color:"#92400E"}}>Venda estornada</span>
+                    {v.reembolsadaEm&&<span style={{fontSize:10,color:"#B45309",marginLeft:"auto"}}>{new Date(v.reembolsadaEm).toLocaleDateString("pt-BR")}</span>}
+                  </div>
+                )}
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:8}}>
                   <div style={{flex:1,minWidth:0}}>
-                    <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{v.itens?.map(i=>i.nome).join(", ")}</div>
+                    <div style={{fontSize:13,fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",textDecoration:reembolsada?"line-through":undefined,color:reembolsada?C.soft:C.text}}>{v.itens?.map(i=>i.nome).join(", ")}</div>
                     <div style={{fontSize:11,marginTop:3,display:"flex",alignItems:"center",gap:4,flexWrap:"wrap"}}>
                       <span style={{color:C.soft}}>{new Date(v.data).toLocaleDateString("pt-BR")}</span>
                       <span style={{color:C.soft}}>·</span>
@@ -1923,7 +1935,7 @@ const Clientes = ({clientes,setClientes,vendas,setVendas,onCelebrate}) => {
                       {v.desconto>0&&<><span style={{color:C.soft}}>·</span><span style={{color:C.soft}}>Desc: {fmt(v.desconto)}</span></>}
                     </div>
                   </div>
-                  <Badge color={pendente?C.red:quitado?C.green:C.pink}>{fmt(v.total)}</Badge>
+                  <Badge color={reembolsada?C.amber:pendente?C.red:quitado?C.green:C.pink}>{fmt(v.total)}</Badge>
                 </div>
                 {pendente&&(
                   <button onClick={()=>{setRecPagt("dinheiro");setRecModal(v.id);}} className="tap"
