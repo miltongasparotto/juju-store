@@ -193,9 +193,9 @@
  * v2.5.0 — Google OAuth + Drive Sync:
  *   - Autenticação Google OAuth 2.0 (scope: drive.appdata)
  *   - Sincronização automática com Google Drive (pasta appdata, invisível ao usuário)
- *   - Token em sessionStorage (apagado ao fechar o navegador)
+ *   - Token em localStorage (login persistente entre sessões)
  *   - save() com localStorage imediato + debounce 1.5s para Drive
- *   - Auto-login via token salvo em sessionStorage
+ *   - Auto-login via token salvo em localStorage
  *   - Tela de login com botão "Entrar com Google"
  *   - Botão de logout no menu superior
  *   - Import/Export via Drive substitui/complementa o backup local
@@ -355,7 +355,7 @@ const gdrive = {
           expires_at:   Date.now() + (resp.expires_in - 60) * 1000,
         };
         _driveToken = token;
-        sessionStorage.setItem(SS_TOKEN_KEY, JSON.stringify(token));
+        localStorage.setItem(SS_TOKEN_KEY, JSON.stringify(token));
         onSuccess && onSuccess(token);
       },
     });
@@ -365,7 +365,7 @@ const gdrive = {
   _getValidToken() {
     if (_driveToken && _driveToken.expires_at > Date.now()) return _driveToken;
     try {
-      const saved = JSON.parse(sessionStorage.getItem(SS_TOKEN_KEY));
+      const saved = JSON.parse(localStorage.getItem(SS_TOKEN_KEY));
       if (saved && saved.expires_at > Date.now()) { _driveToken = saved; return saved; }
     } catch {}
     return null;
@@ -381,21 +381,21 @@ const gdrive = {
         });
         const info = await r.json();
         const user = { name: info.name, email: info.email, picture: info.picture };
-        sessionStorage.setItem(SS_USER_KEY, JSON.stringify(user));
+        localStorage.setItem(SS_USER_KEY, JSON.stringify(user));
         onSuccess && onSuccess({ token, user });
       } catch {
         onSuccess && onSuccess({ token, user: null });
       }
     }, onError);
-    _tokenClient.requestAccessToken({ prompt: "consent" });
+    _tokenClient.requestAccessToken({ prompt: "select_account" });
   },
 
-  /* Auto-login: tenta usar token salvo em sessionStorage */
+  /* Auto-login: tenta usar token salvo em localStorage */
   autoLogin() {
     const token = this._getValidToken();
     if (!token) return null;
     let user = null;
-    try { user = JSON.parse(sessionStorage.getItem(SS_USER_KEY)); } catch {}
+    try { user = JSON.parse(localStorage.getItem(SS_USER_KEY)); } catch {}
     return { token, user };
   },
 
@@ -406,8 +406,8 @@ const gdrive = {
     }
     _driveToken  = null;
     _driveFileId = null;
-    sessionStorage.removeItem(SS_TOKEN_KEY);
-    sessionStorage.removeItem(SS_USER_KEY);
+    localStorage.removeItem(SS_TOKEN_KEY);
+    localStorage.removeItem(SS_USER_KEY);
   },
 
   /* Acha (ou cria) o arquivo no Drive */
