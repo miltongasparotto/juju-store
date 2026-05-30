@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
   <meta name="apple-mobile-web-app-title" content="Juju Store"/>
   <meta name="mobile-web-app-capable" content="yes"/>
-  <title>Juju Store 🌸 v2.4.0</title>
+  <title>Juju Store 🌸 v2.5.0</title>
   <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+"/>
   <script>
-    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.4.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
+    if('serviceWorker' in navigator){navigator.serviceWorker.register(URL.createObjectURL(new Blob(["const CACHE='juju-v2.5.0';self.addEventListener('install',e=>{self.skipWaiting();});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)));});"],{type:'text/javascript'}))).catch(()=>{});}
     const mLink=document.createElement('link');mLink.rel='manifest';
     mLink.href=URL.createObjectURL(new Blob([JSON.stringify({name:"Juju Store",short_name:"Juju Store",start_url:"./",display:"standalone",orientation:"portrait",background_color:"#FFF1F5",theme_color:"#DB2777",icons:[{src:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI0RCMjc3NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI4MCIgZm9udC1mYW1pbHk9InNlcmlmIj7wn4y4PC90ZXh0PgogIDx0ZXh0IHg9IjI1NiIgeT0iNDMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIGxldHRlci1zcGFjaW5nPSItMiI+SnVqdTwvdGV4dD4KPC9zdmc+",sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}]})],{type:'application/manifest+json'}));
     document.head.appendChild(mLink);
@@ -30,6 +30,7 @@
     @keyframes splashFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
     @keyframes loadBar{0%{width:0}60%{width:70%}100%{width:100%}}
   </style>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <div id="splash">
@@ -185,10 +186,19 @@
   </script>
   <script type="text/babel" data-presets="env,react">
 /**
- * Lojinha — v2.4.0
- * Atualizado: 2026-05-25
+ * Lojinha — v2.5.0
+ * Atualizado: 2026-05-30
  *
  * Changelog:
+ * v2.5.0 — Google OAuth + Drive Sync:
+ *   - Autenticação Google OAuth 2.0 (scope: drive.appdata)
+ *   - Sincronização automática com Google Drive (pasta appdata, invisível ao usuário)
+ *   - Token em sessionStorage (apagado ao fechar o navegador)
+ *   - save() com localStorage imediato + debounce 1.5s para Drive
+ *   - Auto-login via token salvo em sessionStorage
+ *   - Tela de login com botão "Entrar com Google"
+ *   - Botão de logout no menu superior
+ *   - Import/Export via Drive substitui/complementa o backup local
  * v2.4.0 — Atualizações de segurança e UX:
  *   - Botão "Apagar tudo": contador de 10s bloqueia "Confirmar já" como proteção real
  *   - "Confirmar já" só é liberado (verde) após a barra completar os 10 segundos
@@ -310,12 +320,257 @@ const C = {
 
 const useStorage = (key, init) => {
   const [v, sv] = useState(() => { try { const r=JSON.parse(localStorage.getItem(key)); return r!==null&&r!==undefined?r:init; } catch { return init; } });
-  useEffect(() => { localStorage.setItem(key, JSON.stringify(v)); }, [key, v]);
+  // Não persiste automaticamente — a persistência é feita pelo save() global do App
   return [v, sv];
 };
 const uid  = () => Date.now().toString(36) + Math.random().toString(36).slice(2);
 const fmt  = (n) => "R$ " + Number(n||0).toFixed(2).replace(".",",");
 const fmtN = (n) => Number(n||0).toFixed(2).replace(".",",");
+
+/* ─────────────────────────────────────────────
+   GOOGLE AUTH + DRIVE SYNC ENGINE
+   ───────────────────────────────────────────── */
+const GDRIVE_CLIENT_ID  = "175753605665-qgci1gfo3o4co7r9j76voh94pmlq4klo.apps.googleusercontent.com";
+const GDRIVE_SCOPE      = "https://www.googleapis.com/auth/drive.appdata";
+const GDRIVE_FILENAME   = "juju-store-data.json";
+const GDRIVE_FIELDS     = "files(id,name)";
+const SS_TOKEN_KEY      = "juju_gdrive_token";
+const SS_USER_KEY       = "juju_gdrive_user";
+
+let _tokenClient = null;
+let _driveToken  = null;   // { access_token, expires_at }
+let _driveFileId = null;   // cached file id
+
+const gdrive = {
+  /* Inicializa o token client (lazy) */
+  _initClient(onSuccess, onError) {
+    if (!window.google) { onError && onError("GSI não carregou"); return; }
+    _tokenClient = google.accounts.oauth2.initTokenClient({
+      client_id: GDRIVE_CLIENT_ID,
+      scope: GDRIVE_SCOPE,
+      callback: (resp) => {
+        if (resp.error) { onError && onError(resp.error); return; }
+        const token = {
+          access_token: resp.access_token,
+          expires_at:   Date.now() + (resp.expires_in - 60) * 1000,
+        };
+        _driveToken = token;
+        sessionStorage.setItem(SS_TOKEN_KEY, JSON.stringify(token));
+        onSuccess && onSuccess(token);
+      },
+    });
+  },
+
+  /* Retorna token válido ou null */
+  _getValidToken() {
+    if (_driveToken && _driveToken.expires_at > Date.now()) return _driveToken;
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(SS_TOKEN_KEY));
+      if (saved && saved.expires_at > Date.now()) { _driveToken = saved; return saved; }
+    } catch {}
+    return null;
+  },
+
+  /* Login: abre popup Google */
+  login(onSuccess, onError) {
+    this._initClient(async (token) => {
+      // Busca nome/email do usuário
+      try {
+        const r = await fetch("https://www.googleapis.com/oauth2/v3/userinfo", {
+          headers: { Authorization: "Bearer " + token.access_token }
+        });
+        const info = await r.json();
+        const user = { name: info.name, email: info.email, picture: info.picture };
+        sessionStorage.setItem(SS_USER_KEY, JSON.stringify(user));
+        onSuccess && onSuccess({ token, user });
+      } catch {
+        onSuccess && onSuccess({ token, user: null });
+      }
+    }, onError);
+    _tokenClient.requestAccessToken({ prompt: "consent" });
+  },
+
+  /* Auto-login: tenta usar token salvo em sessionStorage */
+  autoLogin() {
+    const token = this._getValidToken();
+    if (!token) return null;
+    let user = null;
+    try { user = JSON.parse(sessionStorage.getItem(SS_USER_KEY)); } catch {}
+    return { token, user };
+  },
+
+  /* Logout */
+  logout() {
+    if (_driveToken) {
+      try { google.accounts.oauth2.revoke(_driveToken.access_token, ()=>{}); } catch {}
+    }
+    _driveToken  = null;
+    _driveFileId = null;
+    sessionStorage.removeItem(SS_TOKEN_KEY);
+    sessionStorage.removeItem(SS_USER_KEY);
+  },
+
+  /* Acha (ou cria) o arquivo no Drive */
+  async _getOrCreateFileId(token) {
+    if (_driveFileId) return _driveFileId;
+    // Busca
+    const search = await fetch(
+      `https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name='${GDRIVE_FILENAME}'&fields=${GDRIVE_FIELDS}`,
+      { headers: { Authorization: "Bearer " + token.access_token } }
+    );
+    const data = await search.json();
+    if (data.files && data.files.length > 0) {
+      _driveFileId = data.files[0].id;
+      return _driveFileId;
+    }
+    // Cria
+    const meta = await fetch("https://www.googleapis.com/drive/v3/files", {
+      method: "POST",
+      headers: { Authorization: "Bearer " + token.access_token, "Content-Type": "application/json" },
+      body: JSON.stringify({ name: GDRIVE_FILENAME, parents: ["appDataFolder"] })
+    });
+    const created = await meta.json();
+    _driveFileId = created.id;
+    return _driveFileId;
+  },
+
+  /* Carrega dados do Drive → null se não encontrar */
+  async load() {
+    const token = this._getValidToken();
+    if (!token) return null;
+    try {
+      const search = await fetch(
+        `https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name='${GDRIVE_FILENAME}'&fields=${GDRIVE_FIELDS}`,
+        { headers: { Authorization: "Bearer " + token.access_token } }
+      );
+      const data = await search.json();
+      if (!data.files || data.files.length === 0) return null;
+      const fileId = data.files[0].id;
+      _driveFileId = fileId;
+      const content = await fetch(
+        `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media`,
+        { headers: { Authorization: "Bearer " + token.access_token } }
+      );
+      return await content.json();
+    } catch { return null; }
+  },
+
+  /* Salva dados no Drive (PATCH multipart) */
+  async save(payload) {
+    const token = this._getValidToken();
+    if (!token) return false;
+    try {
+      const fileId = await this._getOrCreateFileId(token);
+      const body   = JSON.stringify(payload);
+      const boundary = "juju_boundary_42";
+      const multipart =
+        `--${boundary}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n` +
+        `${JSON.stringify({ name: GDRIVE_FILENAME })}\r\n` +
+        `--${boundary}\r\nContent-Type: application/json\r\n\r\n` +
+        `${body}\r\n--${boundary}--`;
+      await fetch(
+        `https://www.googleapis.com/upload/drive/v3/files/${fileId}?uploadType=multipart`,
+        {
+          method: "PATCH",
+          headers: {
+            Authorization: "Bearer " + token.access_token,
+            "Content-Type": `multipart/related; boundary=${boundary}`,
+          },
+          body: multipart,
+        }
+      );
+      return true;
+    } catch { return false; }
+  },
+};
+/* ── FIM ENGINE ────────────────────────────── */
+
+
+/* Tela de Login */
+const LoginScreen = ({ onLogin }) => {
+  const [loading, setLoading] = useState(false);
+  const [erro, setErro]       = useState("");
+
+  const handleLogin = () => {
+    setLoading(true);
+    setErro("");
+    gdrive.login(
+      ({ token, user }) => { setLoading(false); onLogin({ token, user }); },
+      (err)             => { setLoading(false); setErro("Não foi possível fazer login. Tente novamente."); console.error(err); }
+    );
+  };
+
+  return (
+    <div style={{minHeight:"100vh",background:"linear-gradient(135deg,#FBCFE8,#FFF1F5)",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:24,fontFamily:"'Nunito',sans-serif"}}>
+      <div style={{fontSize:72,marginBottom:8,animation:"float 3s ease-in-out infinite"}}>🌸</div>
+      <div style={{fontSize:28,fontWeight:900,color:"#DB2777",marginBottom:4}}>Juju Store</div>
+      <div style={{fontSize:13,color:"#F472B6",marginBottom:40}}>Sua lojinha inteligente</div>
+
+      <div style={{background:"#fff",borderRadius:24,padding:28,width:"100%",maxWidth:340,boxShadow:"0 8px 40px rgba(219,39,119,.15)",textAlign:"center"}}>
+        <div style={{fontSize:16,fontWeight:800,color:"#1F2937",marginBottom:8}}>Bem-vinda! 👋</div>
+        <div style={{fontSize:13,color:"#6B7280",marginBottom:24,lineHeight:1.5}}>
+          Faça login com sua conta Google para acessar seus dados de qualquer dispositivo.
+        </div>
+
+        <button
+          onClick={handleLogin}
+          disabled={loading}
+          className="tap"
+          style={{
+            display:"flex",alignItems:"center",justifyContent:"center",gap:10,
+            width:"100%",padding:"13px 20px",borderRadius:14,
+            background: loading ? "#f3f4f6" : "#fff",
+            border:"2px solid #e5e7eb",cursor: loading ? "not-allowed" : "pointer",
+            fontFamily:"inherit",fontWeight:800,fontSize:14,color:"#1F2937",
+            boxShadow:"0 2px 8px rgba(0,0,0,.08)",transition:"all .2s",
+          }}
+        >
+          {loading ? (
+            <><div style={{width:18,height:18,border:"2px solid #DB2777",borderTopColor:"transparent",borderRadius:"50%",animation:"spin 1s linear infinite"}}/> Entrando…</>
+          ) : (
+            <>
+              <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+              Entrar com Google
+            </>
+          )}
+        </button>
+
+        {erro && <div style={{marginTop:14,fontSize:12,color:"#EF4444",background:"#FEF2F2",padding:"8px 12px",borderRadius:10}}>{erro}</div>}
+
+        <div style={{marginTop:20,fontSize:11,color:"#9CA3AF",lineHeight:1.5}}>
+          Seus dados ficam salvos na sua própria conta Google Drive, com acesso privado e exclusivo.
+        </div>
+      </div>
+
+      <div style={{marginTop:24,fontSize:11,color:"#F472B6",opacity:.7}}>v2.5.0</div>
+    </div>
+  );
+};
+
+/* Indicador de sync */
+const SyncIndicator = ({ status }) => {
+  if (status === "idle") return null;
+  const map = {
+    saving:  { emoji:"☁️", label:"Salvando…",  color:"#F59E0B" },
+    saved:   { emoji:"✅", label:"Salvo",       color:"#10B981" },
+    error:   { emoji:"⚠️", label:"Erro sync",  color:"#EF4444" },
+    loading: { emoji:"🔄", label:"Carregando…", color:"#8B5CF6" },
+  };
+  const s = map[status] || map.saved;
+  return (
+    <div style={{
+      position:"fixed",bottom:76,left:"50%",transform:"translateX(-50%)",
+      background:"rgba(255,255,255,.97)",backdropFilter:"blur(8px)",
+      borderRadius:20,padding:"6px 14px",display:"flex",alignItems:"center",
+      gap:6,boxShadow:"0 2px 16px rgba(0,0,0,.12)",zIndex:200,
+      fontSize:12,fontWeight:700,color:s.color,whiteSpace:"nowrap",
+      animation:"fadeUp .3s ease",
+    }}>
+      <span>{s.emoji}</span>{s.label}
+    </div>
+  );
+};
+
 
 
 const P = {
@@ -3280,7 +3535,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
     exportarJSON({
       app:"Juju Store",
       tipo:"BACKUP",
-      versao:"2.4.0",
+      versao:"2.5.0",
       exportadoEm: agora.toISOString(),
       dataHoraLegivel: agora.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"}),
       produtos, clientes, vendas
@@ -3321,7 +3576,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
       {
         app:"Juju Store",
         tipo:"BACKUP-ANTES-DE-APAGAR",
-        versao:"2.4.0",
+        versao:"2.5.0",
         exportadoEm: agora.toISOString(),
         dataHoraLegivel: agora.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"}),
         produtos, clientes, vendas
@@ -3392,7 +3647,7 @@ const Backup = ({produtos,clientes,vendas,setProdutos,setClientes,setVendas,onCl
           <InfoBox emoji="💡" title="Dica importante" text="Faça um backup pelo menos uma vez por semana. Envie o arquivo pelo WhatsApp para você mesma para guardar com segurança." color={C.purple}/>
 
           <div style={{textAlign:"center",paddingTop:4}}>
-            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 2.4.0</span>
+            <span style={{fontSize:11,color:C.soft,fontWeight:600}}>Juju Store — versão 2.5.0</span>
           </div>
         </div>
       )}
@@ -3604,16 +3859,102 @@ const Onboarding = ({onClose}) => {
 
 function App() {
   useEffect(()=>{injectStyles();},[]);
+
+  /* ── Auth state ── */
+  const [authUser, setAuthUser]       = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
+
+  /* ── Data state ── */
   const [tab,setTab]               = useState("home");
   const [celebration,setCelebration] = useState(null);
   const [produtos,setProdutos]     = useStorage("mlv3_produtos",[]);
   const [clientes,setClientes]     = useStorage("mlv3_clientes",[]);
   const [vendas,setVendas]         = useStorage("mlv3_vendas",[]);
   const [showBackup,setShowBackup] = useState(false);
-  const [showOnboarding,setShowOnboarding] = useState(()=>{ try{ return !localStorage.getItem("juju_onboarding_done"); }catch{return true;} });
+  const [showOnboarding,setShowOnboarding] = useState(false);
+  const [syncStatus,setSyncStatus] = useState("idle");
+  const syncDebounce = useRef(null);
+
   const celebrate  = useCallback(d=>setCelebration(d),[]);
   const closeCeleb = useCallback(()=>setCelebration(null),[]);
   const finishOnboarding = () => { try{localStorage.setItem("juju_onboarding_done","1");}catch{} setShowOnboarding(false); };
+
+  /* ── Auto-login ao montar ── */
+  useEffect(()=>{
+    const saved = gdrive.autoLogin();
+    if (saved) {
+      setAuthUser(saved);
+      setSyncStatus("loading");
+      gdrive.load().then(data => {
+        if (data && data.produtos && data.clientes && data.vendas) {
+          setProdutos(data.produtos);
+          setClientes(data.clientes);
+          setVendas(data.vendas);
+          try {
+            localStorage.setItem("mlv3_produtos", JSON.stringify(data.produtos));
+            localStorage.setItem("mlv3_clientes", JSON.stringify(data.clientes));
+            localStorage.setItem("mlv3_vendas",   JSON.stringify(data.vendas));
+          } catch {}
+        }
+        setSyncStatus("idle");
+        setAuthLoading(false);
+        try{ if(!localStorage.getItem("juju_onboarding_done")) setShowOnboarding(true); }catch{}
+      });
+    } else {
+      setAuthLoading(false);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
+
+  /* ── Persiste local sempre; Drive só se logado ── */
+  useEffect(()=>{
+    try {
+      localStorage.setItem("mlv3_produtos", JSON.stringify(produtos));
+      localStorage.setItem("mlv3_clientes", JSON.stringify(clientes));
+      localStorage.setItem("mlv3_vendas",   JSON.stringify(vendas));
+    } catch {}
+    if (!authUser) return;
+    if (syncDebounce.current) clearTimeout(syncDebounce.current);
+    setSyncStatus("saving");
+    syncDebounce.current = setTimeout(async () => {
+      const ok = await gdrive.save({ produtos, clientes, vendas });
+      setSyncStatus(ok ? "saved" : "error");
+      setTimeout(()=>setSyncStatus("idle"), 2500);
+    }, 1500);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [produtos, clientes, vendas]);
+
+  /* ── Login callback ── */
+  const handleLogin = useCallback(async ({ token, user }) => {
+    setAuthUser({ token, user });
+    setSyncStatus("loading");
+    const data = await gdrive.load();
+    if (data && data.produtos && data.clientes && data.vendas) {
+      setProdutos(data.produtos);
+      setClientes(data.clientes);
+      setVendas(data.vendas);
+      try {
+        localStorage.setItem("mlv3_produtos", JSON.stringify(data.produtos));
+        localStorage.setItem("mlv3_clientes", JSON.stringify(data.clientes));
+        localStorage.setItem("mlv3_vendas",   JSON.stringify(data.vendas));
+      } catch {}
+    }
+    setSyncStatus("idle");
+    try{ if(!localStorage.getItem("juju_onboarding_done")) setShowOnboarding(true); }catch{}
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  /* ── Logout ── */
+  const handleLogout = useCallback(() => {
+    gdrive.logout();
+    setAuthUser(null);
+  }, []);
+
+  /* ── Loading inicial (tentando auto-login) ── */
+  if (authLoading) return null;
+
+  /* ── Tela de login ── */
+  if (!authUser) return <LoginScreen onLogin={handleLogin}/>;
 
   const TABS=[
     {id:"home",      label:"Início",     icon:"home" },
@@ -3639,7 +3980,7 @@ function App() {
 
       {}
       <div style={{position:"sticky",top:0,zIndex:150,padding:"10px 14px 0",background:"transparent",pointerEvents:"none"}}>
-        <div style={{display:"flex",gap:8,pointerEvents:"auto",justifyContent:"flex-end"}}>
+        <div style={{display:"flex",gap:8,pointerEvents:"auto",justifyContent:"flex-end",alignItems:"center"}}>
           {}
           <GuiaAcoes tab={tab}/>
           {}
@@ -3651,6 +3992,14 @@ function App() {
           <button onClick={()=>setShowBackup(true)} className="tap" title="Backup dos dados"
             style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)"}}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={C.pinkD} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </button>
+          {}
+          <button onClick={handleLogout} className="tap" title={`Sair (${authUser.user?.email || ""})`}
+            style={{width:38,height:38,borderRadius:50,background:"rgba(255,255,255,.95)",border:"none",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",boxShadow:"0 2px 14px rgba(244,114,182,.14)",flexShrink:0,backdropFilter:"blur(8px)",overflow:"hidden",padding:0}}>
+            {authUser.user?.picture
+              ? <img src={authUser.user.picture} alt="" style={{width:38,height:38,borderRadius:"50%",objectFit:"cover"}}/>
+              : <span style={{fontSize:16}}>👤</span>
+            }
           </button>
         </div>
       </div>
@@ -3669,6 +4018,7 @@ function App() {
           );
         })}
       </nav>
+      <SyncIndicator status={syncStatus}/>
       <Celebration data={celebration} onClose={closeCeleb}/>
       {showOnboarding&&<Onboarding onClose={finishOnboarding}/>}
       {showBackup&&(
